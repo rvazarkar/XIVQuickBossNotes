@@ -10,9 +10,6 @@ namespace BossNotes
         private readonly Configuration _configuration;
         private readonly string[] _expansions = {"A Realm Reborn", "Heavensward", "Shadowbringers", "Stormblood"};
 
-        private readonly string[] _arrDungeons =
-            {"Sastasha", "The Tam-Tara Deepcroft", "Copperbell Mines", "Halatali", "The Thousand Maws of Toto-Rak", "Haukke Manor", "Brayflox's Longstop", "The Sunken Temple of Qarn", "Cutter's Cry"};
-
         private bool _visible = false;
         public bool Visible
         {
@@ -43,10 +40,8 @@ namespace BossNotes
                         if (ImGui.Selectable(_expansions[i], selected))
                         {
                             _configuration.SelectedExpansion = i;
-                            _configuration.
                         }
-                            
-                        
+
                         if (selected)
                             ImGui.SetItemDefaultFocus();
                     }
