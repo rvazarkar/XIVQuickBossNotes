@@ -1,0 +1,14 @@
+﻿namespace BossNotes.ARR.Dungeons.ThousandMawsBosses
+{
+    public class Graffias : Boss
+    {
+        public Graffias()
+        {
+            Name = "Graffias";
+            QuickStrategy =
+                "Destroy fleshy pods with ranged attacks. Kill mitelings ASAP. Avoid puddles , kill tail and then boss";
+            InDepthStrategy =
+                @"Graffias, a giant arachnid, is the final boss of Toto-Rak. At the start of the boss fight, the room is surrounded by the explosive Fleshy Pods. Be sure to destroy the pods as soon as possible. During the fight, Graffias can spawn Fleshy Pods at the locations of the party members. Make sure to move away from those pods and destroy them with ranged abilities. Graffias will summon two mitelings. Kill them as soon as possible. Around halfway into the fight, Graffias' tail will become exposed and target-able. The tail will spawn giant puddles of green goo around the boss room. Avoid these puddles and kill the tail then the boss.";
+        }
+    }
+}

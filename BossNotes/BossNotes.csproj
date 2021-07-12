@@ -53,12 +53,23 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="ARR\ARR.cs" />
+        <Compile Include="ARR\Dungeons\Copperbell.cs" />
+        <Compile Include="ARR\Dungeons\CopperbellBosses\Gyges.cs" />
+        <Compile Include="ARR\Dungeons\CopperbellBosses\Ichorous.cs" />
+        <Compile Include="ARR\Dungeons\CopperbellBosses\Kottos.cs" />
+        <Compile Include="ARR\Dungeons\Halatali.cs" />
+        <Compile Include="ARR\Dungeons\HalataliBosses\Firemane.cs" />
+        <Compile Include="ARR\Dungeons\HalataliBosses\PitPeiste.cs" />
+        <Compile Include="ARR\Dungeons\HalataliBosses\Tangata.cs" />
+        <Compile Include="ARR\Dungeons\HalataliBosses\Thunderclap.cs" />
         <Compile Include="ARR\Dungeons\Sastasha.cs" />
         <Compile Include="ARR\Dungeons\SastashaBosses\CaptainMadison.cs" />
         <Compile Include="ARR\Dungeons\SastashaBosses\Chopper.cs" />
         <Compile Include="ARR\Dungeons\SastashaBosses\Denn.cs" />
         <Compile Include="ARR\Dungeons\TamTara.cs" />
         <Compile Include="ARR\Dungeons\TamTaraBosses\Galvanth.cs" />
+        <Compile Include="ARR\Dungeons\ThousandMaws.cs" />
+        <Compile Include="ARR\Dungeons\ThousandMawsBosses\Graffias.cs" />
         <Compile Include="Boss.cs" />
         <Compile Include="BossNotesPlugin.cs" />
         <Compile Include="Configuration.cs" />
