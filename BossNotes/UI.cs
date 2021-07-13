@@ -38,15 +38,19 @@ namespace BossNotes
             _configuration = configuration;
         }
 
+        public void Draw()
+        {
+            DrawNotesWindows();
+        }
+
         public void DrawNotesWindows()
         {
             if (!_visible)
                 return;
             
             ImGui.SetNextWindowSize(new Vector2(400, 600) * ImGui.GetIO().FontGlobalScale, ImGuiCond.FirstUseEver);
-            ImGui.Begin("BossNotes", ImGuiWindowFlags.None);
 
-            if (ImGui.BeginTabBar("BossNotesTabBar", ImGuiTabBarFlags.NoTooltip))
+            if (ImGui.Begin("BossNotes", ref _visible, ImGuiWindowFlags.None))
             {
                 if (ImGui.BeginCombo("expansion combo", _expansions[_configuration.SelectedExpansion].Name))
                 {
@@ -58,13 +62,14 @@ namespace BossNotes
                             _selectedInstance = _expansions[i].Dungeons[0];
                             _configuration.SelectedExpansion = i;
                         }
-                        
+                    
                         if (selected)
                             ImGui.SetItemDefaultFocus();
                     }
                     ImGui.EndCombo();
                 }
 
+                ImGui.SameLine();
                 if (ImGui.BeginCombo("type combo", _types[_selectedType]))
                 {
                     for (var i = 0; i < _types.Length; i++)
@@ -96,6 +101,7 @@ namespace BossNotes
                     _ => throw new ArgumentOutOfRangeException()
                 };
 
+                ImGui.SameLine();
                 if (ImGui.BeginCombo("instance combo", _selectedInstance.Name))
                 {
                     for (var i = 0;  i < list.Length; i++)
@@ -106,12 +112,16 @@ namespace BossNotes
                             _selectedInstance = list[i];
                             _selectedInstanceIndex = i;
                         }
-                        
+                    
                         if (selected)
                             ImGui.SetItemDefaultFocus();
                     }
+                
+                    ImGui.EndCombo();
                 }
             }
+
+            ImGui.End();
         }
         
         public void Dispose()
