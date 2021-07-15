@@ -1,8 +1,6 @@
 ﻿using System;
-using ImGuiNET;
-using ImGuiScene;
 using System.Numerics;
-
+using ImGuiNET;
 
 namespace BossNotes
 {
@@ -10,32 +8,39 @@ namespace BossNotes
     {
         private readonly Configuration _configuration;
 
-        private readonly Expansion[] _expansions = {
+        private readonly Expansion[] _expansions =
+        {
             new ARR.ARR(),
             new Stormblood.Stormblood()
         };
 
-        private readonly string[] _types = {
+        private readonly string[] _types =
+        {
             "Dungeons",
             "Trials",
             "Raids"
         };
 
-        private int _selectedType = 0;
-        private int _selectedInstanceIndex = 0;
-
         private Instance _selectedInstance;
-        
-        private bool _visible = false;
+        private int _selectedInstanceIndex;
+
+        private int _selectedType;
+
+        private bool _visible;
+
+        public UI(Configuration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public bool Visible
         {
             get => _visible;
             set => _visible = value;
         }
 
-        public UI(Configuration configuration)
+        public void Dispose()
         {
-            _configuration = configuration;
         }
 
         public void Draw()
@@ -47,7 +52,7 @@ namespace BossNotes
         {
             if (!_visible)
                 return;
-            
+
             ImGui.SetNextWindowSize(new Vector2(400, 600) * ImGui.GetIO().FontGlobalScale, ImGuiCond.FirstUseEver);
 
             if (ImGui.Begin("BossNotes", ref _visible, ImGuiWindowFlags.None))
@@ -62,10 +67,11 @@ namespace BossNotes
                             _selectedInstance = _expansions[i].Dungeons[0];
                             _configuration.SelectedExpansion = i;
                         }
-                    
+
                         if (selected)
                             ImGui.SetItemDefaultFocus();
                     }
+
                     ImGui.EndCombo();
                 }
 
@@ -90,6 +96,7 @@ namespace BossNotes
                         if (selected)
                             ImGui.SetItemDefaultFocus();
                     }
+
                     ImGui.EndCombo();
                 }
 
@@ -104,7 +111,7 @@ namespace BossNotes
                 ImGui.SameLine();
                 if (ImGui.BeginCombo("instance combo", _selectedInstance.Name))
                 {
-                    for (var i = 0;  i < list.Length; i++)
+                    for (var i = 0; i < list.Length; i++)
                     {
                         var selected = i == _selectedInstanceIndex;
                         if (ImGui.Selectable(list[i].Name, selected))
@@ -112,20 +119,16 @@ namespace BossNotes
                             _selectedInstance = list[i];
                             _selectedInstanceIndex = i;
                         }
-                    
+
                         if (selected)
                             ImGui.SetItemDefaultFocus();
                     }
-                
+
                     ImGui.EndCombo();
                 }
             }
 
             ImGui.End();
-        }
-        
-        public void Dispose()
-        {
         }
     }
 }

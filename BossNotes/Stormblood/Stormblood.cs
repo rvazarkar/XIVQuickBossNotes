@@ -5,7 +5,6 @@
         public Stormblood()
         {
             Name = "Stormblood";
-            
         }
     }
 }

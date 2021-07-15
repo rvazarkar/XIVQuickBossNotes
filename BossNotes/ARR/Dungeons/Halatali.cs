@@ -15,6 +15,7 @@ namespace BossNotes.ARR.Dungeons
                 new PitPeiste(),
                 new Tangata()
             };
+            ZoneID = 162;
         }
     }
 }

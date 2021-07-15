@@ -14,6 +14,7 @@ namespace BossNotes.ARR.Dungeons
                 new TempleGuardian(),
                 new Adjudicator()
             };
+            ZoneID = 163;
         }
     }
 }

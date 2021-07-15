@@ -12,6 +12,7 @@ namespace BossNotes.ARR.Dungeons
             {
                 new Graffias()
             };
+            ZoneID = 169;
         }
     }
 }

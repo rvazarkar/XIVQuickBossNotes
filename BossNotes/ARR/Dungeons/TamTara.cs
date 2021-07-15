@@ -12,6 +12,7 @@ namespace BossNotes.ARR.Dungeons
             {
                 new Galvanth()
             };
+            ZoneID = 164;
         }
     }
 }

@@ -1,19 +1,18 @@
-﻿using Dalamud.Configuration;
-using Dalamud.Plugin;
+﻿using System.Reflection;
 using Dalamud.Game.Command;
+using Dalamud.Plugin;
 
 namespace BossNotes
 {
     public class BossNotesPlugin : IDalamudPlugin
     {
         private const string Command = "/bnotes";
-        
-        private DalamudPluginInterface _pluginInterface;
         private Configuration _configuration;
+
+        private DalamudPluginInterface _pluginInterface;
         private UI _ui;
-        
-        public string AssemblyLocation { get => assemblyLocation; set => assemblyLocation = value; }
-        private string assemblyLocation = System.Reflection.Assembly.GetExecutingAssembly().Location;
+
+        public string AssemblyLocation { get; set; } = Assembly.GetExecutingAssembly().Location;
 
         public void Dispose()
         {
@@ -38,6 +37,8 @@ namespace BossNotes
             _pluginInterface.UiBuilder.OnBuildUi += DrawUI;
         }
 
+        public string Name => "Boss Notes";
+
         private void OnCommand(string command, string args)
         {
             _ui.Visible = !_ui.Visible;
@@ -47,7 +48,5 @@ namespace BossNotes
         {
             _ui.Draw();
         }
-
-        public string Name => "Boss Notes";
     }
 }

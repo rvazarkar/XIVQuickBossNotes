@@ -14,6 +14,7 @@ namespace BossNotes.ARR.Dungeons
                 new Ichorous(),
                 new Gyges()
             };
+            ZoneID = 161;
         }
     }
 }

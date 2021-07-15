@@ -45,10 +45,44 @@
         <Reference Include="ImGuiScene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\AppData\Roaming\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
         </Reference>
+        <Reference Include="IndexRange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e6a3c4212514c6">
+          <HintPath>..\packages\IndexRange.1.0.0\lib\net471\IndexRange.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Lumina, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Lumina.3.1.0\lib\netstandard2.0\Lumina.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Lumina.Excel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Lumina.Excel.5.50.0\lib\netstandard2.0\Lumina.Excel.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="mscorlib" />
         <Reference Include="System" />
+        <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.ComponentModel.DataAnnotations" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System.Xml" />
         <Reference Include="XivCommon, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\packages\XivCommon.2.2.0-alpha.1\lib\net48\XivCommon.dll</HintPath>
@@ -94,14 +128,45 @@
         <Compile Include="Expansion.cs" />
         <Compile Include="Instance.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Stormblood\Dungeons\AbaniaBosses\Inferno.cs" />
+        <Compile Include="Stormblood\Dungeons\AbaniaBosses\MagnaRoader.cs" />
+        <Compile Include="Stormblood\Dungeons\AbaniaBosses\NumberXXIV.cs" />
+        <Compile Include="Stormblood\Dungeons\AlaMhigo.cs" />
+        <Compile Include="Stormblood\Dungeons\AlaMhigoBosses\AulusMalAsina.cs" />
+        <Compile Include="Stormblood\Dungeons\AlaMhigoBosses\MagitekScorpion.cs" />
+        <Compile Include="Stormblood\Dungeons\AlaMhigoBosses\Zenos.cs" />
+        <Compile Include="Stormblood\Dungeons\BardamsMettle.cs" />
+        <Compile Include="Stormblood\Dungeons\BardamBosses\Bardam.cs" />
+        <Compile Include="Stormblood\Dungeons\BardamBosses\Garula.cs" />
+        <Compile Include="Stormblood\Dungeons\BardamBosses\Yol.cs" />
+        <Compile Include="Stormblood\Dungeons\CastrumAbania.cs" />
+        <Compile Include="Stormblood\Dungeons\Kugane.cs" />
+        <Compile Include="Stormblood\Dungeons\KuganeBosses\DojunMaru.cs" />
+        <Compile Include="Stormblood\Dungeons\KuganeBosses\Yojimbo.cs" />
+        <Compile Include="Stormblood\Dungeons\KuganeBosses\ZuikoMaru.cs" />
+        <Compile Include="Stormblood\Dungeons\Shisui.cs" />
+        <Compile Include="Stormblood\Dungeons\ShisuiBosses\Amikiri.cs" />
+        <Compile Include="Stormblood\Dungeons\ShisuiBosses\RubyPrincess.cs" />
+        <Compile Include="Stormblood\Dungeons\ShisuiBosses\ShisuiYohi.cs" />
+        <Compile Include="Stormblood\Dungeons\Sirensong.cs" />
+        <Compile Include="Stormblood\Dungeons\SirensongBosses\Governor.cs" />
+        <Compile Include="Stormblood\Dungeons\SirensongBosses\Lorelei.cs" />
+        <Compile Include="Stormblood\Dungeons\SirensongBosses\Lugat.cs" />
+        <Compile Include="Stormblood\Dungeons\TempleFist.cs" />
+        <Compile Include="Stormblood\Dungeons\TempleFistBosses\Arbuda.cs" />
+        <Compile Include="Stormblood\Dungeons\TempleFistBosses\CouerlSmriti.cs" />
+        <Compile Include="Stormblood\Dungeons\TempleFistBosses\Ivon.cs" />
         <Compile Include="Stormblood\Stormblood.cs" />
         <Compile Include="UI.cs" />
+        <Compile Include="ZoneLookupHelper.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Stormblood\Dungeons" />
+      <Folder Include="Shadowbringers" />
+      <Folder Include="Stormblood\Raids" />
+      <Folder Include="Stormblood\Trials" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,17 +6,17 @@ namespace BossNotes
 {
     public class Configuration : IPluginConfiguration
     {
-        [NonSerialized]
-        private DalamudPluginInterface _pluginInterface;
-        
-        public int Version { get; set; } = 0;
+        [NonSerialized] private DalamudPluginInterface _pluginInterface;
+
         public int SelectedExpansion { get; set; } = 0;
+
+        public int Version { get; set; } = 0;
 
         public void Initialize(DalamudPluginInterface pluginInterface)
         {
             _pluginInterface = pluginInterface;
         }
-        
+
         public void Save()
         {
             _pluginInterface.SavePluginConfig(this);

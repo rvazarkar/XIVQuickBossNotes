@@ -10,12 +10,13 @@ namespace BossNotes.ARR.Dungeons
             Level = 32;
             Bosses = new Boss[]
             {
-                new Pelican(), 
+                new Pelican(),
                 new InfernoDrake(),
                 new Hellbender(),
                 new DeepJungleCoeurl(),
                 new Aiatar()
             };
+            ZoneID = 158;
         }
     }
 }

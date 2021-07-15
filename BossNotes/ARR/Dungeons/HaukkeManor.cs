@@ -14,6 +14,7 @@ namespace BossNotes.ARR.Dungeons
                 new JesterSteward(),
                 new Amandine()
             };
+            ZoneID = 166;
         }
     }
 }
