@@ -244,7 +244,7 @@ namespace BossNotes
                     }
                     
                     var baseMessage =
-                        $"{_selectedInstance.Bosses[_configuration.SelectedBossIndex].Name}: {_selectedInstance.Bosses[_configuration.SelectedBossIndex].QuickStrategy}";
+                        $"★{_selectedInstance.Bosses[_configuration.SelectedBossIndex].Name}★: {_selectedInstance.Bosses[_configuration.SelectedBossIndex].QuickStrategy}";
                     _xivBase.Functions.Chat.SendMessage(channel.FormatMessage(baseMessage));
                 }
 
