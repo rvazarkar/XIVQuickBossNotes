@@ -215,17 +215,27 @@ namespace BossNotes
                     ChatChannel channel;
                     if (_autoSelectChat)
                     {
-                        if ((_pluginInterface.ClientState.LocalPlayer.StatusFlags & StatusFlags.AllianceMember) != 0)
-                        {
-                            channel = _chatChannels[4];
-                        }else if ((_pluginInterface.ClientState.LocalPlayer.StatusFlags & StatusFlags.PartyMember) != 0)
-                        {
-                            channel = _chatChannels[3];
-                        }
-                        else
+                        var player = _pluginInterface.ClientState.LocalPlayer;
+                        
+                        if (player == null)
                         {
                             channel = _chatChannels[0];
                         }
+                        else
+                        {
+                            if ((player.StatusFlags & StatusFlags.AllianceMember) != 0)
+                            {
+                                channel = _chatChannels[4];
+                            }else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
+                            {
+                                channel = _chatChannels[3];
+                            }
+                            else
+                            {
+                                channel = _chatChannels[0];
+                            }    
+                        }
+                        
                     }
                     else
                     {
