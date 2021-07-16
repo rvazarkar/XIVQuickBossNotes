@@ -33,28 +33,17 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="Dalamud, Version=5.2.6.1, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\AppData\Roaming\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
-        </Reference>
         <Reference Include="Dalamud, Version=5.2.7.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\AppData\Roaming\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
+          <HintPath>$(AppData)\Roaming\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
         </Reference>
         <Reference Include="ImGui.NET, Version=1.72.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\AppData\Roaming\XIVLauncher\addon\Hooks\dev\ImGui.NET.dll</HintPath>
+          <HintPath>$(AppData)\Roaming\XIVLauncher\addon\Hooks\dev\ImGui.NET.dll</HintPath>
         </Reference>
         <Reference Include="ImGuiScene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\AppData\Roaming\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
+          <HintPath>$(AppData)\Roaming\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
         </Reference>
         <Reference Include="IndexRange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e6a3c4212514c6">
           <HintPath>..\packages\IndexRange.1.0.0\lib\net471\IndexRange.dll</HintPath>
-          <Private>True</Private>
-        </Reference>
-        <Reference Include="Lumina, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\packages\Lumina.3.1.0\lib\netstandard2.0\Lumina.dll</HintPath>
-          <Private>True</Private>
-        </Reference>
-        <Reference Include="Lumina.Excel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\packages\Lumina.Excel.5.50.0\lib\netstandard2.0\Lumina.Excel.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="mscorlib" />
@@ -124,6 +113,7 @@
         <Compile Include="ARR\Dungeons\ThousandMawsBosses\Graffias.cs" />
         <Compile Include="Boss.cs" />
         <Compile Include="BossNotesPlugin.cs" />
+        <Compile Include="ChatChannels.cs" />
         <Compile Include="Configuration.cs" />
         <Compile Include="Expansion.cs" />
         <Compile Include="Instance.cs" />
@@ -158,7 +148,6 @@
         <Compile Include="Stormblood\Dungeons\TempleFistBosses\Ivon.cs" />
         <Compile Include="Stormblood\Stormblood.cs" />
         <Compile Include="UI.cs" />
-        <Compile Include="ZoneLookupHelper.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

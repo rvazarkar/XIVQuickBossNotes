@@ -6,7 +6,8 @@
         {
             Name = "Couerl Smriti";
             QuickStrategy = "When add spawns, focus boss and then add. Avoid stacking up during purple markers";
-            InDepthStrategy = @"Coeurl Smriti is a straight forward Boss. His attack are based on claws and jumping without a marker, though he will also use an AoE around him called Radial Blaster; if you get hit by it, you gain stacks of ""Magical Damage received up"".
+            InDepthStrategy =
+                @"Coeurl Smriti is a straight forward Boss. His attack are based on claws and jumping without a marker, though he will also use an AoE around him called Radial Blaster; if you get hit by it, you gain stacks of ""Magical Damage received up"".
 
             At around 77% he will summon his minion Coeurl Sruti who will claw and jump around like Coeurl Smriti. Instead of Radial Blaster, he uses Windblaster in a cone of aprox 150° in front of him.
 

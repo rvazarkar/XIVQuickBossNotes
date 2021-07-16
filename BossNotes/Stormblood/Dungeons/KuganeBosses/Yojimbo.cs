@@ -5,8 +5,10 @@
         public Yojimbo()
         {
             Name = "Yojimbo";
-            QuickStrategy = "Pick up gold after Payday. Inoshi-Katcho is middle of room and then outside. Destroy dragon heads whenever they spawn";
-            InDepthStrategy = @"During the first Payday phase, piles of gold will spawn around the room. His dog will lunge to pick them up, knocking aside anyone in his trajectory, filling the duty gauge with each pile he successfully picks up. Interact with as much gold as you can to pick it up; his dog prioritizes gold in the order in which it drops. When the Payday phase completes, Yojimbo will deal groupwide damage according to how much the duty gauge has filled.
+            QuickStrategy =
+                "Pick up gold after Payday. Inoshi-Katcho is middle of room and then outside. Destroy dragon heads whenever they spawn";
+            InDepthStrategy =
+                @"During the first Payday phase, piles of gold will spawn around the room. His dog will lunge to pick them up, knocking aside anyone in his trajectory, filling the duty gauge with each pile he successfully picks up. Interact with as much gold as you can to pick it up; his dog prioritizes gold in the order in which it drops. When the Payday phase completes, Yojimbo will deal groupwide damage according to how much the duty gauge has filled.
 
 Be ready for occasional groupwide damage from Metta-Giri.
 

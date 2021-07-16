@@ -1,12 +1,20 @@
 ﻿using System.Reflection;
 using Dalamud.Game.Command;
 using Dalamud.Plugin;
+using XivCommon;
 
 namespace BossNotes
 {
     public class BossNotesPlugin : IDalamudPlugin
     {
         private const string Command = "/bnotes";
+
+        private readonly Expansion[] _expansions =
+        {
+            new ARR.ARR(),
+            new Stormblood.Stormblood()
+        };
+
         private Configuration _configuration;
 
         private DalamudPluginInterface _pluginInterface;
@@ -26,12 +34,13 @@ namespace BossNotes
             _pluginInterface = pluginInterface;
             _configuration = pluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             _configuration.Initialize(_pluginInterface);
+            
 
-            _ui = new UI(_configuration);
+            _ui = new UI(_configuration, _pluginInterface, _expansions);
 
             _pluginInterface.CommandManager.AddHandler(Command, new CommandInfo(OnCommand)
             {
-                HelpMessage = "Displays quick notes for bosses and lets you print strats to chat."
+                HelpMessage = "Displays quick notes for bosses and lets you print quick strategies to chat."
             });
 
             _pluginInterface.UiBuilder.OnBuildUi += DrawUI;

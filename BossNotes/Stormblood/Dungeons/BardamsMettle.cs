@@ -8,7 +8,7 @@ namespace BossNotes.Stormblood.Dungeons
         {
             Name = "Bardam's Mettle";
             Level = 65;
-            Bosses = new Boss[] { new Garula(), new Bardam(), new Yol()};
+            Bosses = new Boss[] {new Garula(), new Bardam(), new Yol()};
             ZoneID = 623;
         }
     }

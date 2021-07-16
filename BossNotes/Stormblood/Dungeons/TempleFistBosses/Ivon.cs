@@ -5,8 +5,10 @@
         public Ivon()
         {
             Name = "Ivon Couerlfist";
-            QuickStrategy = @"Stand behind the boss to avoid AoE. Stack for ""Rose of Destruction"". Everyone should collect orbs when they spawn. Dodge ""Silent Roar""";
-            InDepthStrategy = @"A powerful ancient monk in search of worthy challengers, Ivon is a formidable challenge even for veteran adventurers.
+            QuickStrategy =
+                @"Stand behind the boss to avoid AoE. Stack for ""Rose of Destruction"". Everyone should collect orbs when they spawn. Dodge ""Silent Roar""";
+            InDepthStrategy =
+                @"A powerful ancient monk in search of worthy challengers, Ivon is a formidable challenge even for veteran adventurers.
 
 Spirit Wave: Drop a whirlwind with an AoE Windzone on one random player, typically Ranged DPS or the Healer. Just move out of it. Doesn't last very long.
 Hurricane Kick: A short-ranged 270° roundhouse kick AoE, front-facing, leaving a 90° safe-spot for melee. Inflicts Stun for a short time if it hits you.

@@ -5,7 +5,8 @@
         public Bardam()
         {
             Name = "Bardam";
-            QuickStrategy = @"Phase 1: Avoid AoE, avoid gaze attack. Phase 2: Stand in towers to dodge initial attack, avoid AoE. Safe spot behind golems. Phase 3: Avoid AoE. Hide behind Star Shard to dodge meteor when cast is finishing";
+            QuickStrategy =
+                @"Phase 1: Avoid AoE, avoid gaze attack. Phase 2: Stand in towers to dodge initial attack, avoid AoE. Safe spot behind golems. Phase 3: Avoid AoE. Hide behind Star Shard to dodge meteor when cast is finishing";
             InDepthStrategy = @"Phase 1
 Magnetism Pulls all players towards the center of the room.
 Travail (shockwave) Occurs immediately after Magnetism. A circle AoE will appear in the center, followed by a circle AoE covering the remainder of the outer arena. Stand just outside the inner AoE facing away from the Hunter of Bardam. Wait for the inner AoE to cast, then immediately walk backwards to avoid the outer AoE. If you use Legacy camera, press all 3 of left strafe, right strafe, and backwards in order to walk backwards, e.g. ASD if using WASD movement.

@@ -5,7 +5,8 @@
         public Zenos()
         {
             Name = "Zenos Yae galvus";
-            QuickStrategy = "Avoid outer edge of ring. When Zenos copies himself, stay close to him after tether to avoid Lightless Spark. Kill adds.";
+            QuickStrategy =
+                "Avoid outer edge of ring. When Zenos copies himself, stay close to him after tether to avoid Lightless Spark. Kill adds.";
             InDepthStrategy = @"The fight could be separated into three phases:
 
 Phase 1: Pre-Aether Transfer.

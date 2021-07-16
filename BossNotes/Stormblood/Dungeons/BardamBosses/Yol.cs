@@ -5,7 +5,8 @@
         public Yol()
         {
             Name = "Yol";
-            QuickStrategy = "Phase 1: Avoid stacking orange markers, turn away for gaze attack. Phase 2: Green marker will knock you back. Stay close to center.";
+            QuickStrategy =
+                "Phase 1: Avoid stacking orange markers, turn away for gaze attack. Phase 2: Green marker will knock you back. Stay close to center.";
             InDepthStrategy = @"Phase 1
 Feathercut Frontal cleave tank-buster.
 Wind Unbound Group-wide AoE. Spawns a number of orbs around the outer edge of the arena. Orbs will periodically fire line AoEs.

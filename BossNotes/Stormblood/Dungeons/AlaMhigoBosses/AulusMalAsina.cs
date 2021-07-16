@@ -5,7 +5,8 @@
         public AulusMalAsina()
         {
             Name = "Aulus Mal Asina";
-            QuickStrategy = @"Safe zone for overlap is inside. When ""Out of Body"", get back to your body while dodging adds";
+            QuickStrategy =
+                @"Safe zone for overlap is inside. When ""Out of Body"", get back to your body while dodging adds";
             InDepthStrategy = @"The fight could be separated in 3 phases:
 
 Phase 1: Pre-Out-of-Body.
