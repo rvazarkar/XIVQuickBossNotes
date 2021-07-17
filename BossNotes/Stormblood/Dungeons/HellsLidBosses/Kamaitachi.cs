@@ -5,7 +5,8 @@
         public Kamaitachi()
         {
             Name = "Kamaitachi";
-            QuickStrategy = @"Safe zone for ""The wind begins to howl!"" is either melee range or max range. Staying close to the boss allows you to dodge ""The Patient Blade""";
+            QuickStrategy =
+                @"Safe zone for ""The wind begins to howl!"" is either melee range or max range. Staying close to the boss allows you to dodge ""The Patient Blade""";
             InDepthStrategy = @"Abilities
 
 Whipping Wittret: No castbar. Tankbuster.

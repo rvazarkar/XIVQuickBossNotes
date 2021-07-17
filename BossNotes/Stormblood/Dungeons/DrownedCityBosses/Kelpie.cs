@@ -5,7 +5,8 @@
         public Kelpie()
         {
             Name = "Kelpie";
-            QuickStrategy = @"Move to boss for ""Hydro Push"" and away for ""Hydro Pull"". Spread out for Bloody Puddle.";
+            QuickStrategy =
+                @"Move to boss for ""Hydro Push"" and away for ""Hydro Pull"". Spread out for Bloody Puddle.";
             InDepthStrategy = @"Torpedo Moderate tank damage.
 Rising Seas Group AoE.
 Hydra Pull Move away from Kelpie to avoid outer edge damage.

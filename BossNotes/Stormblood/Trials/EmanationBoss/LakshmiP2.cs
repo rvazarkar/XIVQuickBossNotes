@@ -8,7 +8,8 @@
             QuickStrategy = @"Use your duty mechanic to shield yourself from her ultimate.
 Use your duty action whenever the boss goes to the middle and casts the big AoE.
 Don't pick up an orb if you already have one.";
-            InDepthStrategy = @"The trial begins with Lakshmi surrounded by a barrier, and flanked by a pair of Dreamer Ananta. Defeat them to lower Lakshmi's barrier and begin the fight, but bear in mind that Lakshmi will use area of effect attacks that also heal the Dreamers, so the party should concentrate on them one at a time rather than splitting attention.
+            InDepthStrategy =
+                @"The trial begins with Lakshmi surrounded by a barrier, and flanked by a pair of Dreamer Ananta. Defeat them to lower Lakshmi's barrier and begin the fight, but bear in mind that Lakshmi will use area of effect attacks that also heal the Dreamers, so the party should concentrate on them one at a time rather than splitting attention.
 
 Shortly after she begins fighting for herself, Lakshmi will leave the platform and prepare to use a special attack that is an instant kill on anyone not shielded by the Duty mechanic - Vril. Players can hold a single charge of Vril at any time and activate it whenever they wish; once activated, the charge lasts for around 30 seconds and significantly reduces the effect of Lakshmi's attacks. After this attack has been used once, she will not attempt to use it again during the regular version of the trial.
 

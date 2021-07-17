@@ -5,8 +5,10 @@
         public DefectiveDrone()
         {
             Name = "Defective Drone";
-            QuickStrategy = @"Safe zone for ""Full Throttle"" is in front of the broken zone. Avoid the edges of the arena.";
-            InDepthStrategy = @"The Defective Drone's arena is smaller than most, and the left and right sides of the arena are constantly burning, inflicting Burns for as long as the player stands in it. Additionally, take note of the ""lanes"" the arena is separated into.
+            QuickStrategy =
+                @"Safe zone for ""Full Throttle"" is in front of the broken zone. Avoid the edges of the arena.";
+            InDepthStrategy =
+                @"The Defective Drone's arena is smaller than most, and the left and right sides of the arena are constantly burning, inflicting Burns for as long as the player stands in it. Additionally, take note of the ""lanes"" the arena is separated into.
 
 Aetherochemical Flame: High party-wide damage. Mitigate and heal through this.
 Aetherochemical Coil: Tankbuster that hits an arc in front of the boss.

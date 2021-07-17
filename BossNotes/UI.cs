@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Numerics;
-using Dalamud.Game.ClientState;
 using Dalamud.Game.ClientState.Actors;
-using Dalamud.Game.Text;
 using Dalamud.Plugin;
 using ImGuiNET;
 using XivCommon;
@@ -12,11 +9,8 @@ namespace BossNotes
 {
     public class UI : IDisposable
     {
-        private readonly Configuration _configuration;
-
-        private readonly Expansion[] _expansions;
-
-        private readonly ChatChannel[] _chatChannels = {
+        private readonly ChatChannel[] _chatChannels =
+        {
             new ChatChannel("Say", "say"),
             new ChatChannel("Yell", "yell"),
             new ChatChannel("Shout", "shout"),
@@ -30,8 +24,13 @@ namespace BossNotes
             new ChatChannel("Linkshell 5", "ls5"),
             new ChatChannel("Linkshell 6", "ls6"),
             new ChatChannel("Linkshell 7", "ls7"),
-            new ChatChannel("Linkshell 8", "ls8"),
+            new ChatChannel("Linkshell 8", "ls8")
         };
+
+        private readonly Configuration _configuration;
+
+        private readonly Expansion[] _expansions;
+        private readonly DalamudPluginInterface _pluginInterface;
 
         private readonly string[] _types =
         {
@@ -41,10 +40,10 @@ namespace BossNotes
         };
 
         private readonly XivCommonBase _xivBase;
-        private readonly DalamudPluginInterface _pluginInterface;
+        private bool _autoSelectChat;
+        private bool _autoSwapDungeons;
 
         private Instance _selectedInstance;
-        private bool _autoSelectChat;
 
         private bool _visible;
 
@@ -167,6 +166,10 @@ namespace BossNotes
                     ImGui.EndCombo();
                 }
 
+                ImGui.SameLine();
+                if (ImGui.Checkbox("Swap and Open Automatically", ref _autoSwapDungeons))
+                    _configuration.AutoSwapDungeon = _autoSwapDungeons;
+
                 if (ImGui.BeginTabBar("BossNotes Tab Bar", ImGuiTabBarFlags.NoTooltip))
                 {
                     for (var i = 0; i < _selectedInstance.Bosses.Length; i++)
@@ -190,21 +193,20 @@ namespace BossNotes
                 if (!_autoSelectChat)
                 {
                     ImGui.SameLine();
-                    if (ImGui.BeginCombo("##BossNotes Chat select", _chatChannels[_configuration.SelectedChatIndex].DisplayName))
+                    if (ImGui.BeginCombo("##BossNotes Chat select",
+                        _chatChannels[_configuration.SelectedChatIndex].DisplayName))
                     {
                         for (var i = 0; i < _chatChannels.Length; i++)
                         {
                             var selected = i == _configuration.SelectedChatIndex;
-                        
-                            if (ImGui.Selectable(_chatChannels[i].DisplayName,  selected))
-                            {
+
+                            if (ImGui.Selectable(_chatChannels[i].DisplayName, selected))
                                 _configuration.SelectedChatIndex = i;
-                            }
-                        
+
                             if (selected)
                                 ImGui.SetItemDefaultFocus();
                         }
-                    
+
                         ImGui.EndCombo();
                     }
                 }
@@ -232,7 +234,7 @@ namespace BossNotes
                         }
                     }
                 }
-                
+
 
                 ImGui.End();
             }
@@ -244,7 +246,7 @@ namespace BossNotes
             if (_autoSelectChat)
             {
                 var player = _pluginInterface.ClientState.LocalPlayer;
-                        
+
                 if (player == null)
                 {
                     channel = _chatChannels[0];
@@ -252,24 +254,18 @@ namespace BossNotes
                 else
                 {
                     if ((player.StatusFlags & StatusFlags.AllianceMember) != 0)
-                    {
                         channel = _chatChannels[4];
-                    }else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
-                    {
+                    else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
                         channel = _chatChannels[3];
-                    }
                     else
-                    {
                         channel = _chatChannels[0];
-                    }    
                 }
-                        
             }
             else
             {
                 channel = _chatChannels[_configuration.SelectedChatIndex];
             }
-            
+
             _xivBase.Functions.Chat.SendMessage(channel.FormatMessage(baseMessage));
         }
     }

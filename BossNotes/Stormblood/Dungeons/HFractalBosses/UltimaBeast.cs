@@ -5,7 +5,8 @@
         public UltimaBeast()
         {
             Name = "The Ultima Beast";
-            QuickStrategy = @"Raised arm = run away, stand up = move to boss. Spread for purple markers. Spread for ""Allagan Flare""";
+            QuickStrategy =
+                @"Raised arm = run away, stand up = move to boss. Spread for purple markers. Spread for ""Allagan Flare""";
             InDepthStrategy = @"Death Spin: Hits anyone in Melee Range - Keep Clear.
 Aether Bend: Hits anyone not inside his Hitbox - Stand on Boss.
 Flare Star: Drops Fire Puddles - Proximity Based Damage.

@@ -6,7 +6,8 @@
         {
             Name = "Annia and Julia quo Soranus";
             QuickStrategy = @"Avoid AoE, bombs will explode in a chain reaction from the one the boss targets.";
-            InDepthStrategy = @"As the battle begins, whichever sister was attacked first will remain in the arena, while the other will support from outside the arena, untargetable. Annia utilizes a fist weapon, while Julia has a gunblade.
+            InDepthStrategy =
+                @"As the battle begins, whichever sister was attacked first will remain in the arena, while the other will support from outside the arena, untargetable. Annia utilizes a fist weapon, while Julia has a gunblade.
 
 Delta Trance: Annia's tankbuster.
 Innocence: Julia's tankbuster.

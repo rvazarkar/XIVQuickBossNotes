@@ -5,7 +5,8 @@
         public UltimaWarrior()
         {
             Name = "The Ultima Warrior";
-            QuickStrategy = @"""Zurvan"" = run to the matching circle. ""Sephirot"" = spread green markers far apart. ""Sophia"" = stack with player of opposite color. 
+            QuickStrategy =
+                @"""Zurvan"" = run to the matching circle. ""Sephirot"" = spread green markers far apart. ""Sophia"" = stack with player of opposite color. 
 Stack for Mass Aetheroplasm.";
             InDepthStrategy = @"Atherplasm Tankbuster + Damage around Tank.
 Citadel Buster Targets random player.

@@ -5,7 +5,8 @@
         public Hrodric()
         {
             Name = "Hrodric Poisontongue";
-            QuickStrategy = @"Some AoEs don't have ground markers. ""Rusting Claw"" = move behind. ""Tail Drive"" = move to font. Avoid ""Eye of Fire"" gaze attack.";
+            QuickStrategy =
+                @"Some AoEs don't have ground markers. ""Rusting Claw"" = move behind. ""Tail Drive"" = move to font. Avoid ""Eye of Fire"" gaze attack.";
             InDepthStrategy = @"Rusting Claw Raise Right arm - Move away from front.
 Tail Drive Raise Tail - Move away from rear.
 The Spin Crouches down for Proximity AoE- Move Away.

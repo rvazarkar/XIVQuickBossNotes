@@ -1,6 +1,5 @@
 ﻿using System;
 using Dalamud.Configuration;
-using Dalamud.Game.Text;
 using Dalamud.Plugin;
 
 namespace BossNotes
@@ -9,14 +8,15 @@ namespace BossNotes
     {
         [NonSerialized] private DalamudPluginInterface _pluginInterface;
 
-        public int SelectedExpansionIndex { get; set; } = 0;
-        public int SelectedTypeIndex { get; set; } = 0;
-        public int SelectedInstanceIndex { get; set; } = 0;
+        public int SelectedExpansionIndex { get; set; }
+        public int SelectedTypeIndex { get; set; }
+        public int SelectedInstanceIndex { get; set; }
         public int SelectedBossIndex { get; set; } = 0;
 
         public int SelectedChatIndex { get; set; } = 0;
 
         public bool AutoSelectChat { get; set; } = true;
+        public bool AutoSwapDungeon { get; set; } = true;
 
         public int Version { get; set; } = 0;
 

@@ -6,7 +6,8 @@
         {
             Name = "Prometheus";
             QuickStrategy = @"When boss burrows, move out of the way of the red wall.";
-            InDepthStrategy = @"Nitrospin: Moderate damage on the entire party. Prometheus always casts this ability first, surrounding the arena in fire.
+            InDepthStrategy =
+                @"Nitrospin: Moderate damage on the entire party. Prometheus always casts this ability first, surrounding the arena in fire.
 Unbreakable Cermet Drill: Tankbuster.
 Needle Gun: 90 degree Cone directly in front of the boss.
 Oil Shower: 270 degree Cone directly behind the boss, hitting everywhere Needle Gun doesn't.

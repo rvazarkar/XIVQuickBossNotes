@@ -7,7 +7,8 @@
             Name = "Hedetet";
             QuickStrategy = @"Stand behind crystals to avoid ""Hailfire"" and ""Shardfall"".
 Stand inside boss hitbox to avoid ""Dissonance"" which is always after ""Shardfall""";
-            InDepthStrategy = @"Take note of the four white crystals jutting from the ground, as these serve as shields for some of the boss's attacks. Be warned that the crystals explode after being hit by one of Hedetet's attacks. New crystals fall from the ceiling, but be prepared to move out of their way.
+            InDepthStrategy =
+                @"Take note of the four white crystals jutting from the ground, as these serve as shields for some of the boss's attacks. Be warned that the crystals explode after being hit by one of Hedetet's attacks. New crystals fall from the ceiling, but be prepared to move out of their way.
 
 Crystal Needle: Tankbuster.
 Hailfire: Places a crosshair on a random target. After a short delay, Hedetet blasts sand at the targeted player, damaging the first thing it hits. Standing behind a crystal blocks all damage.

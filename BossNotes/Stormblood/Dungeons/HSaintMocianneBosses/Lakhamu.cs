@@ -7,7 +7,8 @@
             Name = "Lakhamu";
             QuickStrategy = @"Avoid the edges of the arena.
 Try to end up in safe areas after conveyor belts. Earthquake hits close and then far. Avoid ""Empty Gaze"" by turning away from boss.";
-            InDepthStrategy = @"When the fight begins, the edges of the arena will be coated in thorny vines, damaging players who come in contact with them as well as inflicting a stack of Vulnerability Up.
+            InDepthStrategy =
+                @"When the fight begins, the edges of the arena will be coated in thorny vines, damaging players who come in contact with them as well as inflicting a stack of Vulnerability Up.
 
 Stone II: Tankbuster.
 Tectonics: Party-wide damage.

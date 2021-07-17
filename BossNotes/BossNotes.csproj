@@ -179,6 +179,7 @@
         <Compile Include="Stormblood\Trials\Emanation.cs" />
         <Compile Include="Stormblood\Trials\EmanationBoss\LakshmiP1.cs" />
         <Compile Include="Stormblood\Trials\EmanationBoss\LakshmiP2.cs" />
+        <Compile Include="Stormblood\Trials\FluminisBoss\TsukuyomiP1.cs" />
         <Compile Include="Stormblood\Trials\Menagerie.cs" />
         <Compile Include="Stormblood\Trials\MenagerieBosses\ShinryuP1.cs" />
         <Compile Include="Stormblood\Trials\MenagerieBosses\ShinryuP2.cs" />

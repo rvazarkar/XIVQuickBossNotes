@@ -7,7 +7,8 @@
             Name = "Tokkapchi";
             QuickStrategy = @"Spread out for ""Quagmire"" as it will leave a puddle when it expires.
 Don't allow the add to get by by any AoE. Attacks will push the add away.";
-            InDepthStrategy = @"The arena for this fight is a grate with four solid platforms. Periodically, the mud beneath the platform will churn with the message ""The puddles begin to froth"". After a short delay, mud will explode upwards through the grate, damaging players not on a solid platform and launching them into the air.
+            InDepthStrategy =
+                @"The arena for this fight is a grate with four solid platforms. Periodically, the mud beneath the platform will churn with the message ""The puddles begin to froth"". After a short delay, mud will explode upwards through the grate, damaging players not on a solid platform and launching them into the air.
 
 Mudsling: Tankbuster.
 Quagmire: All players are marked for an AoE. Spread out to avoid overlap, but also keep the center of the attack off the solid platforms. Allowing Quagmire to coat a platform creates a highly-damaging puddle on that platform.
