@@ -176,6 +176,9 @@
         <Compile Include="Stormblood\Dungeons\TheBurn.cs" />
         <Compile Include="Stormblood\Stormblood.cs" />
         <Compile Include="Stormblood\Trials\PoolOfTribute.cs" />
+        <Compile Include="Stormblood\Trials\Susano\SusanoP1.cs" />
+        <Compile Include="Stormblood\Trials\Susano\SusanoP2.cs" />
+        <Compile Include="Stormblood\Trials\Susano\SusanoP3.cs" />
         <Compile Include="UI.cs" />
     </ItemGroup>
     <ItemGroup>
