@@ -212,29 +212,18 @@ namespace BossNotes
                 }
 
                 ImGui.SameLine();
-                if (_configuration.SelectedTypeIndex != 1)
+                ImGui.Text("Share Strat:");
+                
+                foreach (var phase in _selectedInstance.Bosses)
                 {
-                    if (ImGui.Button("Print Quick Strat"))
+                    ImGui.SameLine();
+                    if (ImGui.Button($"Chat {phase.Name} Strat"))
                     {
                         var baseMessage =
-                            $"★{_selectedInstance.Bosses[_configuration.SelectedBossIndex].Name}★: {_selectedInstance.Bosses[_configuration.SelectedBossIndex].QuickStrategy}";
+                            $"★{phase.Name}★: {phase.QuickStrategy}";
                         OutputChat(baseMessage);
                     }
                 }
-                else
-                {
-                    foreach (var phase in _selectedInstance.Bosses)
-                    {
-                        ImGui.SameLine();
-                        if (ImGui.Button($"Print {phase.Name} Strat"))
-                        {
-                            var baseMessage =
-                                $"★{phase.Name}★: {phase.QuickStrategy}";
-                            OutputChat(baseMessage);
-                        }
-                    }
-                }
-
 
                 ImGui.End();
             }
