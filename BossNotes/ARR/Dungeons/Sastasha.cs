@@ -1,5 +1,4 @@
-﻿using BossNotes.ARR.Dungeons.Bosses;
-using BossNotes.ARR.Dungeons.SastashaBosses;
+﻿using BossNotes.ARR.Dungeons.SastashaBosses;
 
 namespace BossNotes.ARR.Dungeons
 {

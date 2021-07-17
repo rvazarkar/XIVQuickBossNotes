@@ -1,4 +1,4 @@
-﻿namespace BossNotes.ARR.Dungeons.Bosses
+﻿namespace BossNotes.ARR.Dungeons.SastashaBosses
 {
     public class CaptainMadison : Boss
     {

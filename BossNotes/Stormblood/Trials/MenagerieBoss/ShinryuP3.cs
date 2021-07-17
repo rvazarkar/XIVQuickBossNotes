@@ -1,4 +1,4 @@
-﻿namespace BossNotes.Stormblood.Trials.MenagerieBosses
+﻿namespace BossNotes.Stormblood.Trials.MenagerieBoss
 {
     public class ShinryuP3 : Boss
     {

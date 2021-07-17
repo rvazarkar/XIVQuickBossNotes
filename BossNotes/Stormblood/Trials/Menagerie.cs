@@ -1,4 +1,4 @@
-﻿using BossNotes.Stormblood.Trials.MenagerieBosses;
+﻿using BossNotes.Stormblood.Trials.MenagerieBoss;
 
 namespace BossNotes.Stormblood.Trials
 {
