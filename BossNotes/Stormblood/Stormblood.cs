@@ -15,7 +15,14 @@ namespace BossNotes.Stormblood
                 new CastrumAbania(),
                 new AlaMhigo(),
                 new Kugane(),
-                new TempleFist()
+                new TempleFist(),
+                new DrownedCity(),
+                new HellsLid(),
+                new HFractal(),
+                new SwallowsCompass(),
+                new HSaintMocianne(),
+                new TheBurn(),
+                new Ghimlyt()
             };
         }
     }

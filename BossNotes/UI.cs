@@ -240,7 +240,6 @@ namespace BossNotes
                     else
                     {
                         channel = _chatChannels[_configuration.SelectedChatIndex];
-                        
                     }
                     
                     var baseMessage =

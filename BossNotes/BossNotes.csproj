@@ -129,7 +129,30 @@
         <Compile Include="Stormblood\Dungeons\BardamBosses\Bardam.cs" />
         <Compile Include="Stormblood\Dungeons\BardamBosses\Garula.cs" />
         <Compile Include="Stormblood\Dungeons\BardamBosses\Yol.cs" />
+        <Compile Include="Stormblood\Dungeons\BurnBosses\DefectiveDrone.cs" />
+        <Compile Include="Stormblood\Dungeons\BurnBosses\Hedetet.cs" />
+        <Compile Include="Stormblood\Dungeons\BurnBosses\MistDragon.cs" />
         <Compile Include="Stormblood\Dungeons\CastrumAbania.cs" />
+        <Compile Include="Stormblood\Dungeons\DrownedCity.cs" />
+        <Compile Include="Stormblood\Dungeons\DrownedCityBosses\Hrodric.cs" />
+        <Compile Include="Stormblood\Dungeons\DrownedCityBosses\Kelpie.cs" />
+        <Compile Include="Stormblood\Dungeons\DrownedCityBosses\OldOne.cs" />
+        <Compile Include="Stormblood\Dungeons\Ghimlyt.cs" />
+        <Compile Include="Stormblood\Dungeons\GhimlytBosses\AnniaJulia.cs" />
+        <Compile Include="Stormblood\Dungeons\GhimlytBosses\MarkIII.cs" />
+        <Compile Include="Stormblood\Dungeons\GhimlytBosses\Prometheus.cs" />
+        <Compile Include="Stormblood\Dungeons\HellsLid.cs" />
+        <Compile Include="Stormblood\Dungeons\HellsLidBosses\Genbu.cs" />
+        <Compile Include="Stormblood\Dungeons\HellsLidBosses\Kamaitachi.cs" />
+        <Compile Include="Stormblood\Dungeons\HellsLidBosses\OtakeMaru.cs" />
+        <Compile Include="Stormblood\Dungeons\HFractalBosses\Motherbit.cs" />
+        <Compile Include="Stormblood\Dungeons\HFractalBosses\UltimaBeast.cs" />
+        <Compile Include="Stormblood\Dungeons\HFractalBosses\UltimaWarrior.cs" />
+        <Compile Include="Stormblood\Dungeons\HFractal.cs" />
+        <Compile Include="Stormblood\Dungeons\HSaintMocianne.cs" />
+        <Compile Include="Stormblood\Dungeons\HSaintMocianneBosses\Lakhamu.cs" />
+        <Compile Include="Stormblood\Dungeons\HSaintMocianneBosses\Nullchu.cs" />
+        <Compile Include="Stormblood\Dungeons\HSaintMocianneBosses\Tokkapchi.cs" />
         <Compile Include="Stormblood\Dungeons\Kugane.cs" />
         <Compile Include="Stormblood\Dungeons\KuganeBosses\DojunMaru.cs" />
         <Compile Include="Stormblood\Dungeons\KuganeBosses\Yojimbo.cs" />
@@ -142,11 +165,17 @@
         <Compile Include="Stormblood\Dungeons\SirensongBosses\Governor.cs" />
         <Compile Include="Stormblood\Dungeons\SirensongBosses\Lorelei.cs" />
         <Compile Include="Stormblood\Dungeons\SirensongBosses\Lugat.cs" />
+        <Compile Include="Stormblood\Dungeons\SwallowsCompass.cs" />
+        <Compile Include="Stormblood\Dungeons\SwallowsCompassBosses\Daidarabotchi.cs" />
+        <Compile Include="Stormblood\Dungeons\SwallowsCompassBosses\Otengu.cs" />
+        <Compile Include="Stormblood\Dungeons\SwallowsCompassBosses\QitianDasheng.cs" />
         <Compile Include="Stormblood\Dungeons\TempleFist.cs" />
         <Compile Include="Stormblood\Dungeons\TempleFistBosses\Arbuda.cs" />
         <Compile Include="Stormblood\Dungeons\TempleFistBosses\CouerlSmriti.cs" />
         <Compile Include="Stormblood\Dungeons\TempleFistBosses\Ivon.cs" />
+        <Compile Include="Stormblood\Dungeons\TheBurn.cs" />
         <Compile Include="Stormblood\Stormblood.cs" />
+        <Compile Include="Stormblood\Trials\PoolOfTribute.cs" />
         <Compile Include="UI.cs" />
     </ItemGroup>
     <ItemGroup>
@@ -155,7 +184,6 @@
     <ItemGroup>
       <Folder Include="Shadowbringers" />
       <Folder Include="Stormblood\Raids" />
-      <Folder Include="Stormblood\Trials" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
