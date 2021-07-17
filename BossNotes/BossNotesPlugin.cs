@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 using Dalamud.Game.Command;
 using Dalamud.Plugin;
 using XivCommon;
@@ -15,6 +17,8 @@ namespace BossNotes
             new Stormblood.Stormblood()
         };
 
+        private Dictionary<ushort, DungeonSelectionIndex> _zoneMap;
+
         private Configuration _configuration;
 
         private DalamudPluginInterface _pluginInterface;
@@ -26,6 +30,7 @@ namespace BossNotes
         {
             _ui.Dispose();
             _pluginInterface.CommandManager.RemoveHandler(Command);
+            _pluginInterface.ClientState.TerritoryChanged -= OnTerritoryChanged;
             _pluginInterface.Dispose();
         }
 
@@ -35,6 +40,7 @@ namespace BossNotes
             _configuration = pluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             _configuration.Initialize(_pluginInterface);
             
+            BuildZoneMap();
 
             _ui = new UI(_configuration, _pluginInterface, _expansions);
 
@@ -44,6 +50,38 @@ namespace BossNotes
             });
 
             _pluginInterface.UiBuilder.OnBuildUi += DrawUI;
+            _pluginInterface.ClientState.TerritoryChanged += OnTerritoryChanged;
+        }
+
+        private void OnTerritoryChanged(object sender, ushort id)
+        {
+            if (_zoneMap.ContainsKey(id))
+            {
+                _configuration.SetSelected(_zoneMap[id]);
+            }
+        }
+
+        private void BuildZoneMap()
+        {
+            _zoneMap = new Dictionary<ushort, DungeonSelectionIndex>();
+
+            for (var i = 0; i < _expansions.Length; i++)
+            {
+                for (var j = 0; j < _expansions[i].Dungeons.Length; j++)
+                {
+                    _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 0, j));
+                }
+                
+                for (var j = 0; j < _expansions[i].Trials.Length; j++)
+                {
+                    _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 1, j));
+                }
+                
+                for (var j = 0; j < _expansions[i].Raids.Length; j++)
+                {
+                    _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 2, j));
+                }
+            }
         }
 
         public string Name => "Boss Notes";

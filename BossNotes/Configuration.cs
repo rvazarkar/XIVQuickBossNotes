@@ -29,5 +29,12 @@ namespace BossNotes
         {
             _pluginInterface.SavePluginConfig(this);
         }
+
+        public void SetSelected(DungeonSelectionIndex idx)
+        {
+            SelectedExpansionIndex = idx.SelectedExpansion;
+            SelectedTypeIndex = idx.SelectedType;
+            SelectedInstanceIndex = idx.SelectedInstance;
+        }
     }
 }

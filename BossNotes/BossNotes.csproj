@@ -115,6 +115,7 @@
         <Compile Include="BossNotesPlugin.cs" />
         <Compile Include="ChatChannels.cs" />
         <Compile Include="Configuration.cs" />
+        <Compile Include="DungeonSelectionIndex.cs" />
         <Compile Include="Expansion.cs" />
         <Compile Include="Instance.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,10 +176,17 @@
         <Compile Include="Stormblood\Dungeons\TempleFistBosses\Ivon.cs" />
         <Compile Include="Stormblood\Dungeons\TheBurn.cs" />
         <Compile Include="Stormblood\Stormblood.cs" />
+        <Compile Include="Stormblood\Trials\Emanation.cs" />
+        <Compile Include="Stormblood\Trials\EmanationBoss\LakshmiP1.cs" />
+        <Compile Include="Stormblood\Trials\EmanationBoss\LakshmiP2.cs" />
+        <Compile Include="Stormblood\Trials\Menagerie.cs" />
+        <Compile Include="Stormblood\Trials\MenagerieBosses\ShinryuP1.cs" />
+        <Compile Include="Stormblood\Trials\MenagerieBosses\ShinryuP2.cs" />
+        <Compile Include="Stormblood\Trials\MenagerieBosses\ShinryuP3.cs" />
         <Compile Include="Stormblood\Trials\PoolOfTribute.cs" />
-        <Compile Include="Stormblood\Trials\Susano\SusanoP1.cs" />
-        <Compile Include="Stormblood\Trials\Susano\SusanoP2.cs" />
-        <Compile Include="Stormblood\Trials\Susano\SusanoP3.cs" />
+        <Compile Include="Stormblood\Trials\PoolOfTributeBoss\SusanoP1.cs" />
+        <Compile Include="Stormblood\Trials\PoolOfTributeBoss\SusanoP2.cs" />
+        <Compile Include="Stormblood\Trials\PoolOfTributeBoss\SusanoP3.cs" />
         <Compile Include="UI.cs" />
     </ItemGroup>
     <ItemGroup>

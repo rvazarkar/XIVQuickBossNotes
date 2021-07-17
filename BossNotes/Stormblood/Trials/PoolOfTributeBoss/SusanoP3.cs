@@ -1,4 +1,4 @@
-﻿namespace BossNotes.Stormblood.Trials.Susano
+﻿namespace BossNotes.Stormblood.Trials.PoolOfTributeBoss
 {
     public class SusanoP3 : Boss
     {

@@ -1,4 +1,6 @@
-﻿namespace BossNotes.Stormblood.Trials
+﻿using BossNotes.Stormblood.Trials.PoolOfTributeBoss;
+
+namespace BossNotes.Stormblood.Trials
 {
     public class PoolOfTribute : Instance
     {
@@ -7,7 +9,12 @@
             Name = "The Pool of Tribute";
             Level = 63;
             ZoneID = 674;
-            Bosses = new Boss[] { };
+            Bosses = new Boss[]
+            {
+                new SusanoP1(),
+                new SusanoP2(),
+                new SusanoP3()
+            };
         }
     }
 }

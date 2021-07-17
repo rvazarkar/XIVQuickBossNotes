@@ -210,45 +210,67 @@ namespace BossNotes
                 }
 
                 ImGui.SameLine();
-                if (ImGui.Button("Print Quick Strat"))
+                if (_configuration.SelectedTypeIndex != 1)
                 {
-                    ChatChannel channel;
-                    if (_autoSelectChat)
+                    if (ImGui.Button("Print Quick Strat"))
                     {
-                        var player = _pluginInterface.ClientState.LocalPlayer;
-                        
-                        if (player == null)
-                        {
-                            channel = _chatChannels[0];
-                        }
-                        else
-                        {
-                            if ((player.StatusFlags & StatusFlags.AllianceMember) != 0)
-                            {
-                                channel = _chatChannels[4];
-                            }else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
-                            {
-                                channel = _chatChannels[3];
-                            }
-                            else
-                            {
-                                channel = _chatChannels[0];
-                            }    
-                        }
-                        
+                        var baseMessage =
+                            $"★{_selectedInstance.Bosses[_configuration.SelectedBossIndex].Name}★: {_selectedInstance.Bosses[_configuration.SelectedBossIndex].QuickStrategy}";
+                        OutputChat(baseMessage);
                     }
-                    else
-                    {
-                        channel = _chatChannels[_configuration.SelectedChatIndex];
-                    }
-                    
-                    var baseMessage =
-                        $"★{_selectedInstance.Bosses[_configuration.SelectedBossIndex].Name}★: {_selectedInstance.Bosses[_configuration.SelectedBossIndex].QuickStrategy}";
-                    _xivBase.Functions.Chat.SendMessage(channel.FormatMessage(baseMessage));
                 }
+                else
+                {
+                    foreach (var phase in _selectedInstance.Bosses)
+                    {
+                        ImGui.SameLine();
+                        if (ImGui.Button($"Print {phase.Name} Strat"))
+                        {
+                            var baseMessage =
+                                $"★{phase.Name}★: {phase.QuickStrategy}";
+                            OutputChat(baseMessage);
+                        }
+                    }
+                }
+                
 
                 ImGui.End();
             }
+        }
+
+        private void OutputChat(string baseMessage)
+        {
+            ChatChannel channel;
+            if (_autoSelectChat)
+            {
+                var player = _pluginInterface.ClientState.LocalPlayer;
+                        
+                if (player == null)
+                {
+                    channel = _chatChannels[0];
+                }
+                else
+                {
+                    if ((player.StatusFlags & StatusFlags.AllianceMember) != 0)
+                    {
+                        channel = _chatChannels[4];
+                    }else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
+                    {
+                        channel = _chatChannels[3];
+                    }
+                    else
+                    {
+                        channel = _chatChannels[0];
+                    }    
+                }
+                        
+            }
+            else
+            {
+                channel = _chatChannels[_configuration.SelectedChatIndex];
+            }
+            
+            _xivBase.Functions.Chat.SendMessage(channel.FormatMessage(baseMessage));
         }
     }
 }
