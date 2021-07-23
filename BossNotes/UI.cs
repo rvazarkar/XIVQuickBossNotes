@@ -76,6 +76,17 @@ namespace BossNotes
             _configuration.Save();
         }
 
+        public void SetSelected(DungeonSelectionIndex idx)
+        {
+            _selectedInstance = idx.SelectedType switch
+            {
+                0 => _expansions[idx.SelectedExpansion].Dungeons[idx.SelectedInstance],
+                1 => _expansions[idx.SelectedExpansion].Trials[idx.SelectedInstance],
+                2 => _expansions[idx.SelectedExpansion].Raids[idx.SelectedInstance],
+                _ => throw new ArgumentOutOfRangeException()
+            };
+        }
+
         public void Draw()
         {
             DrawNotesWindows();
@@ -144,8 +155,7 @@ namespace BossNotes
                     2 => _expansions[_configuration.SelectedExpansionIndex].Raids,
                     _ => throw new ArgumentOutOfRangeException()
                 };
-                // ImGui.PopItemWidth();
-                // ImGui.PushItemWidth(ImGui.GetContentRegionAvail().X);
+                
                 ImGui.SameLine();
                 if (ImGui.BeginCombo("##selectedinstance", _selectedInstance.Name))
                 {
@@ -167,7 +177,7 @@ namespace BossNotes
                 }
 
                 ImGui.SameLine();
-                if (ImGui.Checkbox("Swap and Open Automatically", ref _autoSwapDungeons))
+                if (ImGui.Checkbox("Change Automatically", ref _autoSwapDungeons))
                     _configuration.AutoSwapDungeon = _autoSwapDungeons;
 
                 if (ImGui.BeginTabBar("BossNotes Tab Bar", ImGuiTabBarFlags.NoTooltip))
@@ -217,7 +227,7 @@ namespace BossNotes
                 foreach (var phase in _selectedInstance.Bosses)
                 {
                     ImGui.SameLine();
-                    if (ImGui.Button($"Chat {phase.Name} Strat"))
+                    if (ImGui.Button($"{phase.Name}"))
                     {
                         var baseMessage =
                             $"★{phase.Name}★: {phase.QuickStrategy}";

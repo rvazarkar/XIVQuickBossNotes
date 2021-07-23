@@ -1,4 +1,5 @@
 ﻿using BossNotes.Stormblood.Dungeons;
+using BossNotes.Stormblood.Trials;
 
 namespace BossNotes.Stormblood
 {
@@ -23,6 +24,16 @@ namespace BossNotes.Stormblood
                 new HSaintMocianne(),
                 new TheBurn(),
                 new Ghimlyt()
+            };
+            Trials = new Instance[]
+            {
+                new PoolOfTribute(),
+                new Emanation(),
+                new Menagerie(),
+                new Fluminis(),
+                new Ohashi(),
+                new GreatHunt(),
+                new JadeStoa(),
             };
         }
     }

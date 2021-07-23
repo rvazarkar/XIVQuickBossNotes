@@ -58,6 +58,7 @@ namespace BossNotes
             if (!_configuration.AutoSwapDungeon) return;
 
             if (!_zoneMap.ContainsKey(id)) return;
+            _ui.SetSelected(_zoneMap[id]);
             _configuration.SetSelected(_zoneMap[id]);
             _ui.Visible = true;
         }
@@ -72,10 +73,10 @@ namespace BossNotes
                     _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 0, j));
 
                 for (var j = 0; j < _expansions[i].Trials.Length; j++)
-                    _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 1, j));
+                    _zoneMap.Add(_expansions[i].Trials[j].ZoneID, new DungeonSelectionIndex(i, 1, j));
 
                 for (var j = 0; j < _expansions[i].Raids.Length; j++)
-                    _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 2, j));
+                    _zoneMap.Add(_expansions[i].Raids[j].ZoneID, new DungeonSelectionIndex(i, 2, j));
             }
         }
 
