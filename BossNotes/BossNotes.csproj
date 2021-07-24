@@ -80,6 +80,10 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="ARR\ARR.cs" />
+        <Compile Include="ARR\Dungeons\Ampador.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorBosses\Anantaboga.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorBosses\DemonWall.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorBosses\Psycheflayer.cs" />
         <Compile Include="ARR\Dungeons\AurumVale.cs" />
         <Compile Include="ARR\Dungeons\AurumValeBosses\Coincounter.cs" />
         <Compile Include="ARR\Dungeons\AurumValeBosses\Locksmith.cs" />
@@ -117,6 +121,15 @@
         <Compile Include="ARR\Dungeons\HaukeBosses\Claviger.cs" />
         <Compile Include="ARR\Dungeons\HaukeBosses\JesterSteward.cs" />
         <Compile Include="ARR\Dungeons\HaukkeManor.cs" />
+        <Compile Include="ARR\Dungeons\HCopperbell.cs" />
+        <Compile Include="ARR\Dungeons\HCopperbellBosses\Gogmagolem.cs" />
+        <Compile Include="ARR\Dungeons\HCopperbellBosses\Hecatoncheir.cs" />
+        <Compile Include="ARR\Dungeons\HCopperbellBosses\Ouranos.cs" />
+        <Compile Include="ARR\Dungeons\Pharos.cs" />
+        <Compile Include="ARR\Dungeons\PharosBosses\Siren.cs" />
+        <Compile Include="ARR\Dungeons\PharosBosses\Symond.cs" />
+        <Compile Include="ARR\Dungeons\PharosBosses\Tyrant.cs" />
+        <Compile Include="ARR\Dungeons\PharosBosses\Zu.cs" />
         <Compile Include="ARR\Dungeons\Praetorium.cs" />
         <Compile Include="ARR\Dungeons\PraetoriumBosses\Gaius.cs" />
         <Compile Include="ARR\Dungeons\PraetoriumBosses\Lahabrea.cs" />
@@ -140,6 +153,10 @@
         <Compile Include="ARR\Dungeons\TamTaraBosses\Galvanth.cs" />
         <Compile Include="ARR\Dungeons\ThousandMaws.cs" />
         <Compile Include="ARR\Dungeons\ThousandMawsBosses\Graffias.cs" />
+        <Compile Include="ARR\Dungeons\WanderersPalace.cs" />
+        <Compile Include="ARR\Dungeons\WanderersPalaceBosses\Bavarois.cs" />
+        <Compile Include="ARR\Dungeons\WanderersPalaceBosses\Halidom.cs" />
+        <Compile Include="ARR\Dungeons\WanderersPalaceBosses\TonberryKing.cs" />
         <Compile Include="Boss.cs" />
         <Compile Include="BossNotesPlugin.cs" />
         <Compile Include="ChatChannels.cs" />
@@ -241,6 +258,7 @@
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="ARR\Dungeons\HHaukeBosses" />
       <Folder Include="Shadowbringers" />
       <Folder Include="Stormblood\Raids" />
     </ItemGroup>

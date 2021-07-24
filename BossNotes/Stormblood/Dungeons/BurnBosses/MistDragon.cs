@@ -6,7 +6,7 @@
         {
             Name = "Mist Dragon";
             QuickStrategy = @"When the boss spawns adds, DO NOT ATTACK THE BOSS. Kill the adds.
-Free players trapped in mist by attacking them.";
+Free players trapped in mist by attacking them. Drop star AoE in the corner.";
             InDepthStrategy =
                 @"Rime Wreath: High party-wide damage, mitigate and heal through this. The Mist Dragon will spam this attack when it isn't casting anything else.
 Frost Breath: Two distinct attacks cast one after another. The first attack targets a non-tank and damages everything in a line from the boss to the targeted player. The second marks the tank and hits a wide arc in the tank's direction. Several ice puddles appear in the areas the attacks hit. The attack itself inflicts a dispellable Frostbite, while the puddles also inflict Frostbite for as long as a player stands in them.
