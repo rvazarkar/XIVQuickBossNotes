@@ -2,9 +2,9 @@
 
 namespace BossNotes.ARR.Dungeons
 {
-    public class Ampador : Instance
+    public class AmpadorKeep : Instance
     {
-        public Ampador()
+        public AmpadorKeep()
         {
             Name = "Ampador Keep";
             Level = 50;

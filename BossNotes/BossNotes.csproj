@@ -80,10 +80,10 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="ARR\ARR.cs" />
-        <Compile Include="ARR\Dungeons\Ampador.cs" />
-        <Compile Include="ARR\Dungeons\AmpadorBosses\Anantaboga.cs" />
-        <Compile Include="ARR\Dungeons\AmpadorBosses\DemonWall.cs" />
-        <Compile Include="ARR\Dungeons\AmpadorBosses\Psycheflayer.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorKeep.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorKeepBosses\Anantaboga.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorKeepBosses\DemonWall.cs" />
+        <Compile Include="ARR\Dungeons\AmpadorKeepBosses\Psycheflayer.cs" />
         <Compile Include="ARR\Dungeons\AurumVale.cs" />
         <Compile Include="ARR\Dungeons\AurumValeBosses\Coincounter.cs" />
         <Compile Include="ARR\Dungeons\AurumValeBosses\Locksmith.cs" />
@@ -121,10 +121,39 @@
         <Compile Include="ARR\Dungeons\HaukeBosses\Claviger.cs" />
         <Compile Include="ARR\Dungeons\HaukeBosses\JesterSteward.cs" />
         <Compile Include="ARR\Dungeons\HaukkeManor.cs" />
+        <Compile Include="ARR\Dungeons\HBrayfloxBosses\GobmachineGVI.cs" />
+        <Compile Include="ARR\Dungeons\HBrayfloxBosses\IlluminatiCommander.cs" />
+        <Compile Include="ARR\Dungeons\HBrayfloxBosses\MagitekVangobGIII.cs" />
+        <Compile Include="ARR\Dungeons\HBrayfloxLongstop.cs" />
         <Compile Include="ARR\Dungeons\HCopperbell.cs" />
         <Compile Include="ARR\Dungeons\HCopperbellBosses\Gogmagolem.cs" />
         <Compile Include="ARR\Dungeons\HCopperbellBosses\Hecatoncheir.cs" />
         <Compile Include="ARR\Dungeons\HCopperbellBosses\Ouranos.cs" />
+        <Compile Include="ARR\Dungeons\HHalatali.cs" />
+        <Compile Include="ARR\Dungeons\HHalataliBosses\Catoblepas.cs" />
+        <Compile Include="ARR\Dungeons\HHalataliBosses\Mumuepo.cs" />
+        <Compile Include="ARR\Dungeons\HHalataliBosses\Pyracmon.cs" />
+        <Compile Include="ARR\Dungeons\HHaukkeBosses\Ash.cs" />
+        <Compile Include="ARR\Dungeons\HHaukkeBosses\Halicarnassus.cs" />
+        <Compile Include="ARR\Dungeons\HHaukkeBosses\ManorJester.cs" />
+        <Compile Include="ARR\Dungeons\HHaukkeManor.cs" />
+        <Compile Include="ARR\Dungeons\HSastashaBosses\Karlabos.cs" />
+        <Compile Include="ARR\Dungeons\HStoneVigil.cs" />
+        <Compile Include="ARR\Dungeons\HStoneVigilBosses\CucaFera.cs" />
+        <Compile Include="ARR\Dungeons\HStoneVigilBosses\Giruveganaus.cs" />
+        <Compile Include="ARR\Dungeons\HStoneVigilBosses\Gorynich.cs" />
+        <Compile Include="ARR\Dungeons\HTamTara.cs" />
+        <Compile Include="ARR\Dungeons\HTamTaraBosses\Avere.cs" />
+        <Compile Include="ARR\Dungeons\HTamTaraBosses\Liavinne.cs" />
+        <Compile Include="ARR\Dungeons\HTamTaraBosses\SpareBody.cs" />
+        <Compile Include="ARR\Dungeons\Hullbreaker.cs" />
+        <Compile Include="ARR\Dungeons\HullbreakerBosses\Kraken.cs" />
+        <Compile Include="ARR\Dungeons\HullbreakerBosses\Sasquatch.cs" />
+        <Compile Include="ARR\Dungeons\HullbreakerBosses\Sjoorm.cs" />
+        <Compile Include="ARR\Dungeons\LostCity.cs" />
+        <Compile Include="ARR\Dungeons\LostCityBosses\Arioch.cs" />
+        <Compile Include="ARR\Dungeons\LostCityBosses\DecayingGourmand.cs" />
+        <Compile Include="ARR\Dungeons\LostCityBosses\Diabolos.cs" />
         <Compile Include="ARR\Dungeons\Pharos.cs" />
         <Compile Include="ARR\Dungeons\PharosBosses\Siren.cs" />
         <Compile Include="ARR\Dungeons\PharosBosses\Symond.cs" />
@@ -141,6 +170,10 @@
         <Compile Include="ARR\Dungeons\SastashaBosses\CaptainMadison.cs" />
         <Compile Include="ARR\Dungeons\SastashaBosses\Chopper.cs" />
         <Compile Include="ARR\Dungeons\SastashaBosses\Denn.cs" />
+        <Compile Include="ARR\Dungeons\Snowcloak.cs" />
+        <Compile Include="ARR\Dungeons\SnowcloakBosses\Fenrir.cs" />
+        <Compile Include="ARR\Dungeons\SnowcloakBosses\Wandil.cs" />
+        <Compile Include="ARR\Dungeons\SnowcloakBosses\Yeti.cs" />
         <Compile Include="ARR\Dungeons\StoneVigil.cs" />
         <Compile Include="ARR\Dungeons\StoneVigilBosses\ChudoYudo.cs" />
         <Compile Include="ARR\Dungeons\StoneVigilBosses\Isgebind.cs" />
@@ -258,7 +291,6 @@
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="ARR\Dungeons\HHaukeBosses" />
       <Folder Include="Shadowbringers" />
       <Folder Include="Stormblood\Raids" />
     </ItemGroup>
