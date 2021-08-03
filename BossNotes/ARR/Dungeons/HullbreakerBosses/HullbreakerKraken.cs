@@ -1,8 +1,8 @@
 ﻿namespace BossNotes.ARR.Dungeons.HullbreakerBosses
 {
-    public class Kraken : Boss
+    public class HullbreakerKraken : Boss
     {
-        public Kraken()
+        public HullbreakerKraken()
         {
             Name = "Kraken";
             QuickStrategy = @"When you get a marker, go to another platform and drop it there.";

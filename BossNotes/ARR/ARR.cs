@@ -23,6 +23,23 @@ namespace BossNotes.ARR
                 new AurumVale(),
                 new CastrumMeridianum(),
                 new Praetorium(),
+                new WanderersPalace(),
+                new AmpadorKeep(),
+                new Pharos(),
+                new HCopperbell(),
+                new HHaukkeManor(),
+                new LostCity(),
+                new HHalatali(),
+                new HBrayfloxLongstop(),
+                new Hullbreaker(),
+                new HStoneVigil(),
+                new HTamTara(),
+                new Snowcloak(),
+                new HSastasha(),
+                new HSunkenTemple(),
+                new KeeperLake(),
+                new HWanderersPalace(),
+                new HAmpadorKeep()
             };
         }
     }

@@ -13,7 +13,7 @@ namespace BossNotes.ARR.Dungeons
             {
                 new Sasquatch(),
                 new Sjoorm(),
-                new Kraken()
+                new HullbreakerKraken()
             };
         }
     }
