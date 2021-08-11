@@ -199,7 +199,6 @@ namespace BossNotes
 
                 if (_showDetails)
                 {
-                    ImGui.BeginChild("#BossNotesDetailSection", new Vector2(600, 300), false);
                     if (ImGui.BeginTabBar("BossNotes Tab Bar", ImGuiTabBarFlags.NoTooltip))
                     {
                         for (var i = 0; i < _selectedInstance.Bosses.Length; i++)
@@ -211,7 +210,8 @@ namespace BossNotes
 
                         ImGui.EndTabBar();
                     }
-
+                    
+                    ImGui.BeginChild("#BossNotesDetailSection", new Vector2(600, 300), false);
                     var body = _selectedInstance.Bosses[_configuration.SelectedBossIndex].InDepthStrategy;
                     ImGui.TextWrapped(body);
                     ImGui.EndChild();
