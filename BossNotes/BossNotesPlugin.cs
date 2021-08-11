@@ -12,7 +12,9 @@ namespace BossNotes
         private readonly Expansion[] _expansions =
         {
             new ARR.ARR(),
-            new Stormblood.Stormblood()
+            new Heavensward.Heavensward(),
+            new Stormblood.Stormblood(),
+            new Shadowbringers.Shadowbringers()
         };
 
         private Configuration _configuration;

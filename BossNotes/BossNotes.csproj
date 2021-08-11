@@ -16,6 +16,8 @@
         <PackageReference Include="XivCommon" Version="2.3.0" />
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="ARR\HighEndTrials" />
+      <Folder Include="ARR\Raids" />
       <Folder Include="Properties" />
     </ItemGroup>
 </Project>
