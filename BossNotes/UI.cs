@@ -297,7 +297,7 @@ namespace BossNotes
                 channel = _chatChannels[_configuration.SelectedChatIndex];
             }
 
-            var commands = baseMessage.Split('\n').Select(x => channel.FormatMessage(x)).ToList();
+            var commands = baseMessage.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None).Select(x => channel.FormatMessage(x)).ToList();
 
             var macroPtr = IntPtr.Zero;
             try
