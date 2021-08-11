@@ -44,6 +44,7 @@ namespace BossNotes
         private bool _autoSwapDungeons;
 
         private Instance _selectedInstance;
+        private bool _showDetails;
 
         private bool _visible;
 
@@ -51,6 +52,8 @@ namespace BossNotes
         {
             _configuration = configuration;
             _autoSelectChat = configuration.AutoSelectChat;
+            _autoSwapDungeons = configuration.AutoSwapDungeon;
+            _showDetails = configuration.ShowDetails;
             _expansions = expansions;
             _pluginInterface = pluginInterface;
             _xivBase = new XivCommonBase(pluginInterface);
@@ -73,6 +76,8 @@ namespace BossNotes
         public void Dispose()
         {
             _configuration.AutoSelectChat = _autoSelectChat;
+            _configuration.AutoSwapDungeon = _autoSwapDungeons;
+            _configuration.ShowDetails = _showDetails;
             _configuration.Save();
         }
 
@@ -100,7 +105,7 @@ namespace BossNotes
             ImGui.SetNextWindowSize(new Vector2(600, 400) * ImGui.GetIO().FontGlobalScale, ImGuiCond.FirstUseEver);
             var avail = ImGui.GetContentRegionAvail().X;
 
-            if (ImGui.Begin("BossNotes", ref _visible, ImGuiWindowFlags.None))
+            if (ImGui.Begin("BossNotes", ref _visible, ImGuiWindowFlags.NoCollapse))
             {
                 ImGui.PushItemWidth(avail / 3);
                 if (ImGui.BeginCombo("##expansion", _expansions[_configuration.SelectedExpansionIndex].Name,
@@ -155,7 +160,7 @@ namespace BossNotes
                     2 => _expansions[_configuration.SelectedExpansionIndex].Raids,
                     _ => throw new ArgumentOutOfRangeException()
                 };
-                
+
                 ImGui.SameLine();
                 if (ImGui.BeginCombo("##selectedinstance", _selectedInstance.Name))
                 {
@@ -177,23 +182,30 @@ namespace BossNotes
                 }
 
                 ImGui.SameLine();
-                if (ImGui.Checkbox("Change Automatically", ref _autoSwapDungeons))
+                if (ImGui.Checkbox("Auto Pick", ref _autoSwapDungeons))
                     _configuration.AutoSwapDungeon = _autoSwapDungeons;
 
-                if (ImGui.BeginTabBar("BossNotes Tab Bar", ImGuiTabBarFlags.NoTooltip))
+                ImGui.SameLine();
+                if (ImGui.Checkbox("Show Details", ref _showDetails))
+                    _configuration.ShowDetails = _showDetails;
+
+                if (_showDetails)
                 {
-                    for (var i = 0; i < _selectedInstance.Bosses.Length; i++)
-                        if (ImGui.BeginTabItem(_selectedInstance.Bosses[i].Name))
-                        {
-                            _configuration.SelectedBossIndex = i;
-                            ImGui.EndTabItem();
-                        }
+                    if (ImGui.BeginTabBar("BossNotes Tab Bar", ImGuiTabBarFlags.NoTooltip))
+                    {
+                        for (var i = 0; i < _selectedInstance.Bosses.Length; i++)
+                            if (ImGui.BeginTabItem(_selectedInstance.Bosses[i].Name))
+                            {
+                                _configuration.SelectedBossIndex = i;
+                                ImGui.EndTabItem();
+                            }
 
-                    ImGui.EndTabBar();
+                        ImGui.EndTabBar();
+                    }
+
+                    var body = _selectedInstance.Bosses[_configuration.SelectedBossIndex].InDepthStrategy;
+                    ImGui.TextWrapped(body);
                 }
-
-                var body = _selectedInstance.Bosses[_configuration.SelectedBossIndex].InDepthStrategy;
-                ImGui.TextWrapped(body);
 
                 ImGui.SetCursorPosX(10);
                 ImGui.SetCursorPosY(WindowSizeY - 30);
@@ -223,7 +235,7 @@ namespace BossNotes
 
                 ImGui.SameLine();
                 ImGui.Text("Share Strat:");
-                
+
                 foreach (var phase in _selectedInstance.Bosses)
                 {
                     ImGui.SameLine();

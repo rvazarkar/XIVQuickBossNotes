@@ -6,7 +6,8 @@
         {
             Name = "Lahabrea";
             QuickStrategy = @"Just kill him.";
-            InDepthStrategy = @"Lahabrea is a straight forward fight. Players should avoid the dark pools spawned by Sea of Pitch if possible. He will also cast Shadow Flare, which players can interrupt.
+            InDepthStrategy =
+                @"Lahabrea is a straight forward fight. Players should avoid the dark pools spawned by Sea of Pitch if possible. He will also cast Shadow Flare, which players can interrupt.
 
 Abilities
 

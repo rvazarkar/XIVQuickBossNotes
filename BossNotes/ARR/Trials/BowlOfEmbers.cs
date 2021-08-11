@@ -11,10 +11,7 @@ namespace BossNotes.ARR.Trials
             ZoneID = 202;
             Bosses = new Boss[]
             {
-                new IfritP1(),
-                new IfritP2(),
-                new IfritP3(),
-                new IfritP4()
+                new Ifrit()
             };
         }
     }

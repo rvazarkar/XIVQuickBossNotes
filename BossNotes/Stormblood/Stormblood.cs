@@ -33,7 +33,7 @@ namespace BossNotes.Stormblood
                 new Fluminis(),
                 new Ohashi(),
                 new GreatHunt(),
-                new JadeStoa(),
+                new JadeStoa()
             };
         }
     }

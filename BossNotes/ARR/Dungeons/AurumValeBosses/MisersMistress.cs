@@ -5,8 +5,10 @@
         public MisersMistress()
         {
             Name = "Miser's Mistress";
-            QuickStrategy = @"Eat a morbol fruit around 2-4 stacks of Burrs. Kill ""Strange Morbol Fruits"" as fast as possible.";
-            InDepthStrategy = @"Miser's Mistress is the final boss of The Aurum Vale. This Morbol boss has powerful frontal AoE attacks and should be faced away from all non-tank players. The debuffs from Bad Breath could be deadly.
+            QuickStrategy =
+                @"Eat a morbol fruit around 2-4 stacks of Burrs. Kill ""Morbol Fruits"" as fast as possible when boss uses ""Sow""";
+            InDepthStrategy =
+                @"Miser's Mistress is the final boss of The Aurum Vale. This Morbol boss has powerful frontal AoE attacks and should be faced away from all non-tank players. The debuffs from Bad Breath could be deadly.
 
 Similar to Locksmith, there are objects named Morbol Fruit around the boss room. Players can consume the fruit to remove all the stacks of the debuff Burrs on them. Players should consume the fruit at around 2-4 Burrs stacks.
 

@@ -7,7 +7,8 @@
             Name = "Isgebind";
             QuickStrategy = @"When the boss takes off, stand near the middle to avoid the AoE.
 Otherwise, stand near the edges of the room to keep ice away from center.";
-            InDepthStrategy = @"Isgebind is the final boss of The Stone Vigil. This icy dragon has powerful breath attacks along with massive AoE capabilities. Non-tank party members should stay away from the front of the dragon to avoid its breath attacks. Occasionally, Isgebind will cast Sheet of Ice on a random party member, players should move out of the red ground indicator circle when it appears underneath them.
+            InDepthStrategy =
+                @"Isgebind is the final boss of The Stone Vigil. This icy dragon has powerful breath attacks along with massive AoE capabilities. Non-tank party members should stay away from the front of the dragon to avoid its breath attacks. Occasionally, Isgebind will cast Sheet of Ice on a random party member, players should move out of the red ground indicator circle when it appears underneath them.
 
 Throughout the fight, Isgebind will take flight and about half of the room will glow in a icy blue light. After a few seconds Isegebind will fly over the area and use its frost breath. Players caught in the area will take heavy damage. Squishier players (e.g. healers and ranged DPS) can be killed instantly by this, so be careful. This attack with either fill one half of the room, or a strip down the middle. Stand near the middle and be prepared to run toward one side.
 

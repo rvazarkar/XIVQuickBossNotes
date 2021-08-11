@@ -6,7 +6,8 @@
         {
             Name = "Magitek Vanguard F-I";
             QuickStrategy = @"Non-tanks should be behind the boss. Off-tank should pick up adds.";
-            InDepthStrategy = @"One tank should tank Magitek Vanguard F-I while the second tank grabs adds that spawn at the doors. Non-tank players should avoid the front of the boss.
+            InDepthStrategy =
+                @"One tank should tank Magitek Vanguard F-I while the second tank grabs adds that spawn at the doors. Non-tank players should avoid the front of the boss.
 
 Abilities
 

@@ -11,7 +11,7 @@ namespace BossNotes.ARR.Trials
             ZoneID = 332;
             Bosses = new Boss[]
             {
-                new RihtahtynP1()
+                new Rihtahtyn()
             };
         }
     }

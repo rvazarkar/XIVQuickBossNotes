@@ -5,8 +5,10 @@
         public GarudaP1()
         {
             Name = "Phase 1";
-            QuickStrategy = @"Hide behind rocks when Garuda shrieks. Kill adds ASAP. Stay way from rocks when possible to prevent damage.";
-            InDepthStrategy = @"In the first phase, tank should pull Garuda to 1 edge of the boss room, away from the stone pillars. Ranged damage dealers and healers should spread out a bit to minimize the damage taken from Friction. While Slipstream does not have the red ground indicator, it can still be dodged.
+            QuickStrategy =
+                @"Hide behind rocks when Garuda shrieks. Kill adds ASAP. Stay away from rocks when possible to prevent damage.";
+            InDepthStrategy =
+                @"In the first phase, tank should pull Garuda to 1 edge of the boss room, away from the stone pillars. Ranged damage dealers and healers should spread out a bit to minimize the damage taken from Friction. While Slipstream does not have the red ground indicator, it can still be dodged.
 
 Players should not let Garuda damage the stone pillars with her Friction and Wicked Wheel abilities.
 At about 3/4 HP, Garuda will disappear for a few seconds. After re-appearing she will begin to cast Mistral Song. Get behind stone pillars and get out of her line of sight immediately. Anyone in her line of sight will be killed by the Mistral Song.

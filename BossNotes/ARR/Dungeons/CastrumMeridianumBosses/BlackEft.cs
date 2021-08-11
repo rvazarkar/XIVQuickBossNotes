@@ -6,7 +6,8 @@
         {
             Name = "The Black Eft";
             QuickStrategy = @"Off-tank should grab adds at the door.";
-            InDepthStrategy = @"One tank should tank The Black Eft while another tank should get the attention of the adds spawning at the doors. Players should avoid the heavy hitting Magitek Cannon ability.
+            InDepthStrategy =
+                @"One tank should tank The Black Eft while another tank should get the attention of the adds spawning at the doors. Players should avoid the heavy hitting Magitek Cannon ability.
 
 Abilities
 

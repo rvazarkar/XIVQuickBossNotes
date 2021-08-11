@@ -5,8 +5,9 @@
         public Koshchei()
         {
             Name = "Koshchei";
-            QuickStrategy = @"Use cannons to kill adds";
-            InDepthStrategy = @"Koshchei is the 2nd dragon boss of The Stone Vigil. In this fight there are 3 cannons positioned at the far side of the boss' room. Throughout the fight, Koshchei will summon dragon adds outside of the castle to help him. Use the cannons to defeat the adds when they spawn.
+            QuickStrategy = @"Use cannons to kill adds, face the boss away from the cannons";
+            InDepthStrategy =
+                @"Koshchei is the 2nd dragon boss of The Stone Vigil. In this fight there are 3 cannons positioned at the far side of the boss' room. Throughout the fight, Koshchei will summon dragon adds outside of the castle to help him. Use the cannons to defeat the adds when they spawn.
 
 Koshchei will use the ability Typhoon to spawn whirlwinds. As the fight escalate, multiple whirlwinds appear at once. Players caught within the whirlwinds will take damage and receive a DoT debuff.
 

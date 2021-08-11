@@ -7,7 +7,8 @@
             Name = "Siren";
             QuickStrategy = @"Heal party members that get ""Siren Song"" to full to remove the debuff.
 Kill Sergeants ASAP. When boss vanishes, run to middle.";
-            InDepthStrategy = @"Tank: Position the boss near the center of the room and be ready to pick up the Zombie Storm Privates. Kite the Zombie Storm Sergeants.
+            InDepthStrategy =
+                @"Tank: Position the boss near the center of the room and be ready to pick up the Zombie Storm Privates. Kite the Zombie Storm Sergeants.
 
 Healer: A debuff, Siren Song (Ghost Face Icon), will be placed on random party members. You have 12 seconds to heal them to full HP or they will become charmed for a period of time. You should also remove the bleed debuff, which is applied to the tank periodically.
 

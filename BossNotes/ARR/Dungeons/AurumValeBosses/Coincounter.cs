@@ -5,8 +5,9 @@
         public Coincounter()
         {
             Name = "Coincounter";
-            QuickStrategy = @"Avoid AoE.";
-            InDepthStrategy = @"Coincounter is the cyclops boss of the dungeon. He has a few powerful frontal AoE attacks. All non-tank players should stay away from the front of the boss. He has 2 types of 100-Tonze Swipe abilities. The first type can be identified when he holds his mace with only 1 of his hands. This is a frontal cone AoE attack. The second type can be identified when he holds his mace with 2 of his hands. This is a circular AoE attack that does an enormous amount of damage to all targets around him. Neither of these attacks have ground indicators. Since a few patches back, all of Coincounter's attacks have ground indicators. Players should interrupt or avoid these attacks.
+            QuickStrategy = @"Stand in midrange to be able to avoid all AoE. When his eye glows, move close";
+            InDepthStrategy =
+                @"Coincounter is the cyclops boss of the dungeon. He has a few powerful frontal AoE attacks. All non-tank players should stay away from the front of the boss. He has 2 types of 100-Tonze Swipe abilities. The first type can be identified when he holds his mace with only 1 of his hands. This is a frontal cone AoE attack. The second type can be identified when he holds his mace with 2 of his hands. This is a circular AoE attack that does an enormous amount of damage to all targets around him. Neither of these attacks have ground indicators. Since a few patches back, all of Coincounter's attacks have ground indicators. Players should interrupt or avoid these attacks.
 
 At about half HP, Coincounter will start using Eye of the Beholder, a long range, frontal cone, AoE spell. Ranged damage dealers and healers should spread apart and avoid his Glower and Eye of the Beholder abilities if possible.
 

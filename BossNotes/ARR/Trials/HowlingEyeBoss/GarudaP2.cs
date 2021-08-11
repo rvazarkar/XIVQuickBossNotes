@@ -7,7 +7,8 @@
             Name = "Phase 2";
             QuickStrategy = @"Kill adds, don't stand in clouds. 
 First jump, get behind boss. Second jump get as far away as possible.";
-            InDepthStrategy = @"After Garuda uses her signature ability, Aerial Blast, phase 2 begins. In this phase Garuda uses Eye of the Storm to limit the size of the boss room to a circular center. Any player outside of the swirling vortex will take heavy damage from Eye of the Storm.
+            InDepthStrategy =
+                @"After Garuda uses her signature ability, Aerial Blast, phase 2 begins. In this phase Garuda uses Eye of the Storm to limit the size of the boss room to a circular center. Any player outside of the swirling vortex will take heavy damage from Eye of the Storm.
 
 When teleports to the opposite side of the room, she will start casting Mistral Shriek. Players should run away from her as soon as possible. Everyone near her will take massive damage.
 

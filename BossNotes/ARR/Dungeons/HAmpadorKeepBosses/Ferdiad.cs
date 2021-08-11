@@ -6,7 +6,8 @@
         {
             Name = "Ferdiad";
             QuickStrategy = @"Kill adds ASAP, especially slimes, and move out of AoEs.";
-            InDepthStrategy = @"Tank should pull to the edge like you would with Titan. This way it is clear when Ferdiad is moving to the center for his circular AoE mechanic.
+            InDepthStrategy =
+                @"Tank should pull to the edge like you would with Titan. This way it is clear when Ferdiad is moving to the center for his circular AoE mechanic.
 
 Kill all adds ASAP, especially the add(s) (Wicked Jester) with a tether to Ferdiad. Ferdiad will channel a circular AoE that gradually becomes larger. You need to kill the tethered adds so that the circle will stop growing and not consume the whole arena. If you fail, his attack will deal massive damage to all players and likely cause a wipe. Tanks and healers should also help down these adds, as Ferdiad will not auto-attack at this time.
 

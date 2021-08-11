@@ -6,7 +6,8 @@
         {
             Name = "Locksmith";
             QuickStrategy = @"Stand near your own Morbol Fruit. When you have 2-3 stacks of the debuff, eat a fruit.";
-            InDepthStrategy = @"Locksmith is the first boss of The Aurum Vale. This gigantic Ochu has several high damage mechanics that will test the capabilities of the parties' healers.
+            InDepthStrategy =
+                @"Locksmith is the first boss of The Aurum Vale. This gigantic Ochu has several high damage mechanics that will test the capabilities of the parties' healers.
 
 In the boss area, there are objects named Morbol Fruit along the sides of the room. Players can interact with the fruits to remove all of the Gold Lung debuff stacks on themselves. After interacting with a fruit, it will disappear. The Morbol Fruits respawn over time.
 

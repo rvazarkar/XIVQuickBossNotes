@@ -5,7 +5,8 @@
         public Halicarnassus()
         {
             Name = "Halicarnassus";
-            QuickStrategy = @"This is a DPS race. Adds need to be killed ASAP. The more health they have, the more damage the boss will do.";
+            QuickStrategy =
+                @"This is a DPS race. Adds need to be killed ASAP. The more health they have, the more damage the boss will do.";
             InDepthStrategy = @"Adds
 
 Manor Sentry — When absorbed, Halicarnassus will gain immunity to stun/silence.

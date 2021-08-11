@@ -7,7 +7,8 @@
             Name = "Phase 1";
             QuickStrategy = @"""Steel of the Underworld"" is a frontal cone. ""Lead of the Underworld"" is a line stack.
 ""Zashiki-asobi"" will spawn AoEs in a circle that go off in the order they spawned";
-            InDepthStrategy = @"Torment Unto Death - Large frontal cone tank buster. As usual, all other players must not stand in front of the boss
+            InDepthStrategy =
+                @"Torment Unto Death - Large frontal cone tank buster. As usual, all other players must not stand in front of the boss
 Zashiki-Asobi - This is essentially Ser Adelphel from The Vault. She will spawn fans around the arena; one in the centre, and the others around. They will explode in the same order they spawned in. It is recommended to stand in another fan (ones that will explode last) as the centre one explodes to head back to the centre.
 Nightfall - Casts during Zashiki-Asobi signaling an incoming AoE random attack.
 Steel of the Underworld - Large frontal cone on primary target.

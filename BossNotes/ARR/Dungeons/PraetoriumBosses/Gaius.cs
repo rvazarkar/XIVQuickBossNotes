@@ -6,7 +6,8 @@
         {
             Name = "Gaius van Baelsar";
             QuickStrategy = @"Tank and SPANK";
-            InDepthStrategy = @"Players should spread out to avoid Gaius' Hand of the Empire. Non-tank players should not be in front of the boss. At 3/4, 1/2 and 1/4 HP, flaming blue circles will appear on the ground. Players should move and stay out of the circles because they do damage to anyone in them. Players should also avoid his Blue X ability called Terminus Est. When the flaming blue X appears, move out of its way.
+            InDepthStrategy =
+                @"Players should spread out to avoid Gaius' Hand of the Empire. Non-tank players should not be in front of the boss. At 3/4, 1/2 and 1/4 HP, flaming blue circles will appear on the ground. Players should move and stay out of the circles because they do damage to anyone in them. Players should also avoid his Blue X ability called Terminus Est. When the flaming blue X appears, move out of its way.
 
 Abilities
 

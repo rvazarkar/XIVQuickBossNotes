@@ -17,6 +17,7 @@ namespace BossNotes
 
         public bool AutoSelectChat { get; set; } = true;
         public bool AutoSwapDungeon { get; set; } = true;
+        public bool ShowDetails { get; set; } = true;
 
         public int Version { get; set; } = 0;
 

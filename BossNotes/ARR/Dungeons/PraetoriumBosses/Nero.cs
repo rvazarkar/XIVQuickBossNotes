@@ -6,7 +6,8 @@
         {
             Name = "Nero tol Scaeva";
             QuickStrategy = @"Tank the boss at the exit door to save time and prevent knockbacks.";
-            InDepthStrategy = @"The boss room is surrounded by an electrical field. While in the electrical field, players will take damage over time. All non-tank players should not be in front of Nero tol Scaeva. Ranged damage dealers and healers should stay out of the melee range. Occasionally, Magitek Death Claw add will spawn. A purple line connects the claw to a random player. The targeted player should move away from the Death Claw while rest of the players should kill the claw as soon as possible. If the claw reaches the targeted player, the player will be knocked into the electrical field.
+            InDepthStrategy =
+                @"The boss room is surrounded by an electrical field. While in the electrical field, players will take damage over time. All non-tank players should not be in front of Nero tol Scaeva. Ranged damage dealers and healers should stay out of the melee range. Occasionally, Magitek Death Claw add will spawn. A purple line connects the claw to a random player. The targeted player should move away from the Death Claw while rest of the players should kill the claw as soon as possible. If the claw reaches the targeted player, the player will be knocked into the electrical field.
 
 Abilities
 

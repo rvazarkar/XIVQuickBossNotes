@@ -7,7 +7,8 @@
             Name = "Keeper of Halidom";
             QuickStrategy = @"If you're not a tank, don't be in front of the boss. 
 Healers should cleanse the debuff.";
-            InDepthStrategy = @"All non-tank players should not be in front of of Keeper of Halidom to avoid Beatdown and Moldy Sneeze. White Mages should use Esuna to remove Reduced Immunity debuff if possible. Players should spread out across the room to avoid being pulled in by Inhale. If you are pulled in, move away from the boss as soon as you can because Keeper of Halidom will use Goobbue's Grief right after Inhale. Players should also move out of the AoE ground indicator of Moldy Phlegm.
+            InDepthStrategy =
+                @"All non-tank players should not be in front of of Keeper of Halidom to avoid Beatdown and Moldy Sneeze. White Mages should use Esuna to remove Reduced Immunity debuff if possible. Players should spread out across the room to avoid being pulled in by Inhale. If you are pulled in, move away from the boss as soon as you can because Keeper of Halidom will use Goobbue's Grief right after Inhale. Players should also move out of the AoE ground indicator of Moldy Phlegm.
 
 Abilities
 

@@ -5,8 +5,10 @@
         public MolaaJaJa()
         {
             Name = "Manxome Molaa Ja Ja";
-            QuickStrategy = @"Kill idols and adds ASAP. Pull boss just outside of standards. Heal to full HP to remove Doom.";
-            InDepthStrategy = @"Stay very close to him to avoid a huge cone AoE. Move away for rotting gas. Person with rotting lung has to stay away from the party when Rotting Gas pops. The person with the lungs will also AoE around them.
+            QuickStrategy =
+                @"Kill idols and adds ASAP. Pull boss just outside of standards. Heal to full HP to remove Doom.";
+            InDepthStrategy =
+                @"Stay very close to him to avoid a huge cone AoE. Move away for rotting gas. Person with rotting lung has to stay away from the party when Rotting Gas pops. The person with the lungs will also AoE around them.
 
 The boss drops multiple banners on the ground during the fight. The banners' buff the boss' damage and armor, so the tank should just pull the boss away from the banner-range. Tank needs to keep moving the boss so the party doesn't have to fight in the banner AoE.
 

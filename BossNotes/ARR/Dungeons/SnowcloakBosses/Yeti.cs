@@ -7,7 +7,8 @@
             Name = "Yeti";
             QuickStrategy = @"Make the frontal cone attack target Spriggans/snowballs. Kill Frostbound adds.
 When boss uses AoE, knock snowballs into him.";
-            InDepthStrategy = @"Yeti has a frontal cone AoE that turns its spriggan adds into snowballs if they are hit by it. The tank should try to make the Yeti face as many spriggans as possible. These adds can be safely ignored otherwise, and nobody should attack the snowballs unless needed.
+            InDepthStrategy =
+                @"Yeti has a frontal cone AoE that turns its spriggan adds into snowballs if they are hit by it. The tank should try to make the Yeti face as many spriggans as possible. These adds can be safely ignored otherwise, and nobody should attack the snowballs unless needed.
 
 When Yeti performs a room-wide AoE, hit it with the snowballs (line up behind it and attack it) to stop the casting. The larger Frostbound adds will not turn into snowballs and will break snowballs if given the chance, and should be killed quickly.
 

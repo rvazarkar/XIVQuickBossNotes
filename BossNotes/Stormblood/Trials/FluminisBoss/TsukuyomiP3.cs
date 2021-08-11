@@ -8,7 +8,8 @@
             QuickStrategy = @"Swap platforms when you have 3 stacks.
 ""Lunacy"" is a multi hit stack, don't immediately separate.
 Has all the abilities from phase 1 and 2.";
-            InDepthStrategy = @"Phase 3 will run with the same abilities you have seen so far with the addition of some others. She will also continue to cast Nightfall.
+            InDepthStrategy =
+                @"Phase 3 will run with the same abilities you have seen so far with the addition of some others. She will also continue to cast Nightfall.
 
 Selenomancy - Causes the platform to be split into two sections. Standing in one section stacks debuffs. If the debuffs reach 5 stacks, a Doom and bleed Debuff will be applied, and you're likely to die. Players must move between these two sections to reset their stacks. It is recommended to switch at 3 stacks since that is a safe area and she is likely to cast an AoE around that time, that way you are not trapped on one side. Doughnut AoE's and Nightfall will cast during this time so keep on your toes.
 Antitwilight/Perilune - Removes Selenomancy and debuffs and deals raid-wide damage.

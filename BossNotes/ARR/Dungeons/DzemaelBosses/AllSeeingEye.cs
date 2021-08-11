@@ -5,8 +5,10 @@
         public AllSeeingEye()
         {
             Name = "All-seeing Eye";
-            QuickStrategy = @"Stand near crystals to get the buff. Move between crystals when they fade.";
-            InDepthStrategy = @"All-seeing Eye is the first boss of Dzemael Darkhold. This Ahriman Boss has an ability called Eyes on Me. The ability does heavy damage to all players near it. Players with the buff Crystal Veil are immune to this damage. Players receive this buff when they are near the glowing crystals. The effect of the crystals fade over time. Players need to move to a new cluster of crystals when this occurs.
+            QuickStrategy =
+                @"BOSS NEEDS TO BE INSIDE BLUE LIGHT. Stand near crystals to get the buff. Move between crystals when they fade. ";
+            InDepthStrategy =
+                @"All-seeing Eye is the first boss of Dzemael Darkhold. This Ahriman Boss has an ability called Eyes on Me. The ability does heavy damage to all players near it. Players with the buff Crystal Veil are immune to this damage. Players receive this buff when they are near the glowing crystals. The effect of the crystals fade over time. Players need to move to a new cluster of crystals when this occurs.
 
 Throughout the fight, All-seeing Eye will spawn adds. Avoid Adds AoE attacks and kill them asap.
 

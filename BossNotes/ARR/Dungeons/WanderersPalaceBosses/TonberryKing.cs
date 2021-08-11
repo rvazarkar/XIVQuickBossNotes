@@ -5,8 +5,10 @@
         public TonberryKing()
         {
             Name = "Tonberry King";
-            QuickStrategy = @"Avoid killing adds when possible. Stay near the middle when adds spawn around the room and burn boss";
-            InDepthStrategy = @"Tanks should stay in the middle of the room and within the melee range of the Tonberry King to avoid Scourge of Nym. Throughout the fight, Tonberry King will spawn small Tonberry adds. When they die they will give Tonberry King a stack of Rancor. Tonberry King will use Everybody's Grudge and deal moderate damage for every stack of Rancor it has. The ability also removes all the Rancor stacks on the boss. Do not let the Tonberry King have too many stacks of Rancor, avoid killing Tonberries if they aren't an issue.
+            QuickStrategy =
+                @"Avoid killing adds when possible. Stay near the middle when adds spawn around the room and burn boss";
+            InDepthStrategy =
+                @"Tanks should stay in the middle of the room and within the melee range of the Tonberry King to avoid Scourge of Nym. Throughout the fight, Tonberry King will spawn small Tonberry adds. When they die they will give Tonberry King a stack of Rancor. Tonberry King will use Everybody's Grudge and deal moderate damage for every stack of Rancor it has. The ability also removes all the Rancor stacks on the boss. Do not let the Tonberry King have too many stacks of Rancor, avoid killing Tonberries if they aren't an issue.
 
 At around quarter HP, Tonberry King will spawn multiple Tonberry Slashers around the room. These adds will periodically move closer to the center of the room. Players should away from the slashers and toward the center of the room. Slashers will do heavy amount of damage to players nearby and players that aggro them. Players should focus down the Tonberry King.
 

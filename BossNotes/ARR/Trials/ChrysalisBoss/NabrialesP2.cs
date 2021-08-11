@@ -7,7 +7,8 @@
             Name = "Phase 2";
             QuickStrategy = @"At 20%, pop all your buffs and then run into the rift. They will last 10x as long.
 Tanks should soak meteors.";
-            InDepthStrategy = @"He will cast triple and then cast spark three times, again, tanks can taunt to help with this.
+            InDepthStrategy =
+                @"He will cast triple and then cast spark three times, again, tanks can taunt to help with this.
 
 After second orb phase he will teleport around and cast end of days, a dodge-able straight line, but the teleports are quite annoying. He will also randomly cast Quake 3, which does AoE damage to party for about 2500 damage on non tanks.
 

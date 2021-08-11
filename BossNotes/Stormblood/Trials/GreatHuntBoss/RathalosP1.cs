@@ -10,7 +10,8 @@ Melee should try and stick to the left side of the boss.
 If Rathalos turns towards you and roars, side step the incoming charge.
 If Rathalos looks to the left, move to the sides or away.
 If Rathalos looks to the right, move out of range.";
-            InDepthStrategy = @"Rathalos will rotate between a set of ground-based attacks against randomly chosen players. All players must keep an eye on where Rathalos is facing and what animation he is performing if they wish to avoid damage during his relentless onslaught.
+            InDepthStrategy =
+                @"Rathalos will rotate between a set of ground-based attacks against randomly chosen players. All players must keep an eye on where Rathalos is facing and what animation he is performing if they wish to avoid damage during his relentless onslaught.
 
 Whipping Bite is indicated by Rathalos staring slightly to its left while opening his mouth and raising his tail. After a short delay, he will snap at players immediately in front of him while simultaneously swiping behind him with his tail. You can safely avoid this short-ranged attack by moving to either of Rathalos' flanks or by backing away.
 Tail Swipe is a two-part attack indicated by Rathalos looking to his right side and menacingly raising his tail. After a brief delay, Rathalos will swing his tail in a 180-degree counterclockwise motion. Immediately after this, Rathalos will perform another 180-degree sweep after a short delay in the same counterclockwise motion. Anyone caught in the path of a Tail Swipe will receive moderate damage and a massive knockback, with a possibility of being stunned. To avoid this, players should either move to Rathalos' left flank or move out of range during the wind-up animation.

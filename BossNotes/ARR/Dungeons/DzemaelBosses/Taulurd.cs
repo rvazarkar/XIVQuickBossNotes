@@ -6,7 +6,8 @@
         {
             Name = "Taulurd";
             QuickStrategy = @"Spread out and avoid AoE.";
-            InDepthStrategy = @"Taulurd is the 2nd boss of Dzemael Darkhold. He has some powerful AoE cone attacks that should be avoided by all players.
+            InDepthStrategy =
+                @"Taulurd is the 2nd boss of Dzemael Darkhold. He has some powerful AoE cone attacks that should be avoided by all players.
 
 Throughout the fight he will summon adds named Deepvoid Slaves. These monsters are on top of an elevated platform. They will perform ranged attacks at the players. Be sure to spread out and avoid their Firewater attacks.
 

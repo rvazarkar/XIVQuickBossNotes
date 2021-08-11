@@ -6,7 +6,8 @@
         {
             Name = "Chimera";
             QuickStrategy = @"Violet = close, Blue = away. Move away from purple energy balls.";
-            InDepthStrategy = @"The final boss of Cutter's Cry, the Chimera requires close attention to know where to step. The Chimera has a Frontal Cone called Lion's Breath that deals a moderate amount of fire damage. Occasionally the Chimera will use the abilities Ram's Breath and Dragon's Breath. Ram's Breath causes Ice damage and heavy on the right side of its body and Dragon's Breath causes Thunder damage and paralysis on the left side of its body. Melee DPS can stand directly behind the Chimera to avoid these cones, but the tank will have to move left or right to sidestep their effects. Most of Chimera's attacks will paralyze its target, which can be cleansed with Esuna, but Adventurers with low hit points should be extra careful.
+            InDepthStrategy =
+                @"The final boss of Cutter's Cry, the Chimera requires close attention to know where to step. The Chimera has a Frontal Cone called Lion's Breath that deals a moderate amount of fire damage. Occasionally the Chimera will use the abilities Ram's Breath and Dragon's Breath. Ram's Breath causes Ice damage and heavy on the right side of its body and Dragon's Breath causes Thunder damage and paralysis on the left side of its body. Melee DPS can stand directly behind the Chimera to avoid these cones, but the tank will have to move left or right to sidestep their effects. Most of Chimera's attacks will paralyze its target, which can be cleansed with Esuna, but Adventurers with low hit points should be extra careful.
 
 At 75% of its life, the Chimera will begin to use two attacks called Dragon's Voice and Ram's Voice. When players see one of the two messages below in the chat log, they need to either move closer to the boss or away from it:
 

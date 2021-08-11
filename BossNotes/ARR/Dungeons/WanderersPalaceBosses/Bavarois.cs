@@ -6,7 +6,8 @@
         {
             Name = "Giant Bavarois";
             QuickStrategy = @"Kill adds. When the boss focuses you, run away";
-            InDepthStrategy = @"Giant Bavarois will use the spell Fire. Players can interrupt his spell cast by stunning the boss or moving behind him while he is casting. Throughout the fight Giant Bavarois will spawn White, Blue, Green and Purple Bavarois adds in groups of 3-4. Purple and White adds are most dangerous because they inflict paralysis and heavy debuffs. They should be killed as soon as possible. Healers should remove the debuffs if possible. Occasionally, Giant Bavarois' eyes will focus onto a single target, causing him to chase that player, using Amorphic Flail when he gets close. The targeted player should run away to avoid the Amorphic Flail.
+            InDepthStrategy =
+                @"Giant Bavarois will use the spell Fire. Players can interrupt his spell cast by stunning the boss or moving behind him while he is casting. Throughout the fight Giant Bavarois will spawn White, Blue, Green and Purple Bavarois adds in groups of 3-4. Purple and White adds are most dangerous because they inflict paralysis and heavy debuffs. They should be killed as soon as possible. Healers should remove the debuffs if possible. Occasionally, Giant Bavarois' eyes will focus onto a single target, causing him to chase that player, using Amorphic Flail when he gets close. The targeted player should run away to avoid the Amorphic Flail.
 
 Abilities
 

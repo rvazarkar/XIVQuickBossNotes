@@ -6,7 +6,8 @@
         {
             Name = "Symond the Unsinkable";
             QuickStrategy = @"Kill adds ASAP. If you reach 3 stacks, run away from everyone.";
-            InDepthStrategy = @"Abilities in this encounter add a stack of Corrupting Crystal to each player. At three stacks, it will explode, dealing damage to all nearby players.
+            InDepthStrategy =
+                @"Abilities in this encounter add a stack of Corrupting Crystal to each player. At three stacks, it will explode, dealing damage to all nearby players.
 
 Stay spread out, avoid the long, narrow column attack, and kill the hounds as quickly as possible to limit stacks.
 

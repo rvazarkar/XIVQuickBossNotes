@@ -1,4 +1,5 @@
 ﻿using BossNotes.ARR.Dungeons;
+using BossNotes.ARR.Trials;
 
 namespace BossNotes.ARR
 {
@@ -40,6 +41,23 @@ namespace BossNotes.ARR
                 new KeeperLake(),
                 new HWanderersPalace(),
                 new HAmpadorKeep()
+            };
+            Trials = new Instance[]
+            {
+                new BowlOfEmbers(),
+                new TheNavel(),
+                new HowlingEye(),
+                new CapeWestwind(),
+                new Chrysalis(),
+                new StepsOfFaith(),
+                new HBowlOfEmbers(),
+                new HHowlingEye(),
+                new HNavel(),
+                new HThornmarch(),
+                new HWhorleater(),
+                new HStrikingTree(),
+                new HAfkAkah(),
+                new UrthsFount()
             };
         }
     }

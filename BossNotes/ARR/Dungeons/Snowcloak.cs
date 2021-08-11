@@ -11,7 +11,7 @@ namespace BossNotes.ARR.Dungeons
             ZoneID = 371;
             Bosses = new Boss[]
             {
-                new  Wandil(),
+                new Wandil(),
                 new Yeti(),
                 new Fenrir()
             };

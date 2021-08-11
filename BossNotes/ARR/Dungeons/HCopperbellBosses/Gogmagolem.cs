@@ -5,8 +5,10 @@
         public Gogmagolem()
         {
             Name = "Gogmagolem";
-            QuickStrategy = @"Kill adds, use the blasting device, pick up bombs and try to drop them in front of the boss.";
-            InDepthStrategy = @"Gogmagolem is a spriggan operating a rock giant. The boss not only has very high defense, it will also move back and forth in the boss room.
+            QuickStrategy =
+                @"Kill adds, use the blasting device, pick up bombs and try to drop them in front of the boss.";
+            InDepthStrategy =
+                @"Gogmagolem is a spriggan operating a rock giant. The boss not only has very high defense, it will also move back and forth in the boss room.
 
 In the boss room, there is an object named Improved Blasting Device. One of your party members should operate the Device to spawn a Waymaker Bomb. That player should pick up the bomb. When it says it is going to explode in 5 seconds, place it in the path of the Gogmagolem. This is the main method of damaging the boss. Black bombs will also spawn near the Blasting Device and the center of the room. These will Self-Destruct, so move away quickly.
 

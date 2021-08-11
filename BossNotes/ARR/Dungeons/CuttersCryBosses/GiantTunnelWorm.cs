@@ -6,7 +6,8 @@
         {
             Name = "Giant Tunnel Worm";
             QuickStrategy = @"When the worm submerges, spread out. ""Sludge"" should be cleansed ASAP.";
-            InDepthStrategy = @"Giant Tunnel Worm is the humongous worm boss of Cutter's Cry. Throughout the fight, Giant Tunnel Worm will submerge underneath the sandy grounds of the boss room. The Worm is the most dangerous when it is submerged. The worm's main abilities include:
+            InDepthStrategy =
+                @"Giant Tunnel Worm is the humongous worm boss of Cutter's Cry. Throughout the fight, Giant Tunnel Worm will submerge underneath the sandy grounds of the boss room. The Worm is the most dangerous when it is submerged. The worm's main abilities include:
 
 Sandstorm is an instant frontal attack that deals a small amount of damage.
 Sand Cyclone is a spell that targets a random party member. It does a small amount of damage and inflicts a damage over time debuff.

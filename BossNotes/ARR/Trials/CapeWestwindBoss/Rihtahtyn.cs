@@ -1,12 +1,13 @@
 ﻿namespace BossNotes.ARR.Trials.CapeWestwindBoss
 {
-    public class RihtahtynP1 : Boss
+    public class Rihtahtyn : Boss
     {
-        public RihtahtynP1()
+        public Rihtahtyn()
         {
             Name = "Rihtahtyn sas Arvina";
             QuickStrategy = @"Mostly just tank and spank. Offtank should pick up adds.";
-            InDepthStrategy = @"Rihtahtyn sas Arvina is the hulking, armored Roegadyn general of Garlean Empire. He has two shields, one on each of his arm.
+            InDepthStrategy =
+                @"Rihtahtyn sas Arvina is the hulking, armored Roegadyn general of Garlean Empire. He has two shields, one on each of his arm.
 
 Throughout the fight, Rihtahtyn will spawn flaming circles on the ground. Players standing in the circles will take damage over time. Avoid these circles if possible. He will charge up magitek missiles. Players can avoid these missiles by moving away from where the boss is standing.
 

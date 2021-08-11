@@ -6,7 +6,8 @@
         {
             Name = "Mark II Magitek Colossus";
             QuickStrategy = @"Stand behind the boss if you're not a tank. Kill da boss.";
-            InDepthStrategy = @"All non-tank players should be behind the boss. Players should avoid the Magitek Ray ability. This fight is a simple tank and spank.
+            InDepthStrategy =
+                @"All non-tank players should be behind the boss. Players should avoid the Magitek Ray ability. This fight is a simple tank and spank.
 
 Abilities
 

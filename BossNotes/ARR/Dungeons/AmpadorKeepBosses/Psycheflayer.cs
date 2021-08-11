@@ -7,7 +7,8 @@
             Name = "Psycheflayer";
             QuickStrategy = @"Burn the first enemy before focusing boss.
 Kill ""Stone Marionette"" and ""Marble Marionette"" as fast as possible.";
-            InDepthStrategy = @"At first only the Lunatic Priest is available. It has a circular AoE spell named Void Fire II that players should avoid. At around half HP, he will summon the Psycheflayer. Burst down the Lunatic Priest while the tank pulls the Psycheflayer to the far right side of the room, near the lantern.
+            InDepthStrategy =
+                @"At first only the Lunatic Priest is available. It has a circular AoE spell named Void Fire II that players should avoid. At around half HP, he will summon the Psycheflayer. Burst down the Lunatic Priest while the tank pulls the Psycheflayer to the far right side of the room, near the lantern.
 
 Players should attempt to interrupt Void Fire III with stuns and avoid Void Fire II by moving out of the ground indicator. White Mages should remove the disease debuffs with esuna if possible.
 

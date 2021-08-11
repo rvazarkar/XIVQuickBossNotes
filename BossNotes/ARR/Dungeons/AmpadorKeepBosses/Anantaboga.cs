@@ -8,7 +8,8 @@
             QuickStrategy = @"Non tank's should be at the side of the boss.
 Hide behind statues when orbs spawn, and kill the statue that wakes up.
 Move away from statues/players when you get ""Plague Dance""";
-            InDepthStrategy = @"Anantaboga is the final boss of Amdapor Keep. Non-tank players should be Flanking the boss to avoid its Rotten Breath (front conal AOE) and Tail Drive (rear conal AOE). Rotten Breath will apply the debuff disease to all targets hit. Disease will reduce all healing done to the target. White Mages should remove disease with Esuna if possible.
+            InDepthStrategy =
+                @"Anantaboga is the final boss of Amdapor Keep. Non-tank players should be Flanking the boss to avoid its Rotten Breath (front conal AOE) and Tail Drive (rear conal AOE). Rotten Breath will apply the debuff disease to all targets hit. Disease will reduce all healing done to the target. White Mages should remove disease with Esuna if possible.
 
 Throughout the fight Anantaboga will use Imminent Catastrophe to spawn purplish, red orbs in the center of the boss room. The orbs will do damage to all players in its line of sight. Be sure to hide behind the statues around the room to avoid the damage. Additionally, the ability will awake one of the statues. Avoid the statue's circular AoE attack and burst it down.
 

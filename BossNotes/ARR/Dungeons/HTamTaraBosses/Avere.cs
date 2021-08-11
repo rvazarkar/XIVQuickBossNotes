@@ -6,7 +6,8 @@
         {
             Name = "Avere Bravearm";
             QuickStrategy = @"Kill crawlers ASAP.";
-            InDepthStrategy = @"Edda stands in the middle of the room in a circle that causes bleeding. She cannot be targeted and will periodically summon demons outside the arena to execute linear aoe attacks which all seem to converge on the tank.
+            InDepthStrategy =
+                @"Edda stands in the middle of the room in a circle that causes bleeding. She cannot be targeted and will periodically summon demons outside the arena to execute linear aoe attacks which all seem to converge on the tank.
 
 Avere Bravearm, while the boss, does not have any notable abilities himself.
 

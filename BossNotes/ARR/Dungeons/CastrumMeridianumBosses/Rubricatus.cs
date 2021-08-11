@@ -6,7 +6,8 @@
         {
             Name = "Magitek Colossus Rubricatus";
             QuickStrategy = @"If possible, stun the boss at 80% and at 60% to prevent the buff.";
-            InDepthStrategy = @"One tank should tank Magitek Colossus Rubricatus while the other tank tank the adds that spawn. Players should spread out to lessen the damage taken from Magitek Ray. Players should also avoid standing in front of the Magitek Vanguard H-1 adds.
+            InDepthStrategy =
+                @"One tank should tank Magitek Colossus Rubricatus while the other tank tank the adds that spawn. Players should spread out to lessen the damage taken from Magitek Ray. Players should also avoid standing in front of the Magitek Vanguard H-1 adds.
 
 Abilities
 

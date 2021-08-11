@@ -6,7 +6,8 @@
         {
             Name = "Livia sas Junius (Phase 2)";
             QuickStrategy = @"AoE down adds, kill da boss.";
-            InDepthStrategy = @"Livia sas Junius is now on foot, stripped of her Magitek Armor. She possesses a different set of abilities with greater damage potentials. Players should dodge her Stunning Sweep, circular AoE attack, and Angry Salamander, frontal column AoE attack.
+            InDepthStrategy =
+                @"Livia sas Junius is now on foot, stripped of her Magitek Armor. She possesses a different set of abilities with greater damage potentials. Players should dodge her Stunning Sweep, circular AoE attack, and Angry Salamander, frontal column AoE attack.
 At 3/4 and half HP, Livia will spawn a group of 7th Cohort Secutor Adds. They will target all target one player. That player should stay still so rest of the party members can AoE down the adds. At quarter HP, Livia will spawn a Magitek Colossus along with a group of 7th Cohort Secutors. One of the tanks should take the aggro of the Colossus while the rest of the group AoE down the Secutors and burst down the boss.
 Abilities
 Aglaia Bite is an instant melee attack that deals a moderate amount of damage.
