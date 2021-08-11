@@ -1,4 +1,5 @@
-﻿using BossNotes.ARR.Dungeons;
+﻿using BossNotes.ARR.AllianceRaids;
+using BossNotes.ARR.Dungeons;
 using BossNotes.ARR.Trials;
 
 namespace BossNotes.ARR
@@ -58,6 +59,12 @@ namespace BossNotes.ARR
                 new HStrikingTree(),
                 new HAfkAkah(),
                 new UrthsFount()
+            };
+            AllianceRaids = new Instance[]
+            {
+                new Labyrinth(),
+                new SyrcusTower(),
+                new WorldOfDarkness()
             };
         }
     }

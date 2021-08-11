@@ -36,7 +36,9 @@ namespace BossNotes
         {
             "Dungeons",
             "Trials",
-            "Raids"
+            "High-End Trials",
+            "Raids",
+            "Alliance Raids"
         };
 
         private readonly XivCommonBase _xivBase;
@@ -87,7 +89,9 @@ namespace BossNotes
             {
                 0 => _expansions[idx.SelectedExpansion].Dungeons[idx.SelectedInstance],
                 1 => _expansions[idx.SelectedExpansion].Trials[idx.SelectedInstance],
-                2 => _expansions[idx.SelectedExpansion].Raids[idx.SelectedInstance],
+                2 => _expansions[idx.SelectedExpansion].HighEndTrials[idx.SelectedInstance],
+                3 => _expansions[idx.SelectedExpansion].Raids[idx.SelectedInstance],
+                4 => _expansions[idx.SelectedExpansion].AllianceRaids[idx.SelectedInstance],
                 _ => throw new ArgumentOutOfRangeException()
             };
         }
@@ -140,7 +144,9 @@ namespace BossNotes
                             {
                                 0 => _expansions[_configuration.SelectedExpansionIndex].Dungeons[0],
                                 1 => _expansions[_configuration.SelectedExpansionIndex].Trials[0],
-                                2 => _expansions[_configuration.SelectedExpansionIndex].Raids[0],
+                                2 => _expansions[_configuration.SelectedExpansionIndex].HighEndTrials[0],
+                                3 => _expansions[_configuration.SelectedExpansionIndex].Raids[0],
+                                4 => _expansions[_configuration.SelectedExpansionIndex].AllianceRaids[0],
                                 _ => throw new ArgumentOutOfRangeException()
                             };
                             _configuration.SelectedTypeIndex = i;
@@ -157,7 +163,9 @@ namespace BossNotes
                 {
                     0 => _expansions[_configuration.SelectedExpansionIndex].Dungeons,
                     1 => _expansions[_configuration.SelectedExpansionIndex].Trials,
-                    2 => _expansions[_configuration.SelectedExpansionIndex].Raids,
+                    2 => _expansions[_configuration.SelectedExpansionIndex].HighEndTrials,
+                    3 => _expansions[_configuration.SelectedExpansionIndex].Raids,
+                    4 => _expansions[_configuration.SelectedExpansionIndex].AllianceRaids,
                     _ => throw new ArgumentOutOfRangeException()
                 };
 
