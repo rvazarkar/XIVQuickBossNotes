@@ -7,7 +7,8 @@
             Name = "Scylla";
             QuickStrategy = @"Run purple balls to lightning pillars, and fire balls to frozen people.
 Stand in puddles when boss casts ""Ancient Flare""";
-            InDepthStrategy = @"Elemental balls - Random DPS and healers will be marked to be followed by balls of elemental energy. Lightning balls appear purple, ice balls appear blue, and flame balls appear red. You will have to deal with this mechanic throughout the fight.
+            InDepthStrategy =
+                @"Elemental balls - Random DPS and healers will be marked to be followed by balls of elemental energy. Lightning balls appear purple, ice balls appear blue, and flame balls appear red. You will have to deal with this mechanic throughout the fight.
 
 Lightning ball - Neutralized by the lightning pillar. Running them into the lightning pillar energizes the pillar, which is denoted by panels of light on the ground next to the pillar. Three charges are needed and will produce a red marker indicating that the pillar is fully charged. Lightning balls detonate for heavy raid wide damage after about 15 seconds if not run into a pillar.
 

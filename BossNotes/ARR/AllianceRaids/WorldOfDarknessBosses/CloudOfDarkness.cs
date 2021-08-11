@@ -7,7 +7,8 @@
             Name = "Cloud of Darkness";
             QuickStrategy = @"Keep moving if you get red crosshairs. Never stand in front of the boss.
 Kill clouds when they spawn. Move to your marker when lines appear on ground.";
-            InDepthStrategy = @"Cloud of Darkness targets the tank with a powerful auto-attack that also deals damage over time, so keep your tank safe.
+            InDepthStrategy =
+                @"Cloud of Darkness targets the tank with a powerful auto-attack that also deals damage over time, so keep your tank safe.
 
 A random player will get targeted with red crosshairs (Feint Particle Beam). After a few seconds, blasts will start chasing after the target player at running speed damaging anyone nearby. Each blast adds a Vulnerability Up debuff and it kills you quickly if you stop moving. The player targeted should run towards the outside edge of the area, away from all other players.
 

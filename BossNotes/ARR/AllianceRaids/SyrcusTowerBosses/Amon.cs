@@ -7,7 +7,8 @@
             Name = "Amon";
             QuickStrategy = @"Kill the slime adds ASAP. Drag purple orb over enemies.
 Hide behind rocks for boss's ultimate.";
-            InDepthStrategy = @"Amon should be tanked in the center of the opera house. He has 3 main spells, Blizzard Forte is an AoE centered on Amon and does large damage plus heavy, Thunder Forte is cast on a patch of ground under random players, and can overlap for massive damage and leaves an electrocution DoT if hit, Firaga Forte is a raid wide blast, but not as damaging as the other two.
+            InDepthStrategy =
+                @"Amon should be tanked in the center of the opera house. He has 3 main spells, Blizzard Forte is an AoE centered on Amon and does large damage plus heavy, Thunder Forte is cast on a patch of ground under random players, and can overlap for massive damage and leaves an electrocution DoT if hit, Firaga Forte is a raid wide blast, but not as damaging as the other two.
 
 His Cleave is called Coloatura and is extremely damaging, no one but the tank should ever be in front of him.
 

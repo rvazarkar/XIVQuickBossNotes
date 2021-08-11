@@ -77,8 +77,14 @@ namespace BossNotes
                 for (var j = 0; j < _expansions[i].Trials.Length; j++)
                     _zoneMap.Add(_expansions[i].Trials[j].ZoneID, new DungeonSelectionIndex(i, 1, j));
 
+                for (var j = 0; j < _expansions[i].HighEndTrials.Length; j++)
+                    _zoneMap.Add(_expansions[i].HighEndTrials[j].ZoneID, new DungeonSelectionIndex(i, 2, j));
+
                 for (var j = 0; j < _expansions[i].Raids.Length; j++)
-                    _zoneMap.Add(_expansions[i].Raids[j].ZoneID, new DungeonSelectionIndex(i, 2, j));
+                    _zoneMap.Add(_expansions[i].Raids[j].ZoneID, new DungeonSelectionIndex(i, 3, j));
+                
+                for (var j = 0; j < _expansions[i].AllianceRaids.Length; j++)
+                    _zoneMap.Add(_expansions[i].AllianceRaids[j].ZoneID, new DungeonSelectionIndex(i, 4, j));
             }
         }
 

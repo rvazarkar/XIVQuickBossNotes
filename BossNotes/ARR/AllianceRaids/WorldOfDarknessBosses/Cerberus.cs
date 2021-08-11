@@ -8,7 +8,8 @@
             QuickStrategy = @"Alliance A kills adds.
 Alliance B gets hit by Orb and then stands in Purple Goo to go belly.
 Alliance C drags chains to Cerberus";
-            InDepthStrategy = @"When Cerberus becomes unchained and starts Thrashing, a group of players (usually Alliance B, plus any DPS that want to) needs to execute the following in order:
+            InDepthStrategy =
+                @"When Cerberus becomes unchained and starts Thrashing, a group of players (usually Alliance B, plus any DPS that want to) needs to execute the following in order:
 
 Stand next to the Gastric Orb mob to get hit by Mini spell and shrunk to a small size.
 Stand in the Purple Goo to get eaten by the boss. (Do not stand in the purple goo if you don't have the Mini debuff, as Cerberus will kill you.)

@@ -8,7 +8,8 @@
             QuickStrategy = @"One person per small yellow circle. 
 Bring black circles into melee range (don't overlap!)
 Stand in glowy circles when boss casts ""Ancient Quagga""";
-            InDepthStrategy = @"Xande should be tanked in the center of the arena. He has the standard ""don't stand in this"" mechanics, including a targeted AoE which deals about 2k damage. While not dangerous, a DPS can potentially be one-shotted if two are overlapping each other and the DPS is still standing in them. He also has The People's Elbow, which is centered on him, and deals moderate damage with a severe knockback. Melee must watch out for this.
+            InDepthStrategy =
+                @"Xande should be tanked in the center of the arena. He has the standard ""don't stand in this"" mechanics, including a targeted AoE which deals about 2k damage. While not dangerous, a DPS can potentially be one-shotted if two are overlapping each other and the DPS is still standing in them. He also has The People's Elbow, which is centered on him, and deals moderate damage with a severe knockback. Melee must watch out for this.
 
 Aetherochemical Explosion - Every now and then Xande creates golden orbs with a small golden radius around them. You have about 10-15 seconds before they detonate, so the raid should be fairly well spread in anticipation of this. They explode and deal about 500 damage per explosion if not neutralized, and since he spawns about a dozen at a time, this is a good way to lose a chunk of your raid if nobody is paying attention. To stop the explosion, simply have a person stand within the golden radius. This causes the orb to hit that person for about 50 damage upon detonation, rather than blasting the entire raid for ten times that damage.
 

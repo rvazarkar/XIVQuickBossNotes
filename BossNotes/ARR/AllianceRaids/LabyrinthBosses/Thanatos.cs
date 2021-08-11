@@ -7,7 +7,8 @@
             Name = "Thanatos";
             QuickStrategy = @"Heal pots to full when they're tethered.
 If ethereal, attack the boss. If not, kill adds.";
-            InDepthStrategy = @"Thanatos is the 3rd boss of the dungeon. Players will encounter the boss when they take the right path from the labyrinth entrance.
+            InDepthStrategy =
+                @"Thanatos is the 3rd boss of the dungeon. Players will encounter the boss when they take the right path from the labyrinth entrance.
 
 Thanatos is a ghostly iron giant that is surrounded by three Magic Pots on the corner of his chamber. The Magic Pots are friendly mobs, and should be healed if they're damaged. If all three die, then you will be unable to harm the boss and will wipe.
 

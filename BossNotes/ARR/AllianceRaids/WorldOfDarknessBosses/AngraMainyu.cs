@@ -8,7 +8,8 @@
             QuickStrategy = @"Alternate standing in Red/White areas.
 Kill hourglasses and don't stand in AoEs. Look away for ""Mortal Gaze"".
 Run away from tethers.";
-            InDepthStrategy = @"Double Vision, a floor-covering AoE that is split into red and white, which gives a stacking debuff depending on what colour you're standing on. The white AOE will give a ""Sullen"" debuff and the red AOE will give an ""Ireful"" debuff. The stacks will reset to 1 if you alternate which colour you stand on when it hits. If you get 2 stacks of the debuff you will take 2.5k damage. If you get 3 stacks you will die.
+            InDepthStrategy =
+                @"Double Vision, a floor-covering AoE that is split into red and white, which gives a stacking debuff depending on what colour you're standing on. The white AOE will give a ""Sullen"" debuff and the red AOE will give an ""Ireful"" debuff. The stacks will reset to 1 if you alternate which colour you stand on when it hits. If you get 2 stacks of the debuff you will take 2.5k damage. If you get 3 stacks you will die.
 
 When he casts Mortal Gaze, anyone looking in his direction will receive a Doom debuff that kills you in 10 seconds. Stand on 1 of 4 circular platforms that is lit up to remove this debuff. You can also turn away from the boss when he casts the ability to completely avoid the Doom debuff.
 

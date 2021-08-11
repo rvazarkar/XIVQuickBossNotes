@@ -8,7 +8,8 @@
             QuickStrategy = @"Kill slimes ASAP and stand in puddles to stop more spawns.
 Stack together for purple marker. Pass dragonfly tethers around.
 Kill prominence orbs ASAP.";
-            InDepthStrategy = @"Ice Floor's AoE expands if it hits a player. When you see a white, circular swirl on the ground, run away.
+            InDepthStrategy =
+                @"Ice Floor's AoE expands if it hits a player. When you see a white, circular swirl on the ground, run away.
 
 The poison Slimes need to be killed to stop them from joining together and casting silence on the entire raid. Killing them causes them to burst into poison resistance buffs. Wherever the slimes spawn, there will be a puddle of slime left over. At least one player needs to stand in the puddle to prevent more slimes from spawning and turning into a Toxic Slime.
 

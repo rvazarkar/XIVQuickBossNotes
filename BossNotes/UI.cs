@@ -109,7 +109,7 @@ namespace BossNotes
             ImGui.SetNextWindowSize(new Vector2(600, 400) * ImGui.GetIO().FontGlobalScale, ImGuiCond.FirstUseEver);
             var avail = ImGui.GetContentRegionAvail().X;
 
-            if (ImGui.Begin("BossNotes", ref _visible, ImGuiWindowFlags.NoCollapse))
+            if (ImGui.Begin("BossNotes", ref _visible, ImGuiWindowFlags.NoCollapse | ImGuiWindowFlags.AlwaysAutoResize))
             {
                 ImGui.PushItemWidth(avail / 3);
                 if (ImGui.BeginCombo("##expansion", _expansions[_configuration.SelectedExpansionIndex].Name,
@@ -199,6 +199,7 @@ namespace BossNotes
 
                 if (_showDetails)
                 {
+                    ImGui.BeginChild("#BossNotesDetailSection", new Vector2(600, 300), false);
                     if (ImGui.BeginTabBar("BossNotes Tab Bar", ImGuiTabBarFlags.NoTooltip))
                     {
                         for (var i = 0; i < _selectedInstance.Bosses.Length; i++)
@@ -213,10 +214,8 @@ namespace BossNotes
 
                     var body = _selectedInstance.Bosses[_configuration.SelectedBossIndex].InDepthStrategy;
                     ImGui.TextWrapped(body);
+                    ImGui.EndChild();
                 }
-
-                ImGui.SetCursorPosX(10);
-                ImGui.SetCursorPosY(WindowSizeY - 30);
 
                 ImGui.Checkbox("Auto Select Chat", ref _autoSelectChat);
 
