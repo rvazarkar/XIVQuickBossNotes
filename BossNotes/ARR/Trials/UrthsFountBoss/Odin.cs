@@ -6,7 +6,7 @@
         {
             Name = "Odin";
             QuickStrategy = @"Kill ""Gungnir"" as fast as possible, cleanse slow when applied.
-Don't overlap purple circles. Pop cooldowns when he casts Zantetsuken (DPS race)";
+Don't overlap purple circles. Pop cooldowns when he casts ""Shin-Zantetsuken"" (DPS race)";
             InDepthStrategy =
                 @"Hall of Sorrow: Raid-wide magical damage, unavoidable. Hits for about ~1700 damage. Casts periodically.
 

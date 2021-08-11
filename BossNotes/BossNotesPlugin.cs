@@ -43,6 +43,7 @@ namespace BossNotes
             BuildZoneMap();
 
             _ui = new UI(_configuration, _pluginInterface, _expansions);
+            _ui.Initialize();
 
             _pluginInterface.CommandManager.AddHandler(Command, new CommandInfo(OnCommand)
             {
@@ -82,7 +83,7 @@ namespace BossNotes
 
                 for (var j = 0; j < _expansions[i].Raids.Length; j++)
                     _zoneMap.Add(_expansions[i].Raids[j].ZoneID, new DungeonSelectionIndex(i, 3, j));
-                
+
                 for (var j = 0; j < _expansions[i].AllianceRaids.Length; j++)
                     _zoneMap.Add(_expansions[i].AllianceRaids[j].ZoneID, new DungeonSelectionIndex(i, 4, j));
             }

@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Numerics;
+using System.Runtime.InteropServices;
+using BossNotes.Internal;
 using Dalamud.Game.ClientState.Actors;
 using Dalamud.Plugin;
 using ImGuiNET;
@@ -9,22 +12,25 @@ namespace BossNotes
 {
     public class UI : IDisposable
     {
+        private static IntPtr _raptureShellModule = IntPtr.Zero;
+        private static ExecuteMacroDelegate _executeMacro;
+
         private readonly ChatChannel[] _chatChannels =
         {
-            new ChatChannel("Say", "say"),
-            new ChatChannel("Yell", "yell"),
-            new ChatChannel("Shout", "shout"),
-            new ChatChannel("Party", "party"),
-            new ChatChannel("Alliance", "alliance"),
-            new ChatChannel("Free Company", "fc"),
-            new ChatChannel("Linkshell 1", "ls1"),
-            new ChatChannel("Linkshell 2", "ls2"),
-            new ChatChannel("Linkshell 3", "ls3"),
-            new ChatChannel("Linkshell 4", "ls4"),
-            new ChatChannel("Linkshell 5", "ls5"),
-            new ChatChannel("Linkshell 6", "ls6"),
-            new ChatChannel("Linkshell 7", "ls7"),
-            new ChatChannel("Linkshell 8", "ls8")
+            new("Say", "say"),
+            new("Yell", "yell"),
+            new("Shout", "shout"),
+            new("Party", "party"),
+            new("Alliance", "alliance"),
+            new("Free Company", "fc"),
+            new("Linkshell 1", "ls1"),
+            new("Linkshell 2", "ls2"),
+            new("Linkshell 3", "ls3"),
+            new("Linkshell 4", "ls4"),
+            new("Linkshell 5", "ls5"),
+            new("Linkshell 6", "ls6"),
+            new("Linkshell 7", "ls7"),
+            new("Linkshell 8", "ls8")
         };
 
         private readonly Configuration _configuration;
@@ -59,15 +65,12 @@ namespace BossNotes
             _expansions = expansions;
             _pluginInterface = pluginInterface;
             _xivBase = new XivCommonBase(pluginInterface);
+            _pluginInterface.Framework.Gui.GetUIModule();
+
 
             _selectedInstance = _expansions[_configuration.SelectedExpansionIndex]
                 .Dungeons[_configuration.SelectedInstanceIndex];
         }
-
-        //Taken from https://github.com/karashiiro/NeatNoter/blob/main/NeatNoter/NeatNoterUI.cs
-        private static float InverseFontScale => 1 / ImGui.GetIO().FontGlobalScale;
-        private static float WindowSizeY => ImGui.GetWindowSize().Y * ImGui.GetIO().FontGlobalScale;
-        private static float ElementSizeX => ImGui.GetWindowSize().X - 16 * InverseFontScale;
 
         public bool Visible
         {
@@ -81,6 +84,16 @@ namespace BossNotes
             _configuration.AutoSwapDungeon = _autoSwapDungeons;
             _configuration.ShowDetails = _showDetails;
             _configuration.Save();
+        }
+
+        public unsafe void Initialize()
+        {
+            var uiModule = _pluginInterface.Framework.Gui.GetUIModule();
+            var vtbl = (IntPtr*) (*(IntPtr*) uiModule);
+            var getRaptureShellModule = Marshal.GetDelegateForFunctionPointer<GetModuleDelegate>(*(vtbl + 9));
+            _raptureShellModule = getRaptureShellModule(uiModule);
+            _executeMacro = Marshal.GetDelegateForFunctionPointer<ExecuteMacroDelegate>(
+                _pluginInterface.TargetModuleScanner.ScanText("E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8D 4D 28"));
         }
 
         public void SetSelected(DungeonSelectionIndex idx)
@@ -210,7 +223,7 @@ namespace BossNotes
 
                         ImGui.EndTabBar();
                     }
-                    
+
                     ImGui.BeginChild("#BossNotesDetailSection", new Vector2(600, 300), false);
                     var body = _selectedInstance.Bosses[_configuration.SelectedBossIndex].InDepthStrategy;
                     ImGui.TextWrapped(body);
@@ -284,7 +297,28 @@ namespace BossNotes
                 channel = _chatChannels[_configuration.SelectedChatIndex];
             }
 
-            _xivBase.Functions.Chat.SendMessage(channel.FormatMessage(baseMessage));
+            var commands = baseMessage.Split('\n').Select(x => channel.FormatMessage(x)).ToList();
+
+            var macroPtr = IntPtr.Zero;
+            try
+            {
+                macroPtr = Marshal.AllocHGlobal(Macro.size);
+                using var macro = new Macro(macroPtr, string.Empty, commands);
+                Marshal.StructureToPtr(macro, macroPtr, false);
+                _executeMacro.Invoke(_raptureShellModule, macroPtr);
+            }
+            catch
+            {
+                //pass
+            }
+            finally
+            {
+                if (macroPtr != IntPtr.Zero) Marshal.FreeHGlobal(macroPtr);
+            }
         }
+
+        private delegate void ExecuteMacroDelegate(IntPtr raptureShellModule, IntPtr macro);
+
+        private delegate IntPtr GetModuleDelegate(IntPtr basePtr);
     }
 }
