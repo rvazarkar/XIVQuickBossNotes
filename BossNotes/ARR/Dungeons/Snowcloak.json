@@ -1,0 +1,23 @@
+﻿{
+  "Index":25,
+  "Name":"Snowcloak",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Wandil",
+      "InDepthStrategy":"Wandil has several AOE abilities (one of which is unavoidable) which add a stacking debuff to all players affected. Once this debuff reaches 4 stacks, the player is frozen (effectively stunned) for a short duration. Periodically he will summon Ice Bombs which will self-destruct after some time or when they get low health. These should be killed to avoid additional damage and more stacks of the debuff. Healers should keep an eye on their stack count and try to top up the party's health before they're stunned.\r\n\r\nAt a certain point during the fight, he'll also create a persistent ring of ice around the edges of the most arena which must be avoided, limiting the players room to maneuver and avoid AoE.",
+      "QuickStrategy":"Freeze happens at 4 stacks. Kill bombs to prevent extra stacks."
+    },
+    {
+      "Name":"Yeti",
+      "InDepthStrategy":"Yeti has a frontal cone AoE that turns its spriggan adds into snowballs if they are hit by it. The tank should try to make the Yeti face as many spriggans as possible. These adds can be safely ignored otherwise, and nobody should attack the snowballs unless needed.\r\n\r\nWhen Yeti performs a room-wide AoE, hit it with the snowballs (line up behind it and attack it) to stop the casting. The larger Frostbound adds will not turn into snowballs and will break snowballs if given the chance, and should be killed quickly.\r\n\r\nSnowballs come in different sizes: small, medium and large. Snowballs that are hit by further frost cone attacks or merged together will increase in size. Larger snowballs deal more damage to the Yeti.\r\n\r\nSmall snowball deals around 2000 damage, medium deals around 10,000 damage and large deals around 30,000 damage to Yeti.\r\nSnowballs can be destroyed by Yeti's cleave attack.",
+      "QuickStrategy":"Make the frontal cone attack target Spriggans/snowballs. Kill Frostbound adds.\r\nWhen boss uses AoE, knock snowballs into him."
+    },
+    {
+      "Name":"Fenrir",
+      "InDepthStrategy":"Fenrir will cause three icicles to drop randomly on the field, two of which will then fly away in a line-shaped-AOE attack. The third will explode moments later. Fenrir will rotate between a \"Thousand Year Storm\" party wide attack and a slow cast called \"Lunar Cry\" after icicle drops. On the Lunar Cry cast, you have to run behind the remaining icicle that didn't fly away to avoid the attack and then move away to avoid the icicle's explosion. There is a way to quickly identify which icicle will persist - two of the icicles target party members, but one will be randomly placed. The one that drops randomly will be the one that remains for the party to hide behind. After the Lunar Cry, Fenrir will jump onto the tank with a moderate damage attack.",
+      "QuickStrategy":"Stand behind icicles for Lunar Cry and then move away to avoid explosion."
+    }
+  ],
+  "ZoneID":371
+}

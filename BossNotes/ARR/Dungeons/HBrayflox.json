@@ -1,0 +1,23 @@
+﻿{
+  "Index":21,
+  "Name":"Braflox's Longstop (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Illuminati Commander",
+      "InDepthStrategy":"Illuminati Commander will spawn sniper add that will fixate on a player, does damage for around 600HP, through the battle, several vertical and horizontal AoE attacks will cover the arena, these will get harder as the battle progresses.",
+      "QuickStrategy":"Dodge AoEs, they hurt."
+    },
+    {
+      "Name":"Magitek Vangob G-III",
+      "InDepthStrategy":"Throughout the fight ceruleum spills from the boss, creating vivid blue circles of liquid that start to cover larger and larger chunks of the arena. After several pools of ceruleum have spilled, the boss sets off a bomb of some kind that will explode and cause all of the ceruleum to ignite as well, doing a large chunk of damage to anyone still inside the blue zones when it goes off. Getting out of the blue areas all depends on your tank's ability to kite the boss (similar to Aiatar) and your own positioning around the walls to keep the ceruleum from covering too much ground. From time to time, the boss will call out two Illuminati adds that must be DPS'd down in quick fashion. After a set amount of time, the boss will use a Halicarnassus-like aerial attack that does damage based on the health of the adds. They were always dead by the time the attack happened for my group, so the damage was pretty minimal (maybe 500 HP?) but I would imagine that it gets much worse if an add is still alive.",
+      "QuickStrategy":"Kill adds ASAP, avoid puddles."
+    },
+    {
+      "Name":"Gobmachine G-VI",
+      "InDepthStrategy":"The machine itself doesn't have many attacks, a straight forward flamethrower attack with no AoE cone, and a Bombardment Circle-AoE attack that'll target a random player.\r\n\r\nAt around 75% HP, the boss will start circling the room's outer perimeter and become un-targetable. The party needs to immediately gather in the center of the room to avoid the circling tank. Two Illuminati adds will spawn, one of which is tethered to a party member.A few seconds later, it will launch a massive amount of bombs that cover the entire area. These can be knocked away with attacks and should be moved away from the center with AoE attacks quickly before they explode. Afterwards the boss will stop and becomes targetable again.\r\n\r\nThis will repeat twice more at 50% and 25%, but in the latter case it will be followed up with a Big Bomb, which must be killed quickly. The boss will also try to ram into players at this point.",
+      "QuickStrategy":"Knock bombs away from the center to create a safe zone. Destroy big bomb."
+    }
+  ],
+  "ZoneID":362
+}

@@ -1,0 +1,23 @@
+﻿{
+  "Index":29,
+  "Name":"The Wanderer's Palace (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Frumious Koheel Ja",
+      "InDepthStrategy":"Burn boss and kill spears ASAP. Frumious Koheel Ja throws burning spears at the ground which cast a stacking debuff to the whole party if they are left alive.",
+      "QuickStrategy":"Kill spears ASAP and burn boss."
+    },
+    {
+      "Name":"Slithy Zoolol Ja",
+      "InDepthStrategy":"A shaman boss, who summons totems. If after a while no-one has claimed the totems, he will recall all of them and gain the buffs himself. Some of the totems grant buffs while some should be ignored. He will randomly hex a target and turns them into a toad for 12 seconds. He will also randomly cast Fire to the party members and while the damage is not too big, the totems can increase the damage.\r\n\r\nStanding in a totem gives you a buff or debuff. Clean as many of the flags as possible and don't stack fire resist down.\r\n\r\nThere will be Purple, Red, Blue and Green Totems. The effects of the various colors are random. One will give you attack up (DPS should pick it up), another will give you the toad debuff or cleanse the toad debuff (only pick it up if you are a toad), another will give you fire resist down and final one will give the player Heavy debuff.",
+      "QuickStrategy":"Soak totems to keep boss from buffing. One totem will cleanse Toad."
+    },
+    {
+      "Name":"Manxome Molaa Ja Ja",
+      "InDepthStrategy":"Stay very close to him to avoid a huge cone AoE. Move away for rotting gas. Person with rotting lung has to stay away from the party when Rotting Gas pops. The person with the lungs will also AoE around them.\r\n\r\nThe boss drops multiple banners on the ground during the fight. The banners' buff the boss' damage and armor, so the tank should just pull the boss away from the banner-range. Tank needs to keep moving the boss so the party doesn't have to fight in the banner AoE.\r\n\r\nDo not allow the boss to stand in purple circle of Sacred Standard, by kiting him around the outer edge of the boss room.\r\nHe will cast debuffs that makes healing worse and Doom random party members. Healers can remove doom by healing the target to full hp. Doom can also be negated by turning around as he casts the spell. Don't face the boss and it doesn't take effect.\r\n\r\nWhen Scared Idol spawns (the Idol with a tether to the boss), kill it ASAP!",
+      "QuickStrategy":"Kill idols and adds ASAP. Pull boss just outside of standards. Heal to full HP to remove Doom."
+    }
+  ],
+  "ZoneID":188
+}

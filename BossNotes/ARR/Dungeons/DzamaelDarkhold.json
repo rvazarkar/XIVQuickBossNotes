@@ -1,0 +1,23 @@
+﻿{
+  "Index":10,
+  "Name":"Dzemael Darkhold",
+  "Level":44,
+  "Bosses":[
+    {
+      "Name":"All-seeing Eye",
+      "InDepthStrategy":"All-seeing Eye is the first boss of Dzemael Darkhold. This Ahriman Boss has an ability called Eyes on Me. The ability does heavy damage to all players near it. Players with the buff Crystal Veil are immune to this damage. Players receive this buff when they are near the glowing crystals. The effect of the crystals fade over time. Players need to move to a new cluster of crystals when this occurs.\r\n\r\nThroughout the fight, All-seeing Eye will spawn adds. Avoid Adds AoE attacks and kill them asap.\r\n\r\nFight the All-seeing Eye near the crystal clusters to gain the Crystal Veil buff. When \"The power of the crystal begins to dim\" appears on screen, move to a new crystal cluster immediately. The All-seeing Eye is invulnerable to attack except when it is near a cluster of crystals.\r\nAbilities\r\n\r\nDread Gaze is a frontal cone AoE attack that inflicts the debuff Paralysis to all targets hit.\r\nCursed Gaze is a frontal cone AoE attack that inflicts the debuff Amnesia to all targets hit.\r\nEyes on Me is an ability that deals heavy damage all players near the All-seeing Eye. Players under the effect of Crystal Veil are immune to this damage.",
+      "QuickStrategy":"BOSS NEEDS TO BE INSIDE BLUE LIGHT. Stand near crystals to get the buff. Move between crystals when they fade. "
+    },
+    {
+      "Name":"Taulurd",
+      "InDepthStrategy":"Taulurd is the 2nd boss of Dzemael Darkhold. He has some powerful AoE cone attacks that should be avoided by all players.\r\n\r\nThroughout the fight he will summon adds named Deepvoid Slaves. These monsters are on top of an elevated platform. They will perform ranged attacks at the players. Be sure to spread out and avoid their Firewater attacks.\r\n\r\nAdds\r\n\r\nDeepvoid Slave has two types of attacks, Firewater and Boulderdash. Firewater is a circular AoE attack that targets one random player. Firewater can be avoided by moving out of the red circular ground indicator.\r\nAbilities\r\n\r\nStraight Punch is an instant melee attack that deals a small amount of damage.\r\nDouble Smash is a frontal AoE cone attack that deals a large amount of damage to targets hit.\r\nElbow Drop is a frontal AoE cone attack that deals more damage than Double Smash. Taulurd starts to use this when it is under half HP.",
+      "QuickStrategy":"Spread out and avoid AoE."
+    },
+    {
+      "Name":"Batraal",
+      "InDepthStrategy":"Batraal is the final boss of Dzemael Darkhold. This demon has an instant frontal AoE cone attack that deals heavy damage to all targets hit. Be sure to have only the tank face the boss. He has has a long ranged AoE column attack named Desolation that does extremely high damage and will instantly kill most players.\r\n\r\nThroughout the fight, a purple beam will appear between Batraal and a crystal. Batraal will mark a player with a crosshair and fires Desolation at the target. While Batraal is connected to the crystal, he is invulnerable. Be sure to kill the crystal as soon as possible while dodging Desolations. The player who was targeted should avoid aiming the Desolations at the rest of the party.\r\n\r\nAt around 30% HP and after the 3rd crystal is destroyed, Batraal will use Hellssend and become enraged. He will start using Desolation at will. Batraal will also spawn black pools under 3 players. Players within the pool will take damage over time. Move out of them immediately. The puddles will occasionally explode and deal high damage to anyone standing in them.\r\n\r\nAvoid Desolation at all cost, since it will instantly kill most players\r\nIf you are targeted, don't point Desolation at the rest of the party\r\nKill crystals when they appear.\r\nAbilities\r\n\r\nGrim Fate is an instant frontal attack that deals heavy damage to a single player.\r\nGrim Cleaver is an instant ranged attack that deals moderate amount of damage to a random player.\r\nGrim Halo is an instant attack that deals moderate amount of damage to all players around him.\r\nDesolation is an frontal AoE column that deals very heavy damage to all players caught within.",
+      "QuickStrategy":"Kill crystals when the boss is tethered to them."
+    }
+  ],
+  "ZoneID":171
+}

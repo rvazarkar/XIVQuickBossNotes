@@ -1,0 +1,23 @@
+﻿{
+  "Index":2,
+  "Name":"Copperbell Mines",
+  "Level":17,
+  "Bosses":[
+    {
+      "Name":"Kottos the Gigas",
+      "InDepthStrategy":"Before Kottos emerges, waves of spriggans appear and attack your party. AoE damage is ideal for dealing with spriggans.",
+      "QuickStrategy":"Kill spriggans, and then boss."
+    },
+    {
+      "Name":"Ichorous Ire",
+      "InDepthStrategy":"An Improved Blasting Device sits in the center of the boss room, next to the reddish magma stone. \r\n                During the fight, spriggans will periodically spawn into the room. They will drop blasting powder upon death. \r\n\r\n                Upon receiving blasting powder, one of the party members needs to interact with the Improved Blasting Device to spawn a Blasting Cap. \r\n                Before interacting with the Improved Blasting Device, Ichorous Ire should be lured to the magma stone. \r\n                The bomb monster will explode after sometime, dividing Ichorous Ire into 2, smaller blobs. Repeat previous steps and spawn 4 even smaller blobs. \r\n                Repeat the steps for the 3rd time to spawn 8 very small and vulnerable blobs. Kill the 8 blobs to finish Ichorous Ire off.\r\n\r\n                Do not let the Blasting Cap die.\r\n                Stay out of the Blasting Cap's AoE Self-destruct attack.",
+      "QuickStrategy":"Kill spriggans for powder, use blasting device, let blasting cap explode on boss."
+    },
+    {
+      "Name":"Gyges the Great",
+      "InDepthStrategy":"Just kill the boss.",
+      "QuickStrategy":"Full focus the boss and ignore adds."
+    }
+  ],
+  "ZoneID":161
+}

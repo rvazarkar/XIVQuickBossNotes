@@ -1,0 +1,23 @@
+﻿{
+  "Index":28,
+  "Name":"The Keeper of the Lake",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Einhander",
+      "InDepthStrategy":"The flying enemies will drop big and small canisters to the boss-area. Any partymember can hit the small canisters away from the boss and the rest of the party. The big canisters will stay still. The boss does AoE-breaths that ignite the canisters it hits and those canisters will explode after burning for a while. Small canisters do damage to nearby targets, but big canisters deal moderate damage to the whole party. Usually party can deal with 1 big canister exploding, but two can be fatal so you may want to have Einhander use his abilities to trigger the affect of each medium canister as it spawns and allow your healer to heal through the damage (DPS might be able to destroy the big canisters before they explode, not sure). Medium canister explosions will chain into each other, so if your room has more than one medium canister up as one is trigger, expect a wipe.\r\n\r\nOccasionally, Einhander will suck all of the canisters in the room towards him, the tank should either reposition Einhander away from the canisters or the DPS should quickly knock them away again.",
+      "QuickStrategy":"Knock small canisters away to create safe zone. Don't let the boss AoE canisters."
+    },
+    {
+      "Name":"Magitek Gunship",
+      "InDepthStrategy":"The boss will summon adds two times. First time he summons 4 cohorts and second time he summons a big robot. All of the adds should be killed. The Gunship has a Flamethrower attack that comes out in a cone infront of him and remains active for a few seconds, so tanks should be mindful not to move back into it too early. Sometimes the boss will target a random party member and fly to the edge of the arena. After a while, he will charge towards the party member, dropping fiery circular AoE's on the ground. Party member who is targeted should stay near the edge of the arena, so that the AoE doesn't cover the middle of the fight. As the fight continues, the boss will charge two party members in a row.",
+      "QuickStrategy":"Kill adds. Stay behind boss for flamethrower. When targetted, move to the edge of the arena."
+    },
+    {
+      "Name":"Midgardsormr",
+      "InDepthStrategy":"The boss itself is the big dragon head that does not need to be tanked. He does a couple of different AoE attacks. He will revive one of the two dragons at the time. Party should focus on killing these dragons as Midgardsormr is invulnerable during that time. These dragons also have their own AoE attacks as well as breath attacks so DPS should be mindful not to stand in front of the dragons. The first dragon that spawns has to be tanked far away from Midgardsomr, while the second dragon has to be tanked close to Midgardsomr. After the first dragon is revived, Midgardsormr will begin using a new AoE attack that alternates between approximately half of the room closest to Midgarsormr and later the further half. Tanks should try to position the dragons on either the east or west point of the room to make dodging these attacks easier. At some point an add will spawn who carries a shield-generator, this add will look similar to the dragons which drop the cannisters in the Einhander fight. DPS should focus these instantly, since the Midgardsormr will charge up an insta-kill AoE at that time. The Shield generator needs to be interacted with in order for the shield to become available and all members of the party must be inside the bubble to avoid being instantly killed. Repeat with the second dragon and second shield-generator. In this second phase however, Midgarsormr gains a new AoE ability which begins as a small circle which will expand outward two times, taking up a large portion of the room. Each time a dragon is killed, Midgarsormr will lose around 45% of his health. After both dragons are killed, quickly DPS any of his remaining health.",
+      "QuickStrategy":"Boss is invuln while adds are up. Adds have breath attacks, so stay behind them.\r\nFirst add needs to be tanked away from boss. Second needs to be tanked near boss.\r\nShield generator add needs to be killed as fast as possible."
+    }
+  ],
+  "ZoneID":150
+}

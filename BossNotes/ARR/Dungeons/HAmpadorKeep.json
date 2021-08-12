@@ -1,0 +1,23 @@
+﻿{
+  "Index":30,
+  "Name":"Ampador Keep (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Anchag",
+      "InDepthStrategy":"The key components of this fight are the four statues in the room. When a red marker appears above your head, run behind a statue immediately. If you do not, he will spawn a tether that deals massive DoT and applies a debuff. Most characters, even tanks, will be killed if they take full damage from this attack. The statue will absorb the damage so long as you are hiding behind it.\r\n\r\nAnchag should be tanked in the middle of the room, or at least away from these statues. He will do several AoEs that can destroy the statues prematurely, which you do not want. Similarly, ranged DPS and healers should remain near, but not too near the statues. He will target certain players at random for an AoE, and you do not want a statue to be caught up in that attack by proximity. Standing directly between two statues should be safe.\r\n\r\nIf he targets you for a rush attack, in which he charges at you and knocks you back (it will be a long, rectangular telegraph), stay away from the statues, as this attack will immediately destroy them. Instead, move closer to the boss, which reduces the damage dealt. Other players should avoid the telegraphed area.",
+      "QuickStrategy":"Tank the boss in the middle of the room. Stand behind a statue when you get a marker.\r\nStand slightly away from statues to avoid damaging them."
+    },
+    {
+      "Name":"Boogyman",
+      "InDepthStrategy":"During the fight Boogyman will become partially invisible and untargetable. Kill the Luminescence orb and grab the Irradiance buff by standing in the area around it. Run to the invisible Boogyman to reveal him when the buff wears off with an illuminating AOE explosion that knocks him back.\r\n\r\nAdds will appear as the dead bodies on the ground are reanimated. They are called Bloodmoon Sacrifice. The first set will spawn at around 55%. The next set will spawn at around 30% when Boogyman splits into two.\r\n\r\nWhen his HP is low, Boogyman will split into two and both forms will become invisible. Players need to split up with the Irradiance buff to reveal both of them.",
+      "QuickStrategy":"Kill the Luminescence when the boss goes invisible. Take the buff to the boss to reveal.\r\nKill big adds ASAP."
+    },
+    {
+      "Name":"Ferdiad",
+      "InDepthStrategy":"Tank should pull to the edge like you would with Titan. This way it is clear when Ferdiad is moving to the center for his circular AoE mechanic.\r\n\r\nKill all adds ASAP, especially the add(s) (Wicked Jester) with a tether to Ferdiad. Ferdiad will channel a circular AoE that gradually becomes larger. You need to kill the tethered adds so that the circle will stop growing and not consume the whole arena. If you fail, his attack will deal massive damage to all players and likely cause a wipe. Tanks and healers should also help down these adds, as Ferdiad will not auto-attack at this time.\r\n\r\nFerdiad will also entrap players in slime adds (Suppuration), which will prevent them from moving, and channel a cleave attack that deals heavy damage. Those not trapped should free this player immediately, who can also (and should) target and DPS the add as well (similar to the bubbles in Brayflox Longstop). Some of the more armored DPS and the tank can survive the hit, but it's best not to chance it.\r\n\r\nIn the latter half of the fight, there will be blue, spinning scythes that spawn on top of a player. Avoid this once it appears, as there will be no telegraph for it. As the fight goes on, he will summon more, as well as do criss-crossing lines of AoEs that will stretch across the stage (players will find these similar to the Manor Jester in Haukke Manor (Hard)).\r\n\r\nIn the last leg of the fight, he will combine his two possible adds, entrapping two players with slime adds (who cannot free themselves this time) while tethering itself to another single, stronger add. Depending on who was entrapped, you will need to make decision quickly. In most cases, you will want to down the tethered add immediately, as a casted AoE at full peak will cause a wipe anyway. However, if the two DPS are caught in the Suppurations, you may not have enough DPS to down the tethered add in time, in which case you should free them first (as the slime's health is much lower).\r\n\r\nDon't be afraid to use a DPS Limit Break to kill the tethered add if you're rapidly running out of room. This attack should be the last big surprise of the fight.",
+      "QuickStrategy":"Kill adds ASAP, especially slimes, and move out of AoEs."
+    }
+  ],
+  "ZoneID":189
+}

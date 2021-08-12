@@ -1,0 +1,23 @@
+﻿{
+  "Index":20,
+  "Name":"Halatali (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Pyracmon",
+      "InDepthStrategy":"The fight is similar to The Aurum Vale's Coincounter, with all basic Cyclops abilities (move away when he's casting something with two hands on his mace, run through him when he's casting something with only one hand on his mace). He will use Eye of the Beholder. Avoid his lasers. Throughout the fight, a mechanical Mammet will start marching aimlessly around the room with a tether attaching it to a lever at the back of the room. Interacting with the lever will cause the Mammet to stop and start radiating a blue aura that, after a short pause, will grant the Manawall buff to anyone standing inside it before it fades away about 10 seconds later. The trick is to wait until the cyclops starts charging his 1000 Tonze Swing attack, which will cover the entire arena, and then activate the lever and get the buff before his charge bar fills. The Manawall effect will negate his swing attack, which would likely be lethal otherwise.",
+      "QuickStrategy":"When the room glows, hit the button and stand in the shield."
+    },
+    {
+      "Name":"Catoblepas",
+      "InDepthStrategy":"The boss room has four pedestals placed in a square around the edges. Once the battle begins, each pedestal will light up with a Tainted Eye activate-able lever. They're important, make sure you assign one to each party member. Throughout the fight, he will periodically use Demonic Eye, which has a fairly long cast timer. When he starts to cast Demon Eye, each party member has to activate the Tainted Eye to gain a buff called Gloam that prevents you from taking damage.\r\n\r\nCatoblepas will also make his eye target-able from time to time. This is a DPS check. It starts out blue, then turns yellow, and then red. When the eye turns red the boss starts stacking damage taken debuffs on the entire party. Lastly, this boss has some rough cone AOEs. It can turn toward a player and cover a good 1/3rd of the arena in a massive cone AOE that can be somewhat hard to dodge if you're directly in the center of it.",
+      "QuickStrategy":"Assign one person to each pedestal. Click the pedestal when the boss casts \"Demon Eye\""
+    },
+    {
+      "Name":"Mumuepo the Beholden",
+      "InDepthStrategy":"The final boss is a series of battles. It starts with four combatants that will try to break apart your party. The Lancer seems to have no aggro table and will target someone randomly (he chose me as a Bard on our run), so just kite him around at first. There's a healer which obviously should die first. The Bard should probably die third, followed by the Gladiator. Keep in mind that these characters appear to have level 50 abilities appropriate to their job, so expect the Gladiator to be using Spirits Within and such. Overall, this section was pretty easy.\r\n\r\nThe second phase starts after the trash people are killed off. A red demon and a little Lalafell named Mumepo the Beholden show up. Tank should pick up both of them. Kill Mumoepo first because he casts more and chains players in place before starting a massive AOE with a slow cast bar (Thal's Fury or somesuch). The remaining unchained person needs to save them by finding the \"Thal's Scepter\" interactive lever in the AoE to unchain their party members before the cast finishes so the chained players can escape. The damage is pretty severe if this fails (it was doing upwards of 1/2 to 3/4 of our WHM health bar). Once Mumoepo goes down, the rest of the fight is unremarkable. The red demon thing has a rear tail swipe, so keep that in mind if you're melee, and ranged will have to deal with a targeted AoE circle randomly at their location.",
+      "QuickStrategy":"Order is Healer > Lancer > Archer > Gladiator > Lala.\r\nKill mage while tank picks up big add. Use Scepter to free frozen people."
+    }
+  ],
+  "ZoneID":360
+}

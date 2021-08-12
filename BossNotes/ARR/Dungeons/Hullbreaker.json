@@ -1,0 +1,23 @@
+﻿{
+  "Index":22,
+  "Name":"Hullbreaker Isle",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Sasquatch",
+      "InDepthStrategy":"Kill adds then the boss. Every now and then Sasquatch will get hungry and repeatedly pound his chest. When this occurs, players should activate one of the banana trees and allow the boss to eat the banana dropped from the tree. The bananas calm him down, stopping his debuffs and AoE attacks for a while. Throughout the fight, monkey adds will spawn. Kill these adds and do not let them eat the bananas.\r\n\r\nWhen the boss pounds his chest, activate the Bananas Tree and spawn banana. Do not let the adds go near the spawned bananas.",
+      "QuickStrategy":"Kill adds then boss. When boss is angry, activate a banana tree. Dont let adds get bananas."
+    },
+    {
+      "Name":"Sjoorm",
+      "InDepthStrategy":"This is a fairly straight forward fight. Occasionally bubbles will spawn, do not run into or contact the bubbles until the boss submerges underground for the second time and starts to cast a blue AoE wave that covers the entire boss room. By running into the bubbles, the players will be shielded from the boss' AoE damage. Players outside of the bubbles will take massive amount of damage.\r\n\r\nUse the bubbles to avoid the boss' room-wide AoE. Otherwise do not touch the bubbles.",
+      "QuickStrategy":"Run into bubbles when the boss submerges"
+    },
+    {
+      "Name":"Kraken",
+      "InDepthStrategy":"In the Kraken fight, players will kill 10 of its arms, two per platform. The boss room is divided into various platforms. Players need to use the water sprouts around the platforms to move to among them. Every now and then players will get a green pulsating icon over their heads. This indicates that a tornado is about to spawn on top of you. The player with the green icon should move to another platform immediately, then move back to the previous platform when the tornado drops, because the tornadoes act as time bombs. They will do enormous amounts of damage after a short time. Note that every time you jump you get a stacking debuff that increases the damage you will take.\r\n\r\nWhen a green icon appears over a players head, said player need to jump to a different platform, wait for the tornado to drop, then jump back.",
+      "QuickStrategy":"When you get a marker, go to another platform and drop it there."
+    }
+  ],
+  "ZoneID":361
+}

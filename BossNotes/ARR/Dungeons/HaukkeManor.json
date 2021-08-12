@@ -1,0 +1,23 @@
+﻿{
+  "Index":5,
+  "Name":"Haukke Manor",
+  "Level":28,
+  "Bosses":[
+    {
+      "Name":"Manor Claviger",
+      "InDepthStrategy":"Manor Claviger has a melee cleaver attack. The attack can do massive physical damage to lightly armored party members. Make sure your tanks have her attention. Claviger can cast Void Fire II, a ranged AoE spell. Throughout the fight, a large red circle will appear underneath the feet of party members. Move out of the circle as soon as possible.",
+      "QuickStrategy":"Avoid AoE, kill the boss"
+    },
+    {
+      "Name":"Manor Jester and Manor Steward",
+      "InDepthStrategy":"Manor Jester and Manor Steward are two bosses located in the same room. Jester is the spell caster and Steward is the tank. Players should kill Jester first because it deals more damage and has less HP. Stewart is tankier and has an interrupt-able AoE attack.",
+      "QuickStrategy":"Kill Jester first and then Steward"
+    },
+    {
+      "Name":"Lady Amandine",
+      "InDepthStrategy":"In the boss room, there are 4 lanterns. During the fight, the lanterns will periodically light up, doing AoE damage to the entire party. Players should turn off the lanterns as soon as possible. Lady Amandine will cast Void Fire and Void Thunder. Interrupt her spell cast if possible. Throughout the fight, She will summon Bombs into the room. Kill the bombs asap. If you leave them alone, they will explode after a while. Be sure to get out of the large red circle when the bomb explodes. When Lady Amandine is low on health, she will summon a group of adds and become invincible for a short time. AoE the adds down, use limit breaks if needed.",
+      "QuickStrategy":"Click lanterns at edge of room to turn them off. Kill bomb adds ASAP. Don't stand in AoE."
+    }
+  ],
+  "ZoneID":166
+}

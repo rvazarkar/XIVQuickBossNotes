@@ -1,0 +1,33 @@
+﻿{
+  "Index":12,
+  "Name":"Castrum Meridianum",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"The Black Eft",
+      "InDepthStrategy":"One tank should tank The Black Eft while another tank should get the attention of the adds spawning at the doors. Players should avoid the heavy hitting Magitek Cannon ability.\r\n\r\nAbilities\r\n\r\nPhoton Stream is an instant, frontal, ranged attack that does small to moderate amount of damage.\r\nMagitek Cannon is a large circular AoE attack that targets a random player. It will do heavy damage to all players hit.\r\nAdds\r\n\r\nImperial War Hound has a frontal column AoE ability that should be avoided.\r\n8th Cohort Laquearius has a frontal cone AoE ability that should be avoided.\r\nImperial Signifer is an add with spell casting abilities",
+      "QuickStrategy":"Off-tank should grab adds at the door."
+    },
+    {
+      "Name":"Magitek Vanguard F-I",
+      "InDepthStrategy":"One tank should tank Magitek Vanguard F-I while the second tank grabs adds that spawn at the doors. Non-tank players should avoid the front of the boss.\r\n\r\nAbilities\r\n\r\nCermet Drill is an instant, frontal melee attack that deals a moderate amount of damage.\r\nDrill Cannons is a frontal column, AoE attack that deals a heavy amount of damage to all players hit.\r\nOvercharge is a frontal cone AoE attack that deals heavy amount of damage and inflicts the debuff Paralysis to all players hit.\r\nAdds\r\n\r\n8th Cohort Signifer has a fire spell that should be avoided by moving out of the ground indicator.\r\n8th Cohort Sagittarius has ranged attacks that apply DoTs to its targets.\r\nMagitek Reaper has a large circular AoE ability that deals heavy damage to all targets get. Move out of the ground indicator immediately.",
+      "QuickStrategy":"Non-tanks should be behind the boss. Off-tank should pick up adds."
+    },
+    {
+      "Name":"Magitek Colossus Rubricatus",
+      "InDepthStrategy":"One tank should tank Magitek Colossus Rubricatus while the other tank tank the adds that spawn. Players should spread out to lessen the damage taken from Magitek Ray. Players should also avoid standing in front of the Magitek Vanguard H-1 adds.\r\n\r\nAbilities\r\n\r\nGrand Sword is an instant frontal cleave attack that deals a moderate amount of damage to all targets hit.\r\nExhaust is a frontal column AoE attack that does a moderate amount of damage to all targets hit.\r\nMagitek Ray is an instant attack that randomly targets a player and deals a moderate amount of damage to the player and nearby players.\r\nMagitek Field gives Magitek Colossus Rubricatus the buff Vulnerability Down, massively reducing the damage it takes. This can be bypassed by stunning the boss at the right time (around 80% HP, then again at around 60%), which will make the fight significantly faster. Otherwise, it will last until Cid destroys the untargetable Magitek Death Claw adds tethered to it.\r\nAdds\r\n\r\n8th Cohort Laquearius has a frontal AoE cone attack that moderately damages all targets hit.\r\n8th Cohort Medicus has the Cure spell that heals its ally.\r\nMagitek Vanguard H-1 has a frontal cone and column AoE attacks that deal heavy damage to all targets hit.",
+      "QuickStrategy":"If possible, stun the boss at 80% and at 60% to prevent the buff."
+    },
+    {
+      "Name":"Livia sas Junius (Phase 1)",
+      "InDepthStrategy":"In this fight, players have to defeat Livia sas Junius in her Magitek Armor. In the boss room, there are Mark XLIII Artillery Cannons with Magitek Missle piles near them. When players click on these cannons, Magitek Loaders will load the cannons with missiles. Players can fire the cannons to do 3000 damage to Livia. One of the tanks should fire the cannons because the act draws the aggro of the boss. Tanks should tank Livia in the center of the room, away from the cannons, because Livia's cleave attacks could damage and destroy them.\r\nThe cannons are controlled by a skill bar change. Click on the ammo pile to cause the claw to load the cannon nearby, then click on the cannon, and use the ability on the temporary skill bar to aim the cannon at Livia and fire it.\r\n\r\nShe will spawn adds throughout the fight. One of the tanks should take their aggro and prevent them from destroying the cannons.\r\nAbilities\r\nPhoton Stream is an instant frontal attack that deals a small amount of damage\r\nMagitek Cannon is a large circular AoE attack that targets a random player. It deals heavy damage to all players caught in the AoE.",
+      "QuickStrategy":"Load the cannons with the loader, shoot the boss with the cannons.\r\nIf you get aggro, MOVE TO TO MIDDLE AND TANK. Tank's cannot hold aggro."
+    },
+    {
+      "Name":"Livia sas Junius (Phase 2)",
+      "InDepthStrategy":"Livia sas Junius is now on foot, stripped of her Magitek Armor. She possesses a different set of abilities with greater damage potentials. Players should dodge her Stunning Sweep, circular AoE attack, and Angry Salamander, frontal column AoE attack.\r\nAt 3/4 and half HP, Livia will spawn a group of 7th Cohort Secutor Adds. They will target all target one player. That player should stay still so rest of the party members can AoE down the adds. At quarter HP, Livia will spawn a Magitek Colossus along with a group of 7th Cohort Secutors. One of the tanks should take the aggro of the Colossus while the rest of the group AoE down the Secutors and burst down the boss.\r\nAbilities\r\nAglaia Bite is an instant melee attack that deals a moderate amount of damage.\r\nDelta Trance is an instant melee attack that hits a target 5 times rapidly.\r\nRoundhouse is an instant attack that deals a small amount of damage to all players nearby.\r\nStunning Sweep is a circular AoE attack deals a moderate amount of damage and inflicts the debuff Paralysis to all players hit.\r\nAngry Salamander is a frontal column AoE attack that deals a moderate amount of damage to all targets hit.\r\nAglaia Climb is a frontal attack that hits targets very rapidly.\r\nOrder to Attack summons 7th Cohort Secutors.\r\nAdds\r\n7th Cohort Secutor is a melee damage dealer summoned by Livia in groups.\r\nMagitek Colossus has a frontal column AoE attack that deals moderate amount of damage to all targets caught. It also has an instant frontal cleave attack that should be avoided. Players should also spread out to lessen Magitek Ray damage.",
+      "QuickStrategy":"AoE down adds, kill da boss."
+    }
+  ],
+  "ZoneID":217
+}

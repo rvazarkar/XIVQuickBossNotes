@@ -1,0 +1,28 @@
+﻿{
+  "Index":16,
+  "Name":"Pharos Sirus",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Symond the Unsinkable",
+      "InDepthStrategy":"Abilities in this encounter add a stack of Corrupting Crystal to each player. At three stacks, it will explode, dealing damage to all nearby players.\r\n\r\nStay spread out, avoid the long, narrow column attack, and kill the hounds as quickly as possible to limit stacks.\r\n\r\nWhen the large circles appear, quickly move to one side of the room. It can be beneficial for the ranged to go to one side, while the melee go to the other to prevent an explosion from killing everyone. These circles will leave a persistent yellow pool which adds more stacks of the debuff.\r\n\r\nIf you reach 3 stacks of the debuff, run away from everyone. Since you are at 3 stacks, you can run into the yellow pool if you have to.\r\n\r\nAround 15% HP, either use the melee LB to end the boss, or use the caster LB to kill the 3-4 hounds that spawn.",
+      "QuickStrategy":"Kill adds ASAP. If you reach 3 stacks, run away from everyone."
+    },
+    {
+      "Name":"Zu",
+      "InDepthStrategy":"Tank: Face the boss away from the group.\r\n\r\nHealer: Be prepared for a lot of AoE healing.\r\n\r\nThere are two types of eggs, spotted and plain. The plain eggs spawn an add that does a minor AoE while the spotted eggs spawn an add that channels onto a player. Ignore the eggs until the emote \"The egg is threatening to hatch,\" which will cause 2-3 eggs to start to glow purple. Only kill one of them. If one of them is a spotted egg, kill it. If more than one is killed, Zu will bodyslam a party member, which can easily kill someone.\r\n\r\nWhen Zu flies into the air, kill any adds that are alive. While in the air, Zu will place ground effects under the tank.",
+      "QuickStrategy":"Kill birds, not eggs."
+    },
+    {
+      "Name":"Tyrant",
+      "InDepthStrategy":"Tank: Face the boss away from the group and pick up the Sailor adds.\r\n\r\nMove out of the circular AoE that appears under Tyrant during Bombination.\r\n\r\nThe boss seems to have quite low HP. Either AoE the adds with the boss or just burn the boss down.",
+      "QuickStrategy":"Just burn the boss"
+    },
+    {
+      "Name":"Siren",
+      "InDepthStrategy":"Tank: Position the boss near the center of the room and be ready to pick up the Zombie Storm Privates. Kite the Zombie Storm Sergeants.\r\n\r\nHealer: A debuff, Siren Song (Ghost Face Icon), will be placed on random party members. You have 12 seconds to heal them to full HP or they will become charmed for a period of time. You should also remove the bleed debuff, which is applied to the tank periodically.\r\n\r\nAlong with Storm Privates, Zombie Storm Sergeants will also spawn. These will slowly move towards a target and should be kited while the DPS kill them. If they reach their target, they will stun them. When Siren vanishes, she will either appear in the center of the room or on an edge. If she is in the middle, stack on top of her to avoid getting hit with an AoE Siren Song debuff. If she is on an edge, move out from in front of her to avoid a charge.\r\n\r\nInterrupt Lunatic Voice to avoid an AoE healing reduction debuff. It is remove it with Esuna/Leeches if it does go off.",
+      "QuickStrategy":"Heal party members that get \"Siren Song\" to full to remove the debuff.\r\nKill Sergeants ASAP. When boss vanishes, run to middle."
+    }
+  ],
+  "ZoneID":160
+}

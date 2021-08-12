@@ -1,0 +1,28 @@
+﻿{
+  "Index":3,
+  "Name":"Halatali",
+  "Level":20,
+  "Bosses":[
+    {
+      "Name":"Firemane",
+      "InDepthStrategy":"Firemane is a fire elemental that summons wisps as adds. The wisps travel toward the fire pit in the center of the boss room. If they reach the pit, they will explode and deal damage to everyone in your party. \r\n                Be sure to burst Firemane down or kill the wisps before they can reach the pit.",
+      "QuickStrategy":"Burst firemane down or kill wisps to prevent mass AoE damage."
+    },
+    {
+      "Name":"Thunderclap Guivre",
+      "InDepthStrategy":"Thunderclap Guivre is a drake with that can use Levinshower, a frontal AoE cone attack, and Electrify, a non-self-centered AoE attack. During this boss fight, Thunderclap Guivre will become invulnerable twice. He spawns lightning elementals while invulnerable. Kill the elementals and the drake will become vulnerable again. Occasionally the water will glow purple; any players standing in the water will take damage over time.\r\n\r\nIt is in a shallow pool of water. Those in the water will take significantly more damage from the lightning attacks, so it is advised to fight on either of the slopes.\r\nDuring both add phases, it will run back into the pool to spawn the elementals which will approach the party.",
+      "QuickStrategy":"Kill elementals when they spawn, fight the boss at the stairs so you're not in the water."
+    },
+    {
+      "Name":"Pit Peiste (Optional)",
+      "InDepthStrategy":"Kill the boss",
+      "QuickStrategy":"Kill the boss"
+    },
+    {
+      "Name":"Tangata",
+      "InDepthStrategy":"He has a devastating frontal AoE cone attack. During the fight, Tangata will periodically become invulnerable in a pool of lava. While invulnerable, he summons wisps and fire sprites. Wisps will travel toward Tangata and explode if they reach him. Fire sprites will attack your party members. Kill the adds and Tangata will become vulnerable again.",
+      "QuickStrategy":"Avoid AoE. Kill adds when boss is invulnerable."
+    }
+  ],
+  "ZoneID":162
+}

@@ -1,0 +1,23 @@
+﻿{
+  "Index":27,
+  "Name":"The Sunken Temple of Qarn (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Damaged Adjudicator",
+      "InDepthStrategy":"Do not attack the boss itself, attack the body part with the core. The core is indicated by a bright, red orb. Once the body part with the core is destroyed, the boss will break apart and adds will spawn. Kill the adds and repeat the process til the boss is dead.\r\n\r\nMove out of the sand whirlpools that spawn on the ground. The whirlpools slowly pull you under the floor until you die.\r\n\r\nOccasionally the boss will target a random player and spawn a sphere of sand. The sphere generates an circular AoE sand attack, it is advised that you move towards the edge of the battlefield if targeted.",
+      "QuickStrategy":"Kill the cores, not the boss. Move out of whirlpools."
+    },
+    {
+      "Name":"Sabotender Emperatriz",
+      "InDepthStrategy":"Kill the adds throughout the fight. During the fight the boss will attempt to cast 100'000 needles when her health drops low enough. This must be interrupted by dealing enough damage to her, as it will hit everyone for 100'000 damage. On the third and last time a Sabotender Guardia will spawn and cast Cover on her and must be killed first.",
+      "QuickStrategy":"Kill adds ASAP"
+    },
+    {
+      "Name":"Vicegerent to the Warden",
+      "InDepthStrategy":"Do not get hit by the mummy walls. Everytime you are hit by the Mummy wall, you gain 1 stack of Curse of the Mummy. When you reach 4 stacks, you will run to a corner of the room, enter a sarcophagus and become mummified. As a mummy you lose control of your character and run around aimlessly in the center of the boss room for a short time. Mummified players can also stack the curse on other players if they run into them.\r\n\r\nAs the fight drags on, the boss will target a non-tank member of the party for a sword strike. Players can avoid the attack by running behind the boss while he is casting.\r\n\r\nTanks should have cooldowns ready in case healer gets mummified.\r\nWhen the boss tethers a player, the player will receive stacks of Curse of the Mummy over time. The boss can be stunned to stop this.",
+      "QuickStrategy":"Avoid mummy walls, stand behind the boss to avoid sword strike. Stun boss when he tethers."
+    }
+  ],
+  "ZoneID":367
+}

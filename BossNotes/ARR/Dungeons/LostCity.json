@@ -1,0 +1,23 @@
+﻿{
+  "Index":19,
+  "Name":"The Lost City of Ampador",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Decaying Gourmand",
+      "InDepthStrategy":"The Decaying Gourmand will inflict a random player with Prey. The person targeted with prey will get sucked in and eaten by the Decaying Gourmand. When they do, attack the Voracious Maw to break out the person eaten. Decaying Gourmand will also drop AoE circles on the ground that remain there, inflicting damage over time to whoever stays in it.",
+      "QuickStrategy":"Kill the \"Voracious Jaw\" ASAP when someone gets eaten."
+    },
+    {
+      "Name":"Arioch",
+      "InDepthStrategy":"At first there will be a single Ranch Wamura add with the actual boss, Arioch, flying around. Kill it and have the tank stand in front of it when it dies. Anyone that stands in front of the Ranch Wamura when it dies will get a stacking debuff vulnerability down called Scale Flakes. The boss attacks whoever has the highest stacks of Scale Flakes, so make sure the tank is the one that gets the debuff. When the Scale Flakes debuff is running out, pull another Ranch Wamura add and kill it facing the tank. If the debuff runs out Arioch will start flying overhead, regenerating massive amounts of hp.",
+      "QuickStrategy":"Kill adds to get a stacking debuff. The boss will only target the person with the highest stacks. Tank should kill adds."
+    },
+    {
+      "Name":"Diabolos",
+      "InDepthStrategy":"There are 8 doors divided into pairs of 2 in the boss room. They have four symbols, the blue goobbue, red demon, the light green dragon-like, and the dark green moth. Each symbol will appear above 2 doors. When you open both doors of the same symbol, you will get sucked into a void and you become immune to attacks for a short period of time. When Diabolos casts Ruinous Omen, you need to activate a matching pair of doors or the party will wipe. If you activate doors of the wrong symbol, they will close and there will be no effect.\r\n\r\nThe symbols will only appear at the start of the fight, and during a successful door opening. At the beginning of the fight, a responsible party member should select a symbol and remember or waymark both doors of the chosen symbol. Then, the party member should open one of these doors. When you get to about 60% of Diabolos health, he will go to the center of the arena and start to cast Ruinous Omen, once it gets about halfway through the cast bar have the party member open his matching door. If timed right you will get into the void as soon as he casts Ruinous Omen and you won't take any damage. If your damage is halfway decent you should only see Ruinous Omen once or twice.\r\n\r\nAvoid the orbs when they appear, they apply heavy and deal more damage as the debuff gets stacked on the party.",
+      "QuickStrategy":"Move away if you get the marker. \r\nMark doors with matching symbols. Open first door immediately, and second door when the boss casts \"Ruinous Omen\""
+    }
+  ],
+  "ZoneID":363
+}
