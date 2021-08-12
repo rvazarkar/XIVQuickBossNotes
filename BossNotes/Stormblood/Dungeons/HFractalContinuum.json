@@ -1,0 +1,23 @@
+﻿{
+  "Index": 9,
+  "Name": "The Fractal Continuum (Hard)",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Motherbit",
+      "InDepthStrategy": "Electrochemical Transfer: Bits reactivate and form a pattern - Attacks tank and throws out linear AoEs. Move out of the damage zones when they appear.\r\nAllagan Gravity: Circle AoE - Leaves behind a puddle that will pull you in if too close.\r\nCitadel Buster: The bits form a line in the center of the arena, facing one direction. Quickly get behind them to avoid massive damage and knockback.",
+      "QuickStrategy": "When bits form a line, get behind them."
+    },
+    {
+      "Name": "The Ultima Warrior",
+      "InDepthStrategy": "Atherplasm Tankbuster + Damage around Tank.\r\nCitadel Buster Targets random player.\r\nCeruleum Vent Group Wide Damage \u0026 Knockback.\r\nPrimordial Aether Channels power from a Primal Statue and gains special abilities.\r\nIf Zurvan Players affected by fire or ice must stand in appropriate marker. ex Fire \u003e Fire Ice \u003e Ice\r\nMass Aetheroplasm Stack Damage on Group.\r\nIf Sophia Stack Black \u0026 White markers together.",
+      "QuickStrategy": "\"Zurvan\" \u003d run to the matching circle. \"Sephirot\" \u003d spread green markers far apart. \"Sophia\" \u003d stack with player of opposite color. \r\nStack for Mass Aetheroplasm."
+    },
+    {
+      "Name": "The Ultima Beast",
+      "InDepthStrategy": "Death Spin: Hits anyone in Melee Range - Keep Clear.\r\nAether Bend: Hits anyone not inside his Hitbox - Stand on Boss.\r\nFlare Star: Drops Fire Puddles - Proximity Based Damage.\r\nAllagan Gravity: Spread out from others and move away from gravity puddles after.\r\nLight Pillar: Expanding AoE from center - Dodge as it moves across platform.\r\nForborn Beast: Adds Damage Up buffs on Boss.\r\nAllagen Flare: Targets Tank - Move away to reduce damage.\r\nEnrage: Slow Demi Ulta - Boss must be killed before cast goes off",
+      "QuickStrategy": "Raised arm \u003d run away, stand up \u003d move to boss. Spread for purple markers. Spread for \"Allagan Flare\""
+    }
+  ],
+  "ZoneID": 743
+}

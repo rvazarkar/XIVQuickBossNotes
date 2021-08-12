@@ -1,0 +1,13 @@
+﻿{
+  "Index":11,
+  "Name":"The Bowl of Embers (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Ifrit",
+      "InDepthStrategy":"Interrupt \"Eruption\" casts, nails MUST die before cast finishes or its a wipe.",
+      "QuickStrategy":"Interrupt \"Eruption\" casts, nails MUST die before cast finishes or its a wipe."
+    }
+  ],
+  "ZoneID":292
+}

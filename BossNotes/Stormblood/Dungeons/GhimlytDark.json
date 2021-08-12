@@ -1,0 +1,23 @@
+﻿{
+  "Index": 13,
+  "Name": "The Ghimlyt Dark",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Mark III-B Magitek Colossus",
+      "InDepthStrategy": "Jarring Blow: Tankbuster that hits a wide arc in front of the boss.\r\nCeruleum Vent: Moderate damage on the entire party.\r\nMagitek Ray: Stack marker on one player.\r\nExhaust: Line attack in the direction of a random player.\r\nWild Fire Beam: A targeted AoE on each player, spread to avoid overlapping damage.\r\nMagitek Slash: The Colossus slams its sword down, dealing damage in a cone area and leaving behind a fiery puddle that inflicts Burns while standing in it. The Colossus will rotate and slam down repeatedly until it has covered the entire arena. The first puddle will dissipate as the Colossus turns to make the final strike.",
+      "QuickStrategy": "Stack for \"Magitek Ray\". Stay in front of the AoE for \"Magitek Slash\"."
+    },
+    {
+      "Name": "Prometheus",
+      "InDepthStrategy": "Nitrospin: Moderate damage on the entire party. Prometheus always casts this ability first, surrounding the arena in fire.\r\nUnbreakable Cermet Drill: Tankbuster.\r\nNeedle Gun: 90 degree Cone directly in front of the boss.\r\nOil Shower: 270 degree Cone directly behind the boss, hitting everywhere Needle Gun doesn\u0027t.\r\nAfter a few attacks, Prometheus will burrow underground and a section of the wall surrounding the arena will glow red. After a delay, a fiery blast will launch from the red area to the opposite wall, dealing damage. The attack lingers, continuing to deal damage for a few seconds. The second time Prometheus uses this attack, it will first cast Freezing Missile.\r\nFreezing Missile: Four proximity AoEs that hit at each cardinal direction.",
+      "QuickStrategy": "When boss burrows, move out of the way of the red wall."
+    },
+    {
+      "Name": "Annia and Julia quo Soranus",
+      "InDepthStrategy": "As the battle begins, whichever sister was attacked first will remain in the arena, while the other will support from outside the arena, untargetable. Annia utilizes a fist weapon, while Julia has a gunblade.\r\n\r\nDelta Trance: Annia\u0027s tankbuster.\r\nInnocence: Julia\u0027s tankbuster.\r\nArtificial Plasma: Used by both sisters. Deals moderate damage to the entire party.\r\nCommence Air Strike: Used by Julia. Eight Ceruleum tanks will drop from the sky, four on the outer edge, and four inside. Occasionally, Julia will use Roundhouse to knock the tanks around, with the added effect of dealing damage to and knocking back players in melee range. Regardless of if she uses Roundhouse or not, she will then follow up with Heirsbane targeting a tank to detonate it, dealing damage in a large area around the tank and causing all other tanks in the radius to also detonate.\r\nOrder to Bombard: Used by Annia. Three large AoEs will cover the arena, leaving small safe spots at the edge of the arena, while Julia and Annia perform Crossbones and Angry Salamander\r\nCrossbones: Used by Julia. Carving four \"X\"es into the air that travel across the arena to deal damage. When used as part of Order to Bombard, each X unerringly targets a player and inflicts knockback when it hits.\r\nHeirsbane: Used by Julia. Marks a random player with a crosshair, then deals moderate damage to the target a short time after.\r\nAngry Salamander: Used by Annia. A Line attack in the direction of a random player.\r\nStunning Sweep: Used by Annia. She jumps to a random player, then begins casting. Deals damage to players in melee range.\r\nThe Order: Used by Julia. Julia moves to the center of the arena and surrounds herself with four Crossbones projectiles. Ground AoEs will appear beneath each player, while the Crossbones launch in a cross pattern.\r\nAfter the first sister is defeated, the two will perform Crosshatch, launching a Crossbones projectile back and forth across the arena, their path denoted by very narrow lines appearing. After this attack, the two will tag out and the fight will continue.\r\nWhen the other sister is defeated, they will perform Crosshatch again with the addition of Covering Fire, an AoE targeting each player that requires the party spread out to avoid overlap.\r\nOnce the second cast of Crosshatch is complete, the two will regain 20% of their HP and begin casting Imperial Authority at the center of the arena. This attack will wipe the party if either is allowed to finish casting.",
+      "QuickStrategy": "Avoid AoE, bombs will explode in a chain reaction from the one the boss targets."
+    }
+  ],
+  "ZoneID": 793
+}

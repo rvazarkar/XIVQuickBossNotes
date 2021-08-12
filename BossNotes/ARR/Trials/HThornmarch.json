@@ -1,0 +1,13 @@
+﻿{
+  "Index":14,
+  "Name":"Thornmarch (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Phase 1",
+      "InDepthStrategy":"Kill order is BLM > PLD > WHM > BRD > THF > WAR/RNG.\r\nInterrupt BLM \"Mog Flare\" when possible. Must kill at least 3 adds to survive P2 opening.",
+      "QuickStrategy":"Kill order is BLM > PLD > WHM > BRD > THF > WAR/RNG.\r\nInterrupt BLM \"Mog Flare\" when possible. Must kill at least 3 adds to survive P2 opening."
+    }
+  ],
+  "ZoneID":207
+}

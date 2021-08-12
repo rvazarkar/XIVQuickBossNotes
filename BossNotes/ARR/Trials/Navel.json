@@ -1,0 +1,13 @@
+﻿{
+  "Index":1,
+  "Name":"The Navel",
+  "Level":34,
+  "Bosses":[
+    {
+      "Name":"Titan",
+      "InDepthStrategy":"* don't fall off!\r\n* Leap -- run to the edge of the red circle (not ON it or OUT of it) and face the center\r\n* Landslide -- will knock you off; dodge out. If you can't dodge run towards him (it might help).\r\n* rock gaols on random members; get them out",
+      "QuickStrategy":"Stand just inside the red ring on the outside of the ring when Titan jumps.\r\nDO NOT GET HIT BY LINE AoEs or walk off the edge. Free party members from rock prison.\r\nDestroy the heart ASAP."
+    }
+  ],
+  "ZoneID":206
+}

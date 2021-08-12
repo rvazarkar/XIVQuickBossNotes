@@ -1,0 +1,23 @@
+﻿{
+  "Index": 2,
+  "Name": "The Royal Menagerie",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "When the gauge reaches 100 for the first time, run to the edge with the pillar of water falling from the sky to avoid being pushed off. Healers: use Rescue to save people by pulling them to the edge.\r\n\r\nAfter Shinryu has used two Corrupted Aether attacks, the battle transitions to phase 2.",
+      "QuickStrategy": "When \"Tidal Wave\" spawns, run to the side of the platform with the waterspout. \r\nWhen \"Hellfire\" is cast, stand in water puddles.\r\nWhen \"Judgement Bolt\" is cast, don\u0027t stand in puddles."
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "Shinryu will depart the platform briefly.\r\n\r\nSeveral large AoEs are laid down; move as far away as possible to minimize damage taken. These blasts have no knockback, so you can safely stand at the corners or edge of the platform (and will probably need to).\r\n\r\nShinryu will summon three waves of Hakkinryu and Ginryu adds.\r\n\r\nWave 1 is 2 Ginryu and 1 Hakkinryu; Wave 2 is 3 Ginryu and 1 Hakkinryu, and Wave 3 is 5 Ginryu.\r\n\r\nKill all of the adds as quickly as possible and prepare for phase transition.\r\n\r\nShinryu will Fetter everyone and commence an Active Time Maneuver. Mash the button so that the bar fills before the time runs out or else you\u0027ll start Phase 3 on the floor with 0 HP.",
+      "QuickStrategy": "Move as far from AoE as possible, kill adds as far as possible.\r\nMash the button to survive the active time manuever."
+    },
+    {
+      "Name": "Phase 3",
+      "InDepthStrategy": "This phase opens with the party landing on a three-by-three grid of large platforms, with Shinryu using his new line charge attack almost immediately. This has a short knockback, so either get clear of it entirely (corners) or stand as far away from the edges as possible and soak the damage.\r\n\r\nThe inner grey platform is unbreakable, but the outer blue platforms can be broken by Shinryu\u0027s Tail Slam and Corrupted Earth Aether attacks. The former marks two platforms, whilst the latter marks one. After using the Tail Slam, Shinryu\u0027s tail is vulnerable and should be attacked immediately. Reducing it to 0% transfers the damage to Shinryu and can take a decent chunk (around 5-6%) out of his health in the process, making the fight a lot easier.\r\n\r\nEvery two Corrupted Aether attacks, Shinryu will use his line charge and switch which side of the platform he\u0027s attacking from, but otherwise his attacks are mostly on shuffle now, and nothing new will come up.",
+      "QuickStrategy": "When \"Aerial Blast\" spawns, stay close to center.\r\nWhen \"Tidal Wave\" spawns, run to the side of the platform with the waterspout.\r\nWhen \"Earthen Fury\" is cast, get off the platform.\r\nWhen \"Diamond Dust\" is cast, don\u0027t move\r\n\"Akh Morn\" hits multiple times, don\u0027t unstack until its over.\r\nBreak chains by moving apart from each other."
+    }
+  ],
+  "ZoneID": 679
+}

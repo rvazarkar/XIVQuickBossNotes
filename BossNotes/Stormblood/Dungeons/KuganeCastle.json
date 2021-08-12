@@ -1,0 +1,23 @@
+﻿{
+  "Index": 5,
+  "Name": "Kugane Castle",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Zuiko-maru",
+      "InDepthStrategy": "Avoid the frontal cone he occasionally casts.\r\n\r\nStack when someone is hit with the shareable damage marker.\r\n\r\nHe will spawn up to two bombs at a time that will tether to a player, chase them, and try to bind them. When a bomb is killed, it will stay in place and damage anyone in its radius AoE. Players who get tethered should keep to one side of the room to make it easier to avoid the very large AoE.\r\n\r\nHealers should prepare to heal through his occasional casts of Kenki Release, which hits the whole party.",
+      "QuickStrategy": "Stack for marker, when tethered, drag bombs to the side of the room"
+    },
+    {
+      "Name": "Dojun-maru",
+      "InDepthStrategy": "Avoid the narrow column AoEs that stretches from one end of the room to the other.\r\n\r\nKill the clones as soon as possible to avoid heavy groupwide damage.\r\n\r\nWhen marked with the electric circle marker, spread out to avoid catching anyone in more than their own damage AoE.",
+      "QuickStrategy": "Kill clones ASAP, spread out for markers"
+    },
+    {
+      "Name": "Yojimbo",
+      "InDepthStrategy": "During the first Payday phase, piles of gold will spawn around the room. His dog will lunge to pick them up, knocking aside anyone in his trajectory, filling the duty gauge with each pile he successfully picks up. Interact with as much gold as you can to pick it up; his dog prioritizes gold in the order in which it drops. When the Payday phase completes, Yojimbo will deal groupwide damage according to how much the duty gauge has filled.\r\n\r\nBe ready for occasional groupwide damage from Metta-Giri.\r\n\r\nInoshi-Katcho casts circle AoEs on first the center of the room, then the outskirts. Move out of these.\r\n\r\nAvoid his circle AoE he casts on himself.\r\n\r\nDuring the second Payday phase, act as before, but destroy the dragon heads he summons during this phase. They cast column AoEs on players\u0027 locations, and don\u0027t take much punishment before dying. He may summon dragon heads after the second Payday phase is complete as well; deal with them when that time comes.",
+      "QuickStrategy": "Pick up gold after Payday. Inoshi-Katcho is middle of room and then outside. Destroy dragon heads whenever they spawn"
+    }
+  ],
+  "ZoneID": 662
+}

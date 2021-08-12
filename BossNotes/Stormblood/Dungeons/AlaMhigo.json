@@ -1,0 +1,23 @@
+﻿{
+  "Index": 4,
+  "Name": "Ala Mhigo",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Magitek Scorpion",
+      "InDepthStrategy": "Electromagnetic Field: Area wide moderate damage.\r\nTarget Search: Places a target marker under players. It takes about 6s to aquire its target. Bait it away and drop it somewhere safe. It will put a small AOE at its final place.\r\nTail Laser: Line AOE front/behind Magitek Scorpion.",
+      "QuickStrategy": "Bait \"Target Search\" away from party."
+    },
+    {
+      "Name": "Aulus Mal Asina",
+      "InDepthStrategy": "The fight could be separated in 3 phases:\r\n\r\nPhase 1: Pre-Out-of-Body.\r\nPhase 2: Out-of-Body.\r\nPhase 3: Post-Out-of-Body.\r\nAbilities\r\n\r\nMana Burst: Area wide moderate damage.\r\nOrder to Charge: Places 3 drones somewhere in the area.\r\nOrder to Fire: Shortly after Order to Charge, places large AOE circles somewhere in the area. After the AOE is done, three (3) larger, overlapping circles will appear. Save zones are inside.\r\nMagitek Disruptor: Stuns and sucks the player in.\r\nMindjack: Knocks back and applies Out of Body. Player must reach and touch their body (Unconscious Adeventure - linked by fiery line with the player). Prototype Death Claws will spawn. These mobs stun at melee range.Prototype Bits spawn around the area. They will shoot blue laser that stun on hit. Recommendation: Dodge the Death Claws by moving to a side, away from the mobs. Avoid the blue lasers and get your body. Do note, that player may die in this phase. Death Claws must be killed a soon as normal gamplay is resumed.\r\nDemimagicks: Places a marker and AOE under each player. Uses overlapping circles from Order to Fire but to a larger extent at the same time.",
+      "QuickStrategy": "Safe zone for overlap is inside. When \"Out of Body\", get back to your body while dodging adds"
+    },
+    {
+      "Name": "Zenos Yae galvus",
+      "InDepthStrategy": "The fight could be separated into three phases:\r\n\r\nPhase 1: Pre-Aether Transfer.\r\nPhase 2: Aether Transfer.\r\nPhase 3: Post-Aether Transfer.\r\nIn all phases: Avoid touching the outer ring of the area. It would inflict some damage and one stack of Damage Down.\r\n\r\nZenos will, at around 15% HP, start charging his ultima. An Aether Transfer meter will indicate the time you have to kill the three adds.\r\n\r\nThere is no \"best\" order; just destroy them ASAP. However, The Swell will occasionally kick you into the outer ring.\r\n\r\n\r\nAbilities\r\n\r\nArt of the Storm: PBAoE centred on Zenos. Don\u0027t stay in it.\r\nArt of the Swell: PBAoE centred on Zenos. Knocks back, stay in it.\r\nArt of the Sword: Line AoE targeted at each player. Do not stack or you will get hit by more than one ray.\r\nVein Splitter: Places 4 copies around Zenos. Large PBAoE around Zenos, followed by large PBAOEs around the copies. The AoEs of the copies do not overlap near Zenos. Zenos will jump one player and tether to that player. After a few seconds he will execute Lightless Spark.\r\nLightless Spark: Cone AoE targeted at a chosen player.\r\nConcentrativity: Area wide AoE, high damage.\r\n\r\nADDS\r\n\r\nAme-no-Habakiri: Uses Art of the Sword.\r\nThe Swell: Uses Art of the Swell.\r\nThe Storm: Uses Art of the Storm.",
+      "QuickStrategy": "Avoid outer edge of ring. When Zenos copies himself, stay close to him after tether to avoid Lightless Spark. Kill adds."
+    }
+  ],
+  "ZoneID": 689
+}

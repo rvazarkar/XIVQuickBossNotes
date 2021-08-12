@@ -1,0 +1,13 @@
+﻿{
+  "Index":0,
+  "Name":"The Bowl of Embers",
+  "Level":20,
+  "Bosses":[
+    {
+      "Name":"Ifrit",
+      "InDepthStrategy":"Avoid AoEs and kill the \"Infernal Nail\" as fast as possible!.",
+      "QuickStrategy":"Avoid AoEs and kill the \"Infernal Nail\" as fast as possible!"
+    }
+  ],
+  "ZoneID":202
+}

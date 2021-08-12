@@ -1,0 +1,18 @@
+﻿{
+  "Index":2,
+  "Name":"The Howling Eye",
+  "Level":44,
+  "Bosses":[
+    {
+      "Name":"Phase 1",
+      "InDepthStrategy":"In the first phase, tank should pull Garuda to 1 edge of the boss room, away from the stone pillars. Ranged damage dealers and healers should spread out a bit to minimize the damage taken from Friction. While Slipstream does not have the red ground indicator, it can still be dodged.\r\n\r\nPlayers should not let Garuda damage the stone pillars with her Friction and Wicked Wheel abilities.\r\nAt about 3/4 HP, Garuda will disappear for a few seconds. After re-appearing she will begin to cast Mistral Song. Get behind stone pillars and get out of her line of sight immediately. Anyone in her line of sight will be killed by the Mistral Song.\r\n\r\nAfter using Mistral Song, Garuda will spawn a group of adds named Razor Plumes. These adds will attempt to destroy the stone pillars. Pull DPS off of Garuda immediately, to kill the adds. Use AoE abilities if possible.\r\n\r\nAt around half HP, Garuda will disappear again and re-appear on the other side of the map. After re-appearing she will begin to cast Mistral Song. Get behind stone pillars and get out of her line of sight immediately. Anyone in her line of sight will be killed by the Mistral Song.\r\n\r\nAfter using Mistral Song, Garuda will spawn another group of Razor Plume adds. This time the adds are scattered at the sides of the boss room. Focus fire them down one by one.\r\n\r\nAfter a bit, Garuda will vanish again and re-appear in the center of the room. She will then use her signature ability Aerial Blast. The amount of damage depends on the number of rocks that are still alive. Tanks should use their Limit Break to further lessen the damage. Phase 2 begins after she uses the Aerial Blast.",
+      "QuickStrategy":"Hide behind rocks when Garuda shrieks. Kill adds ASAP. Stay away from rocks when possible to prevent damage."
+    },
+    {
+      "Name":"Phase 2",
+      "InDepthStrategy":"After Garuda uses her signature ability, Aerial Blast, phase 2 begins. In this phase Garuda uses Eye of the Storm to limit the size of the boss room to a circular center. Any player outside of the swirling vortex will take heavy damage from Eye of the Storm.\r\n\r\nWhen teleports to the opposite side of the room, she will start casting Mistral Shriek. Players should run away from her as soon as possible. Everyone near her will take massive damage.\r\n\r\nWhen Garuda teleports to the center of the room, she will start casting Mistral Song. Players need to get out of her line of sight by getting behind her to avoid the massive amount of damage.\r\n\r\nAt about a quarter HP, she will spawn Razor Plumes. These adds will do damage to random players. Kill them as soon as possible.",
+      "QuickStrategy":"Kill adds, don't stand in clouds. \r\nFirst jump, get behind boss. Second jump get as far away as possible."
+    }
+  ],
+  "ZoneID":208
+}

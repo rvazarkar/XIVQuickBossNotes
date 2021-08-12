@@ -1,0 +1,23 @@
+﻿{
+  "Index": 7,
+  "Name": "The Drowned City of Skalla",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Kelpie",
+      "InDepthStrategy": "Torpedo Moderate tank damage.\r\nRising Seas Group AoE.\r\nHydra Pull Move away from Kelpie to avoid outer edge damage.\r\nHydra Push Move to Kelpie to avoid outer edge damage.\r\nBloody Puddle Target players for AoE and tethered orbs. Spread puddles to avoid damage and debuffs and kite orbs away.\r\nFlash outside platform will damage and debuff any player standing in it.",
+      "QuickStrategy": "Move to boss for \"Hydro Push\" and away for \"Hydro Pull\". Spread out for Bloody Puddle."
+    },
+    {
+      "Name": "The Old One",
+      "InDepthStrategy": "Mystic Light Large Frontal Cone on random player.\r\nMystic Flame Large Circle AoE under random players.\r\nShifting Light Turns Players into Spriggans with Action ability.\r\nRound 1: Spawns 4 adds that must be destroyed ASAP to avoid self destruct. Round 2: Spawns 6 adds that must be destroyed using your Spriggan action ability to destroy adds. Spam action as necessary.",
+      "QuickStrategy": "Kill adds ASAP. Spriggan ability is spammable."
+    },
+    {
+      "Name": "Hrodric Poisontongue",
+      "InDepthStrategy": "Rusting Claw Raise Right arm - Move away from front.\r\nTail Drive Raise Tail - Move away from rear.\r\nThe Spin Crouches down for Proximity AoE- Move Away.\r\nRing of Chaos Selected player move to boss to allow party to move to safe area.\r\nEye of the Fire Look away from boss to avoid confusion.\r\nCross of Chaos Cross shaped AoE attack from affected player - stop moving to allow other players to dodge.\r\nCircle of Chaos Circle AoE attack from affected player - Move away from party.\r\nWords of Woe Faces random player for Column attack.",
+      "QuickStrategy": "Some AoEs don\u0027t have ground markers. \"Rusting Claw\" \u003d move behind. \"Tail Drive\" \u003d move to font. Avoid \"Eye of Fire\" gaze attack."
+    }
+  ],
+  "ZoneID": 731
+}

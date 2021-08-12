@@ -1,0 +1,28 @@
+﻿{
+  "Index": 4,
+  "Name": "Kugane Ohashi",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "Wakizashi: Tankbuster that hits an arc around the target.\r\nInoshikacho: Four butterflies will slowly float to random spots in the arena, exploding into large AoEs shortly after touching the ground.\r\nMetta-giri: Moderate party-wide damage.",
+      "QuickStrategy": "Butterflies will eventually explode with large AoEs."
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "After reaching 80% HP, Yojimbo will move to the center of the arena, become untargetable, and shout \"Now we fight like men. And ladies. And men who dress like ladies! For Yojimbo... It is Gilgameshing time!\". Yojimbo will sink into a black vortex, then emerge from a golden light as Gilgamesh and toss his hat away. Phase 1 will then resume until Gilgamesh reaches 50% HP.\r\nDragon Night: Six dragon heads appear on one edge of the arena and slowly travel across in a straight line, dealing damage to players they touch and inflicting a stack of Vulnerability Up. After reaching the other end of the arena, the heads bombard the ground for moderate party-wide damage. Yojimbo says: \"Uh-oh! Someone woke the dragon...\"\r\n???: Ice spears will appear on the edges of the arena, firing off in checkerboard pattern line AoEs.\r\nGekka: Each player is marked with a peach-colored orb above their head and a small AoE at their feet. After a short delay, the attack hits in the small AoE for minor damage, then strikes as a ring AoE around each initial hit for higher damage. Despite what the indicators may seem, it\u0027s safer to stack with allies than to spread apart, though players should never stack with more than two others.\r\nOccasionally, the ring AoEs from the most recent use of Gekka will reappear a short time later and strike again. Gilgamesh says: \"Divide and conquer, Gilgamesh style!\"\r\nTiny Song: Red triangle markers over each player. Players not stacking with at least one other person are inflicted with the Minimum debuff. Gilgamesh says: \"This should cut you down to size!\"\r\nZanmato: Reduces the entire party\u0027s HP to 1. Gilgamesh says: \"Behold, the sword art of legend—Zanmato!\"",
+      "QuickStrategy": "At 50% dodge the dragon heads that move across the arena.\r\nStack together when you get a red triangle marker.\r\nOrange markers will drop two AoEs, one small one ring."
+    },
+    {
+      "Name": "Phase 3",
+      "InDepthStrategy": "To start the phase, Gilgamesh will split into two Embodiment adds, while a giant version of him will rise in the background and begin building up a Divine Epicness bar.\r\nGiga Jump: Spread AoE marker on both tanks.\r\nAme-no-Murakumo: Ultimate attack. Quoting Susano, the giant Gilgamesh slams a colossal sword into the ground, dealing damage to the entire party. If Divine Epicness reaches 100%, the attack will wipe the party.",
+      "QuickStrategy": "Spread away from tanks for initially. Kill the giant sword."
+    },
+    {
+      "Name": "Phase 4",
+      "InDepthStrategy": "Gilgamesh lands with another Giga Jump on a single tank.\r\nElectrogenetic Force: A grid of lightning orbs will appear in the arena, each exploding with a small AoE. The only safe spot is one of the \"grids\" near Gilgamesh\u0027s landing point. All subsequent casts instead place a lightning orb on top of each living player. Gilgamesh says: \"And now for something truly shocking!\"\r\nGilgamesh will now always use Electrogenetic Force or Tiny Song during Dragon Night. Which one he uses is random.\r\nMasamune: Gilgamesh dashes across the arena in a Line, following up with the two following attacks in quick succession. Gilgamesh says: \"Not the strongest of swords, but it should suffice.\"\r\nZanma Zanmai: Reduces the entire party\u0027s HP to 1. Identical to Zanmato. Gilgamesh says: \"Behold, the sword art of legend—Zanmato!\"\r\nEpic Stormsplitter: Line AoE directly across the arena, followed immediately by two rectangular AoEs on either side, covering the entire platform save for a narrow line directly in front of Gilgamesh. Stand in the larger AoEs until the line attack fires, then quickly move into the now-safe middle area. Gilgamesh says: \"The seas part for Gilgamesh alone!\"\r\nEnchain: Traps four players in Fetters, prioritizing both tanks and both healers. Fettered players are untargetable and cannot act, but the fetters themselves can be targeted and destroyed. As he casts this ability, Gilgamesh will say: \"What\u0027s the matter, friend? All tied up?\"\r\nHells\u0027 Gate: Slow casting attack that inflicts Instant Death on all players with the Fetters debuff.",
+      "QuickStrategy": "Initial safe point is where the boss lands.\r\nDestroy fetters on players ASAP.\r\nStand in large AoEs until line fires and then move into line AoE for \"Epic Stormsplitter\""
+    }
+  ],
+  "ZoneID": 806
+}

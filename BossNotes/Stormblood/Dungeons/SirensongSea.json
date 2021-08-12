@@ -1,0 +1,23 @@
+﻿{
+  "Index": 0,
+  "Name": "The Sirensong Sea",
+  "Level": 61,
+  "Bosses": [
+    {
+      "Name": "Lugat",
+      "InDepthStrategy": "Try to stay near this boss - it will help you avoid his half-screen AOEs.\r\n\r\nAmorphous Applause: Large directional AOE. Stay tight to the boss so you have a chance to dodge.\r\nHydroball: One party member is targeted. Stack to split the damage.\r\nSea Swallows All -\u003e Concussive Oscillation: When the boss sucks you in, be prepared to run out. Several AOEs will go down. Find a safe spot, but head back in to the center after so you can dodge the Amorphous Applause that follows.\r\nOverflow -\u003e Hydroball: Everyone is knocked to the arena edge; run back to the middle ASAP. Hydroball is coming, and you\u0027ll want to stack up.",
+      "QuickStrategy": "Stay close to boss to dodge AoE. Stack to split Hydroball. When pulled to the middle be prepared to run out. If pushed to edge, be prepared to run in."
+    },
+    {
+      "Name": "The Governor",
+      "InDepthStrategy": "Bloodburst: Party-wide AoE.\r\nShadowflow: Creates shadow areas on the ground, which fill a large portion of the room. Stay out of those shadow areas because they will stack magic damage vulnerability.\r\nEnter Night: Marks a player, then does a draw-in and tether. Run far from the boss to break the tether.\r\nShadowsplit: Summons a bunch of small versions of himself, which then cover more areas during the ensuing Shadowflow.",
+      "QuickStrategy": "Avoid shadow areas. When tethered, run away from boss to break it"
+    },
+    {
+      "Name": "Lorelei",
+      "InDepthStrategy": "Somber Melody: Party-wide AoE.\r\nVoid Water III: AoE on targeted party member.\r\nVirgin tears: Leaves Damage over time areas, and eventually a ring all around the room. These areas will fade after she casts either Morbid Advance or Morbid Retreat\r\nMorbid Advance and Morbid Retreat force your character to move forward, or backwards respectively. Position yourself accordingly so that you avoid Virgin Tears as much as possible. Note that \"forward\" and \"backward\" are relative to the direction you\u0027re facing; it does not mean you\u0027ll be drawn to/repelled from the boss. Pick the safest route you can based on the skill to follow.",
+      "QuickStrategy": "Morbid Advance and Morbid Retreat will force you to move forward and backwards respectively. Position yourself so you don\u0027t run into AoE"
+    }
+  ],
+  "ZoneID": 626
+}

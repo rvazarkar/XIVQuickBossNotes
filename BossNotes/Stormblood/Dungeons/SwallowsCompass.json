@@ -1,0 +1,23 @@
+﻿{
+  "Index": 10,
+  "Name": "The Swallow's Compass",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Otengu",
+      "InDepthStrategy": "Clout of the Tengu: Large AOE centred around Otengu.\r\nYama-kagura: Line AOE of medium width, directed at one of the player other than the tank.\r\nWile of the Tengu: One of the Eye themed abilities. Looking away from Otengu will dodge its effect. Not doing so will apply the Hysteria debuff.\r\nTengu Ember: A number of Tengu Ember will appear. Those flames will start to move around the arena. Player hit by one of them will suffer minor damage and one (1) debuff stack of Suppuration (Maximum HP is reduced and damage taken is increased.). After some time the remaining ember will explode in medium sized AOE\u0027s.\r\nMight of the Tengu: A tank buster ability.",
+      "QuickStrategy": "Look away for Gaze attacks. Avoid embers floating around."
+    },
+    {
+      "Name": "Daidarabotchi",
+      "InDepthStrategy": "The abilities do not have a castbar. Watch for the messages on screen.\r\n\r\nDaidarabotchi is gathering aetherial energy...: Daidarabotchi will raise one of its arms and slam it down on the ground. Getting hit by this will result in medium damage and one (1) debuff stack of Vulnerability Up. It is suggested to stand on its other side.\r\nThe Land take You, Claim You!: AOE that will follow the marked player.\r\nSwallow You, Consume You!: Daidarabotchi will hit the ground with its fist and create a circular, persistent AOE (a shimmering lake) around the centre of the area. That lake will grow over time and will cover ca. 75% of the area but will disappear again after some time.\r\nMountain Falls : Blue AOE with a blue water drop on top around a player. Will deal damage after a short while.",
+      "QuickStrategy": "Stand to the side of the boss when it raises its hand."
+    },
+    {
+      "Name": "",
+      "InDepthStrategy": "The Short End: Tankbuster.\r\nBoth Ends: This ability has two flavours.\r\nThe first will be signified by the normal weapon, raised. It will create a medium AOE around Qitian Dasheng. Getting hit by this AOE will knock the player back into the bluish outer ring. This debuff area will apply Bleeding and one (1) stack of Vulnerability Up.\r\nThe second will be signified by an enlarged weapon with electric current on it, lowered. It will do the same, but with a save zone near Qitian Dasheng.\r\nIn short: Normal weapon - stay away from the boss. Enlarged, electrified weapon - stay near the boss.\r\nMount Huaguo: Area wide medium AOE.\r\nMonkey Magicks: ADD phase. Kill all Servant of the Sage before the Monkey Magicks meter is fully charged.\r\nSecond Heaven: Ultimate, after Monkey Magicks meter is fully charged or all Servant of the Sage are killed. The amount of damage done depends on the level of the charge of the Monkey Magicks meter.\r\nSplitting Hairs: Qitian Dasheng splits in two Shadow of the Sage. Both mobs must be killed to end the fight. If only one is killed, the remaining will split again. It is suggested to damage both equally and kill them in very short succession, so a to avoid another split.\r\nADD\r\n\r\nServant of the Sage: Spawn during Monkey Magicks phase. Frequently use an AOE.\r\nShadow of the Sage: Two lesser copies of Qitian Dasheng. Both must be killed. Both retain the abilities or the original Qitian Dasheng. Note, that those copies share the health pool of the original Qitian Dasheng. That is, the health of the copies will drop according to the damage dealt.",
+      "QuickStrategy": "Normal Staff \u003d Move Out. Glowing Staff \u003d move in. Kill adds when they spawn.\r\nClones need to be killed at the same time. Tethered players should face the boss away."
+    }
+  ],
+  "ZoneID": 768
+}

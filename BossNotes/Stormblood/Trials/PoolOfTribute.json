@@ -1,0 +1,23 @@
+﻿{
+  "Index": 0,
+  "Name": "The Pool of Tribute",
+  "Level": 63,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "Rasen Kaikyo - Places a circular AoE under each party member\r\n\r\nYata No Kagami - \"The seas part for we alone!\" - A player will be marked (Red). After a short time, they will be damaged and knocked back. The path of their knockback will determine the safe area of the platform-wide AoE that follows. This AoE applies Lightning Resistance Down.\r\n\r\nBrightstorm - Immediately following Yata No Kagami, a stack marker will appear on the previously marked party member. Stack to share damage.\r\n\r\nDark Cloud - Susano will periodically spawn Dark Clouds. These clouds will each cast a wide line AoE that inflict Paralysis.\r\n\r\nAt around 65%, Susano will start Phase 2",
+      "QuickStrategy": "Move out of the path of the marked player, and then stack immediately after the knockback."
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "At the beginning of Phase 2, a flower-shaped crystal will appear on the platform. The Main Tank should pick this up as the player who picks it up will be the one receiving continuous damage from Susano during this phase.\r\n\r\nClash - The player that picked up the flower-shaped crystal will be locked in a clash with Susano, receiving a damaging debuff for as long as Ame-no-Murakumo is alive.\r\n\r\nAme-no-Murakumo - While clashing, Susano will begin casting this ability. Successful casting will cause a wipe. The party should focus damage on the sword to interrupt this cast.\r\n\r\nSheer Force - During the clash, orbs will spawn on the perimeter of the platform. The Off-tank should run into these orbs before they get to the party, as they do splash damage.\r\n\r\nThis ends in heavy, unavoidable damage (a wipe if Ame-no-Murakumo is not destroyed), marked by a large, red line AoE across the platform.",
+      "QuickStrategy": "Main tank should pick up flower crystal. Off-tank should soak orbs."
+    },
+    {
+      "Name": "Phase 3",
+      "InDepthStrategy": "All abilities from Phase 1 are present during this phase.\r\n\r\nStormsplitter - Tank Buster. Pop mitigation cooldowns.\r\n\r\nAma-no-iwato - \"Earth and stone at our beck and call!\" - Susano will trap a player in a chained stone. Two \"dummy stones\" will also spawn. The stone containing the player will be marked and then the stones will be shuffled. Only the stone containing a player needs to be destroyed. If the stone finishes casting \u0027The Sealed Gate\u0027, the player is killed (not confirmed).\r\n\r\nUkehi - Moderate party-wide damage that can hit 1 or 2 times",
+      "QuickStrategy": "Kill the stone that has a player trapped in it (is initially marked)"
+    }
+  ],
+  "ZoneID": 674
+}

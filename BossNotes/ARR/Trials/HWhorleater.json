@@ -1,0 +1,13 @@
+﻿{
+  "Index":15,
+  "Name":"The Whorleater (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Leviathan",
+      "InDepthStrategy":"Kill adds ASAP. Ranged attacks tail, casters attack head.\r\nTurn on the generator when its active. Always interrupt \"Dreadwash\" from the add.",
+      "QuickStrategy":"Kill adds ASAP. Ranged attacks tail, casters attack head.\r\nTurn on the generator when its active. Always interrupt \"Dreadwash\" from the add."
+    }
+  ],
+  "ZoneID":281
+}

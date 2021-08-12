@@ -1,0 +1,23 @@
+﻿{
+  "Index": 8,
+  "Name": "Hell's Lid",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Otake-maru",
+      "InDepthStrategy": "Abilities\r\n\r\n100-tonze Swing: Large point blank AoE around Otake.\r\n10-tonze Slash: Large cone shaped AoE, directed away from the tank.\r\nGrrraaarrrgh: Otake will jump to a player (other than tank) and will follow that player. Kite him around the area because he starts drooling lava. Likewise he will drop his mace \u0026 shield. After some time he will jump to shield and mace and will, upon landing, do a short range point blank AoE.",
+      "QuickStrategy": "Kite boss when he jumps to you."
+    },
+    {
+      "Name": "Kamaitachi",
+      "InDepthStrategy": "Abilities\r\n\r\nWhipping Wittret: No castbar. Tankbuster.\r\nThe wind begins to howl!: No castbar. Watch for the message on screen. Also, he will do a 360° just before it. The boss will do a large point blank AoE, save zone is close to him or far, far away.\r\nThe Patient Blade: 180 degree AoE.\r\nThe wind shifts!: Watch for the message. Large line AoE front/behind the boss.\r\nWhispers in the Wind: Summons 4 Tsumuji-kaze adds. Places moving whirlwinds around the area. Places clouds around the area. The clouds explode and knockback on touch. From time to time fiery lines will appear between the whirlwinds. The boss will charge along those lines with a much larger hitbox than the lines themselves. Getting hit will do moderate damage and apply 1 stack of Vulnerability Up. At the end of this phase, a proximity AoE (Reaper\u0027s Gale) will be dropped at one edge of the area. First thing the boss will do after is The Patient Blade.\r\nSuggestion: Stack somewhere near the edge and let the tank draw the adds to one spot. AoE them down but keep an eye open for the boss\u0027s charge. Group up in the middle after the proximity AoE is done. Prepare for Patient Blade.\r\n\r\nADDS\r\n\r\nTsumuji-kaze: Uses Tornado. Damage is rather low. Adds seem to be melee in general.",
+      "QuickStrategy": "Safe zone for \"The wind begins to howl!\" is either melee range or max range. Staying close to the boss allows you to dodge \"The Patient Blade\""
+    },
+    {
+      "Name": "Genbu",
+      "InDepthStrategy": "Caduceus: No castbar. Tankbuster.\r\nHell of Water: Cross-like AoE, centered on Genbu.\r\nHell of Waste: Marker on player, AoE around player, drops water bomb on player. Stay away from group. Moderate damage.\r\nSinister Tide: Genbu jumps in the air, upon landing greenish light. Arrows appear on the hexagonal platforms, along with a blue orb. The orb will explode and send water following the arrows. Stand on a platform that is not in the water\u0027s path. Getting hit will result in moderate damage and 1 stack of Vulnerability Up.\r\nHell of Waves: Genbu becomes invincible and begins charging his Genbu\u0027s Focus meter. Destroy the Chelonian Gate around him before the meter fills completely. During this time platforms will start to glow and damage anyone standing on them, so move off of them quickly.\r\nDivine Cataract: Ultimate, after Genbu\u0027s Focus meter fills or Chelonian Gate is destroyed. The amount of damage done depends on how full the meter was.",
+      "QuickStrategy": "Move away when marked, avoid blue balls by looking at arrows."
+    }
+  ],
+  "ZoneID": 742
+}

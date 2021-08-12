@@ -1,0 +1,23 @@
+﻿{
+  "Index": 3,
+  "Name": "Castrum Fluminis",
+  "Level": 70,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "Torment Unto Death - Large frontal cone tank buster. As usual, all other players must not stand in front of the boss\r\nZashiki-Asobi - This is essentially Ser Adelphel from The Vault. She will spawn fans around the arena; one in the centre, and the others around. They will explode in the same order they spawned in. It is recommended to stand in another fan (ones that will explode last) as the centre one explodes to head back to the centre.\r\nNightfall - Casts during Zashiki-Asobi signaling an incoming AoE random attack.\r\nSteel of the Underworld - Large frontal cone on primary target.\r\nReprimand - Raid-wide AoE damage; shield/heal through.\r\nMidnight Haze Spawns two Midnight Haze adds on opposite sides of the arena. Destroy them before they reach each other or finish their casts.\r\nLead of the Underworld - Casts a line AoE marked by a line stack marker. Players must line up with the targeted player to share the damage. If a Midnight Haze add is still up, the targeted player can line up with the add so other players can still attack it.",
+      "QuickStrategy": "\"Steel of the Underworld\" is a frontal cone. \"Lead of the Underworld\" is a line stack.\r\n\"Zashiki-asobi\" will spawn AoEs in a circle that go off in the order they spawned"
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "Starts with Nightbloom - raid-wide damage and stun.\r\n\r\nAdds will spawn during this phase. Destroy the adds as soon as they come up.\r\n\r\nDuty Gauge - Suffering - During phase 2, the Suffering gauge will fill up over time. Destroy the adds as soon as possible as the longer the phase goes on, the more suffering is accumulated, which deals more damage at the end of the phase. Naturally, if the gauge hits 100%, it will wipe the group. Shield/heal as necessary.",
+      "QuickStrategy": "Kill adds as fast as possible."
+    },
+    {
+      "Name": "Phase 3",
+      "InDepthStrategy": "Phase 3 will run with the same abilities you have seen so far with the addition of some others. She will also continue to cast Nightfall.\r\n\r\nSelenomancy - Causes the platform to be split into two sections. Standing in one section stacks debuffs. If the debuffs reach 5 stacks, a Doom and bleed Debuff will be applied, and you\u0027re likely to die. Players must move between these two sections to reset their stacks. It is recommended to switch at 3 stacks since that is a safe area and she is likely to cast an AoE around that time, that way you are not trapped on one side. Doughnut AoE\u0027s and Nightfall will cast during this time so keep on your toes.\r\nAntitwilight/Perilune - Removes Selenomancy and debuffs and deals raid-wide damage.\r\nDuring Selenomancy, Tsukuyomi can also cast Midnight Haze, so be mindful of your stacks when they spawn and move to the section you need to move to so you can kill the add and reset your stacks.\r\n\r\nDance of the Dead - Signals final phase change, dealing heavy raid-wide damage.\r\nLunacy - Essentially Ahk Morn; an attack that players must stack for and remain stacked as the attack will hit multiple times. (1 hit, 2 quick hits after a pause)\r\nDark/Bright Blade - Lazer Sword. She will attack large sections of the arena depending on the blade she is using. Dodge the AoE\u0027s!",
+      "QuickStrategy": "Swap platforms when you have 3 stacks.\r\n\"Lunacy\" is a multi hit stack, don\u0027t immediately separate.\r\nHas all the abilities from phase 1 and 2."
+    }
+  ],
+  "ZoneID": 778
+}

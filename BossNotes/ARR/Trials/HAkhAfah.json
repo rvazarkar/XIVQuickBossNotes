@@ -1,0 +1,13 @@
+﻿{
+  "Index":17,
+  "Name":"Akh Afah Amphitheatre (Hard)",
+  "Level":50,
+  "Bosses":[
+    {
+      "Name":"Shiva",
+      "InDepthStrategy":"Spread for markers, avoid AoEs. Stack for \"Diamond Dust\".\r\nWhen the floor fogs up, it'll become slippery. If you hit the outside wall, you'll freeze.",
+      "QuickStrategy":"Spread for markers, avoid AoEs. Stack for \"Diamond Dust\".\r\nWhen the floor fogs up, it'll become slippery. If you hit the outside wall, you'll freeze."
+    }
+  ],
+  "ZoneID":377
+}

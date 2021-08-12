@@ -1,0 +1,23 @@
+﻿{
+  "Index": 3,
+  "Name": "Castrum Abania",
+  "Level": 69,
+  "Bosses": [
+    {
+      "Name": "Magna Roader",
+      "InDepthStrategy": "Wheel: Tankbuster.\r\nMagitek Fire II: Targeted Circle AoE\r\nMagitek Fire III: Group-wide AoE damage\r\nWild Speed: Rushes around the room in line patterns. During this attack, two 12th Legion Optio adds will spawn and activate the cannons on the sides of the arena, bombarding random players with avoidable AoEs. Defeat the adds to commandeer their cannons and use its ability on Magna Roader to disrupt this attack. This attack will continue indefinitely until Magna Roader is hit with a cannon shot. Be warned that the Magna Roader cannot be harmed while it is speeding across the arena - wait for it to pause before firing.",
+      "QuickStrategy": "Kill adds and fire cannons at boss to interrupt his rush."
+    },
+    {
+      "Name": "Number XXIV",
+      "InDepthStrategy": "Stab: Tankbuster.\r\nGale Cut: Targeted Circle AoEs under the three non-Tank players. Step away to avoid.\r\nElemental Pillars: Three pillar AoEs appear on the platform that transform into Fire, Ice, and Lightning elemental attunement puddles after landing. Move into the puddle to attune yourself to that element.\r\nBarrier Shift: Number XXIV gains a shield that reflects all damage dealt by players not attuned to the same element as him. As he casts this ability, Number XXIV shouts \"My cup runneth over with element and element!\". Attune yourself to the element he does not mention.",
+      "QuickStrategy": "Step in the elemental platform that aligns with the boss. It will always be the one he doesn\u0027t include in his yell (\"My cup runneth over with X and Y\")"
+    },
+    {
+      "Name": "Inferno",
+      "InDepthStrategy": "Ketu Slash: Tankbuster.\r\nRahu Blaster: Targeted Column AoE.\r\nKetu \u0026 Rahu: Ground targeted AoE and Player targeted AoE.\r\nRoids: Periodically, Inferno will move to the back of the arena and get showered by the Magitek device there to empower his arms.\r\nEmpowered Ketu: Adds a Bleed debuff to the Tank. The second empower adds Vulnerability Up.\r\nEmpowered Rahu: Adds a multi-column room-wide AoE and a Proximity AoE. Second empower adds two player targeted AoEs.\r\nLegion Adds: Two 12th Legion Death Claws and one 12th Legion Packer will spawn. The two Death Claws will tether to random players and will incapacitate them should they reach their tethered player. The Packer will slowly move towards the back of the arena and attempt to use Quick Charge on the device. If the Packer is able to complete Quick Charge, Inferno will immediately upgrade his arms further.",
+      "QuickStrategy": "Avoid AoE, run from death claws when they come for you"
+    }
+  ],
+  "ZoneID": 661
+}
