@@ -6,7 +6,6 @@ using BossNotes.Internal;
 using Dalamud.Game.ClientState.Actors;
 using Dalamud.Plugin;
 using ImGuiNET;
-using XivCommon;
 
 namespace BossNotes
 {
@@ -46,8 +45,7 @@ namespace BossNotes
             "Raids",
             "Alliance Raids"
         };
-
-        private readonly XivCommonBase _xivBase;
+        
         private bool _autoSelectChat;
         private bool _autoSwapDungeons;
 
@@ -64,7 +62,6 @@ namespace BossNotes
             _showDetails = configuration.ShowDetails;
             _expansions = expansions;
             _pluginInterface = pluginInterface;
-            _xivBase = new XivCommonBase(pluginInterface);
             _pluginInterface.Framework.Gui.GetUIModule();
 
 
@@ -297,7 +294,7 @@ namespace BossNotes
                 channel = _chatChannels[_configuration.SelectedChatIndex];
             }
 
-            var commands = baseMessage.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None).Select(x => channel.FormatMessage(x)).ToList();
+            var commands = baseMessage.Replace("\r", string.Empty).Split('\n').Select(x => channel.FormatMessage(x)).ToList();
 
             var macroPtr = IntPtr.Zero;
             try

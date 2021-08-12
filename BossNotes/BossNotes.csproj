@@ -1,24 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
     <PropertyGroup>
-        <TargetFramework>net48</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
         <LangVersion>preview</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <ItemGroup>
       <Reference Include="Dalamud, Version=5.2.7.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
+          <Private>false</Private>
       </Reference>
       <Reference Include="ImGui.NET, Version=1.72.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGui.NET.dll</HintPath>
+          <Private>false</Private>
       </Reference>
       <Reference Include="ImGuiScene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
+          <Private>false</Private>
       </Reference>
-        <PackageReference Include="XivCommon" Version="2.3.0" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="ARR\HighEndTrials" />
       <Folder Include="ARR\Raids" />
       <Folder Include="Properties" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="DalamudPackager" Version="1.2.2" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="ARR\Dungeons\AmpadorKeep.json" />
     </ItemGroup>
 </Project>

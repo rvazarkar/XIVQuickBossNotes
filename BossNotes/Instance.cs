@@ -4,6 +4,7 @@ namespace BossNotes
 {
     public class Instance
     {
+        public int Index { get; set; }
         public string Name { get; set; }
         public int Level { get; set; }
         public Boss[] Bosses { get; set; } = new Boss[0];
@@ -28,6 +29,7 @@ namespace BossNotes
             Name = "Placeholder";
             Level = 0;
             ZoneID = (ushort) Rand.GetRandom();
+            Index = 0;
         }
     }
 }
