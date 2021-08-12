@@ -25,11 +25,24 @@ namespace BossNotes
     {
         public PlaceholderInstance()
         {
-            var rand = new Random();
             Name = "Placeholder";
             Level = 0;
             ZoneID = (ushort) Rand.GetRandom();
             Index = 0;
+            Bosses = new Boss[]
+            {
+                new PlaceholderBoss()
+            };
+        }
+    }
+
+    public class PlaceholderBoss : Boss
+    {
+        public PlaceholderBoss()
+        {
+            Name = "Placeholder";
+            QuickStrategy = "";
+            InDepthStrategy = "";
         }
     }
 }

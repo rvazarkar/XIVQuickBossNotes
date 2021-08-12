@@ -4,6 +4,7 @@ using System.Numerics;
 using System.Runtime.InteropServices;
 using BossNotes.Internal;
 using Dalamud.Game.ClientState.Actors;
+using Dalamud.Game.ClientState.Actors.Types;
 using Dalamud.Plugin;
 using ImGuiNET;
 
@@ -45,7 +46,7 @@ namespace BossNotes
             "Raids",
             "Alliance Raids"
         };
-        
+
         private bool _autoSelectChat;
         private bool _autoSwapDungeons;
 
@@ -65,8 +66,17 @@ namespace BossNotes
             _pluginInterface.Framework.Gui.GetUIModule();
 
 
-            _selectedInstance = _expansions[_configuration.SelectedExpansionIndex]
-                .Dungeons[_configuration.SelectedInstanceIndex];
+            _selectedInstance = _configuration.SelectedTypeIndex switch
+            {
+                0 => _expansions[_configuration.SelectedExpansionIndex].Dungeons[_configuration.SelectedInstanceIndex],
+                1 => _expansions[_configuration.SelectedExpansionIndex].Trials[_configuration.SelectedInstanceIndex],
+                2 => _expansions[_configuration.SelectedExpansionIndex]
+                    .HighEndTrials[_configuration.SelectedInstanceIndex],
+                3 => _expansions[_configuration.SelectedExpansionIndex].Raids[_configuration.SelectedInstanceIndex],
+                4 => _expansions[_configuration.SelectedExpansionIndex]
+                    .AllianceRaids[_configuration.SelectedInstanceIndex],
+                _ => throw new ArgumentOutOfRangeException()
+            };
         }
 
         public bool Visible
@@ -130,6 +140,8 @@ namespace BossNotes
                         var selected = i == _configuration.SelectedExpansionIndex;
                         if (ImGui.Selectable(_expansions[i].Name, selected))
                         {
+                            _configuration.SelectedTypeIndex = 0;
+                            _configuration.SelectedBossIndex = 0;
                             _selectedInstance = _expansions[i].Dungeons[0];
                             _configuration.SelectedExpansionIndex = i;
                         }
@@ -150,6 +162,8 @@ namespace BossNotes
                         if (ImGui.Selectable(_types[i], selected))
                         {
                             _configuration.SelectedBossIndex = 0;
+                            _configuration.SelectedInstanceIndex = 0;
+                            _configuration.SelectedTypeIndex = 0;
                             _selectedInstance = i switch
                             {
                                 0 => _expansions[_configuration.SelectedExpansionIndex].Dungeons[0],
@@ -221,7 +235,8 @@ namespace BossNotes
                         ImGui.EndTabBar();
                     }
 
-                    ImGui.BeginChild("#BossNotesDetailSection", new Vector2(600, 300), false);
+                    ImGui.BeginChild("#BossNotesDetailSection", new Vector2(ImGui.GetContentRegionAvail().X, 300),
+                        false, ImGuiWindowFlags.AlwaysAutoResize);
                     var body = _selectedInstance.Bosses[_configuration.SelectedBossIndex].InDepthStrategy;
                     ImGui.TextWrapped(body);
                     ImGui.EndChild();
@@ -274,6 +289,9 @@ namespace BossNotes
             if (_autoSelectChat)
             {
                 var player = _pluginInterface.ClientState.LocalPlayer;
+                var actors = _pluginInterface.ClientState.Actors;
+                var inAlliance = actors.Where(x => x.ObjectKind == ObjectKind.Player).Cast<PlayerCharacter>()
+                    .Any(x => (x.StatusFlags & StatusFlags.AllianceMember) != 0);
 
                 if (player == null)
                 {
@@ -281,7 +299,7 @@ namespace BossNotes
                 }
                 else
                 {
-                    if ((player.StatusFlags & StatusFlags.AllianceMember) != 0)
+                    if (inAlliance)
                         channel = _chatChannels[4];
                     else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
                         channel = _chatChannels[3];
@@ -294,7 +312,8 @@ namespace BossNotes
                 channel = _chatChannels[_configuration.SelectedChatIndex];
             }
 
-            var commands = baseMessage.Replace("\r", string.Empty).Split('\n').Select(x => channel.FormatMessage(x)).ToList();
+            var commands = baseMessage.Replace("\r", string.Empty).Split('\n').Select(x => channel.FormatMessage(x))
+                .ToList();
 
             var macroPtr = IntPtr.Zero;
             try
