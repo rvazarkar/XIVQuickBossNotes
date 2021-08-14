@@ -12,19 +12,19 @@ A boss strategy plugin for [Dalamud](https://github.com/goatcorp/Dalamud). Allow
   - High-End Trials: Not Started
   - Raids: Not Started
   - Alliance Raids: Complete
--Heavensward
+- Heavensward
   - Dungeons: Not Started
   - Trials: Not Started
   - High-End Trials: Not Started
   - Raids: Not Started
   - Alliance Raids: Not Started
--Stormblood
+- Stormblood
   - Dungeons: Complete
   - Trials: Complete
   - High-End Trials: Not Started
   - Raids: Not Started
   - Alliance Raids: Not Started
--Shadowbringers
+- Shadowbringers
   - Dungeons: Not Started
   - Trials: Not Started
   - High-End Trials: Not Started
