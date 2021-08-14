@@ -2,6 +2,7 @@
 
 namespace BossNotes
 {
+    [Serializable]
     public class Instance
     {
         public int Index { get; set; }
@@ -13,7 +14,7 @@ namespace BossNotes
 
     internal static class Rand
     {
-        private static readonly Random rnd = new Random();
+        private static readonly Random rnd = new();
 
         public static int GetRandom()
         {

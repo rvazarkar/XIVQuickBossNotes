@@ -1,12 +1,10 @@
-﻿using BossNotes.Stormblood.Dungeons;
-using BossNotes.Stormblood.Trials;
-using Dalamud;
+﻿using System.IO;
 
-namespace BossNotes.Stormblood
+namespace BossNotes.ENG.Stormblood
 {
     public class Stormblood : Expansion
     {
-        public Stormblood(ClientLanguage language) : base("Stormblood", language)
+        public Stormblood(string contentLocation) : base(Path.Combine(contentLocation, "Stormblood"))
         {
             Name = "Stormblood";
         }

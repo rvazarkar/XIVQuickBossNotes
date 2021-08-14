@@ -1,10 +1,10 @@
-﻿using Dalamud;
+﻿using System.IO;
 
-namespace BossNotes.Shadowbringers
+namespace BossNotes.ENG.Shadowbringers
 {
     public class Shadowbringers : Expansion
     {
-        public Shadowbringers(ClientLanguage language) : base("Shadowbringers", language)
+        public Shadowbringers(string contentLocation) : base(Path.Combine(contentLocation, "Shadowbringers"))
         {
             Name = "Shadowbringers";
         }

@@ -1,4 +1,4 @@
-﻿namespace BossNotes.Heavensward.Dungeons.DuskVigilBosses
+﻿namespace BossNotes.ENG.Heavensward.Dungeons.DuskVigilBosses
 {
     public class ToweringOliphant : Boss
     {

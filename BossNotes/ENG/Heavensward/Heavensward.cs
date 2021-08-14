@@ -1,10 +1,10 @@
-﻿using Dalamud;
+﻿using System.IO;
 
-namespace BossNotes.Heavensward
+namespace BossNotes.ENG.Heavensward
 {
     public class Heavensward : Expansion
     {
-        public Heavensward(ClientLanguage language) : base("Heavensward", language)
+        public Heavensward(string contentLocation) : base(Path.Combine(contentLocation, "Heavensward"))
         {
             Name = "Heavensward";
         }

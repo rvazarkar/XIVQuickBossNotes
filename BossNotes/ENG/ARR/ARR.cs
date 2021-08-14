@@ -1,14 +1,10 @@
 ﻿using System.IO;
-using BossNotes.ARR.AllianceRaids;
-using BossNotes.ARR.Dungeons;
-using BossNotes.ARR.Trials;
-using Dalamud;
 
-namespace BossNotes.ARR
+namespace BossNotes.ENG.ARR
 {
     public class ARR : Expansion
     {
-        public ARR(string assemblyLocation, ClientLanguage language) : base(Path.Combine(assemblyLocation, "ENG", "ARR"), language)
+        public ARR(string contentLocation) : base(Path.Combine(contentLocation, "ARR"))
         {
             Name = "A Realm Reborn";
         }

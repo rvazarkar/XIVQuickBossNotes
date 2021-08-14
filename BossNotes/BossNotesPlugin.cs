@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
+using BossNotes.ENG.ARR;
+using BossNotes.ENG.Heavensward;
+using BossNotes.ENG.Shadowbringers;
+using BossNotes.ENG.Stormblood;
 using Dalamud;
 using Dalamud.Game.Command;
 using Dalamud.Plugin;
-using Newtonsoft.Json;
 
 namespace BossNotes
 {
@@ -13,9 +16,9 @@ namespace BossNotes
     {
         private const string Command = "/bnotes";
 
-        private Expansion[] _expansions;
-
         private Configuration _configuration;
+
+        private Expansion[] _expansions;
 
         private DalamudPluginInterface _pluginInterface;
         private UI _ui;
@@ -55,20 +58,30 @@ namespace BossNotes
             _pluginInterface.ClientState.TerritoryChanged += OnTerritoryChanged;
         }
 
+        public string Name => "Boss Notes";
+
         private Expansion[] LoadContent(string assemblyLocation)
         {
             var lang = _pluginInterface.ClientState.ClientLanguage;
             var folder = Path.GetDirectoryName(assemblyLocation);
+            var langFolder = lang switch
+            {
+                ClientLanguage.Japanese => "JPN",
+                ClientLanguage.English => "ENG",
+                ClientLanguage.German => "GER",
+                ClientLanguage.French => "FR",
+                _ => throw new ArgumentOutOfRangeException(nameof(lang), lang, null)
+            };
+
+            var basePath = Path.Combine(folder, langFolder);
             return new Expansion[]
             {
-                new ARR.ARR(folder, lang),
-                // new Heavensward.Heavensward(lang),
-                // new Stormblood.Stormblood(lang),
-                // new Shadowbringers.Shadowbringers(lang)
+                new ARR(basePath),
+                new Heavensward(basePath),
+                new Stormblood(basePath),
+                new Shadowbringers(basePath)
             };
         }
-
-        public string Name => "Boss Notes";
 
         private void OnTerritoryChanged(object sender, ushort id)
         {
