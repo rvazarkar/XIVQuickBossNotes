@@ -2,8 +2,8 @@
 {
     public class Boss
     {
-        public string Name { get; protected set; }
-        public string InDepthStrategy { get; protected set; }
-        public string QuickStrategy { get; protected set; }
+        public string Name { get; set; }
+        public string InDepthStrategy { get; set; }
+        public string QuickStrategy { get; set; }
     }
 }
