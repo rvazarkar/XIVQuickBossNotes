@@ -1,7 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Reflection;
+using Dalamud;
 using Dalamud.Game.Command;
 using Dalamud.Plugin;
+using Newtonsoft.Json;
 
 namespace BossNotes
 {
@@ -9,13 +13,7 @@ namespace BossNotes
     {
         private const string Command = "/bnotes";
 
-        private readonly Expansion[] _expansions =
-        {
-            new ARR.ARR(),
-            new Heavensward.Heavensward(),
-            new Stormblood.Stormblood(),
-            new Shadowbringers.Shadowbringers()
-        };
+        private Expansion[] _expansions;
 
         private Configuration _configuration;
 
@@ -25,6 +23,7 @@ namespace BossNotes
         private Dictionary<ushort, DungeonSelectionIndex> _zoneMap;
 
         public string AssemblyLocation { get; set; } = Assembly.GetExecutingAssembly().Location;
+        internal static string AssemblyLocationInternal { get; set; } = Assembly.GetExecutingAssembly().Location;
 
         public void Dispose()
         {
@@ -40,6 +39,8 @@ namespace BossNotes
             _configuration = pluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             _configuration.Initialize(_pluginInterface);
 
+            _expansions = LoadContent(AssemblyLocation);
+
             BuildZoneMap();
 
             _ui = new UI(_configuration, _pluginInterface, _expansions);
@@ -52,6 +53,19 @@ namespace BossNotes
 
             _pluginInterface.UiBuilder.OnBuildUi += DrawUI;
             _pluginInterface.ClientState.TerritoryChanged += OnTerritoryChanged;
+        }
+
+        private Expansion[] LoadContent(string assemblyLocation)
+        {
+            var lang = _pluginInterface.ClientState.ClientLanguage;
+            var folder = Path.GetDirectoryName(assemblyLocation);
+            return new Expansion[]
+            {
+                new ARR.ARR(folder, lang),
+                // new Heavensward.Heavensward(lang),
+                // new Stormblood.Stormblood(lang),
+                // new Shadowbringers.Shadowbringers(lang)
+            };
         }
 
         public string Name => "Boss Notes";
