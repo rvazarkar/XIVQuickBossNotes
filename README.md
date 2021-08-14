@@ -35,3 +35,6 @@ A boss strategy plugin for [Dalamud](https://github.com/goatcorp/Dalamud). Allow
 Adding new dungeons can be done by submitting JSON files in the appropriate format.
 
 A sample trial can be found [here](https://github.com/rvazarkar/XIVQuickBossNotes/blob/master/BossNotes/ENG/ARR/Trials/Chrysalis.json) and a sample dungeon can be found [here](https://github.com/rvazarkar/XIVQuickBossNotes/blob/master/BossNotes/ENG/ARR/Dungeons/LostCity.json)
+
+# Special Thanks
+Special thanks to everyone in discord who helped me with the random issues I had, and who provided code to solve problems directly (looking at you UnknownX)
