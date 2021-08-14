@@ -26,8 +26,6 @@ namespace BossNotes
         private Dictionary<ushort, DungeonSelectionIndex> _zoneMap;
 
         public string AssemblyLocation { get; set; } = Assembly.GetExecutingAssembly().Location;
-        internal static string AssemblyLocationInternal { get; set; } = Assembly.GetExecutingAssembly().Location;
-
         public void Dispose()
         {
             _ui.Dispose();

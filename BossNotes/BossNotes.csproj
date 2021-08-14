@@ -19,6 +19,7 @@
       </Reference>
       <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
         <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Newtonsoft.Json.dll</HintPath>
+          <Private>false</Private>
       </Reference>
     </ItemGroup>
     <ItemGroup>
@@ -33,4 +34,7 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
+    <Target Name="ZipOutput" AfterTargets="PackagePlugin">
+        <ZipDirectory DestinationFile="$(OutputPath)..\output.zip" SourceDirectory="$(OutputPath)" Overwrite="true" />
+    </Target>
 </Project>
