@@ -1,0 +1,23 @@
+﻿{
+  "Index": 0,
+  "Name": "The Dusk Vigil",
+  "Level": 51,
+  "Bosses": [
+    {
+      "Name": "Towering Oliphant",
+      "InDepthStrategy": "Casts Rear, an AoE around himself\nRoomwide Prehistoric Trumpet attack\nWill occasionally target a player and use Rock of Ages (stun), Wooly Inspiration (conal pull attack), and/or Rout (charge) When Rout is used, one of the party (usually tank) can stand between the Oliphaunt and the targeted player to share the damage. This will result in less damage taken from the attack.",
+      "QuickStrategy": "Can stand in front of boss when he uses \"Rout\" to split damage."
+    },
+    {
+      "Name": "Ser Yuhelmeric",
+      "InDepthStrategy": "Summons adds. Melee adds do some AoE attacks, caster adds cast a buff around themselves. Move the boss away from the caster adds as they spawn to avoid stacking the buff.\nUses Death Spiral, an AoE which hits everything not in/near melee range of him. Be aware of this when dealing with adds.",
+      "QuickStrategy": "Keep boss away from adds. Safe spot for AoE is near boss."
+    },
+    {
+      "Name": "Opinicus",
+      "InDepthStrategy": "The boss starts with several crumbled piles of masonry scattered around the room, similar to Garuda.\nAlpine Draft line attack, easy to avoid.\nFreefall - Opinicus turns to face one player and jumps on them. This will destroy any piles of rubble the player is standing near.\nWhirling Gaol room wide - the outer sides of the room will start pushing you in towards the center, where you will be stunned and then hit for some damage. Hiding behind some of the crumbled masonry in the room will prevent you from being pushed into the center.\nWinds of Winter - AE attack for moderate damage and stacks wind vulnerability on anyone struck. Avoid by standing so there is a pile of rubble between you and the boss. This attack will destroy all piles of rubble and new ones will fall from the ceiling.",
+      "QuickStrategy": "When the whirlwind spawns, run behind piles of rubble."
+    }
+  ],
+  "ZoneID":434 
+}

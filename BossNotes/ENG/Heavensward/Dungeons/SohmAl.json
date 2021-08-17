@@ -1,0 +1,23 @@
+﻿{
+  "Index": 1,
+  "Name": "Sohm Al",
+  "Level": 53,
+  "Bosses": [
+    {
+      "Name": "Raskovnik",
+      "InDepthStrategy": "Casts Acid Rain, placing AoE circles on all players\nSweet Scent spawns Dravanian Hornets that deal no damage and slowly move towards the boss. Kill hornets before they reach the boss\nRaskovnik will mark a player and draw them in after a few moments, stunning them for 2s, then cast Devour, a circular AoE attack. Hornets in range of Devour will give the boss a stacking damage increase\nCasts Spit, basic room-wide AoE to be healed through",
+      "QuickStrategy": "Kill adds before they get to boss. Possible to just burn boss."
+    },
+    {
+      "Name": "Myath",
+      "InDepthStrategy": "A dinosaur-like boss who will use a room-wide shout and spawn gelatinous adds.\nFocus down the big green add as soon as it spawns, otherwise it will cast a room-wide high-damage ability that will instantly KO most non-tanks.\nOtherwise, prioritize red over blue adds. Myath will use these adds to attack, with the effect based on which color he consumes;\nWhen he consumes a blue add: spread away from the party member with a blue arrow over their head.\nWhen he consumes a red add: stack on the party member with the red arrow on their head.",
+      "QuickStrategy": "Kill big add ASAP. Stack on red, split for blue."
+    },
+    {
+      "Name": "Tioman",
+      "InDepthStrategy": "Abyssic Buster is a moderate damage frontal-cone. Tanks should keep the boss facing away from the party\nCasts Chaos Blast, placing both a column and circle AoE on every player\nComet will mark two players and spawn random AoE circles around the room. After several seconds, the marks will fade and comets will fall where the players were standing, dealing room-wide AoE damage based on proximity to these meteors. Players should move as far away as possible when they drop\nBecomes invincible at ~45%. Players must DPS Tioman's wings one at a time to escape this phase (the last wing will heal to full once the first is destroyed.)\nMarks a player with Heavensfall during this phase, spawning clusters of circular AoEs on the player. Marked players should move away from the party\nCasts Dark Star during this phase, a room-wide AoE that must be healed through\nMechanics repeat after wing phase ends",
+      "QuickStrategy": "Drop markers at the edge of the arena and then run away. Kill wings one at a time."
+    }
+  ],
+  "ZoneID": 441
+}
