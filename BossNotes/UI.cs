@@ -270,12 +270,15 @@ namespace BossNotes
 
                 foreach (var phase in _selectedInstance.Bosses)
                 {
-                    ImGui.SameLine();
-                    if (ImGui.Button($"{phase.Name}"))
+                    if (!string.IsNullOrWhiteSpace(phase.QuickStrategy))
                     {
-                        var baseMessage =
-                            $"★{phase.Name}★: {phase.QuickStrategy}";
-                        OutputChat(baseMessage);
+                        ImGui.SameLine();
+                        if (ImGui.Button($"{phase.Name}"))
+                        {
+                            var baseMessage =
+                                $"★{phase.Name}★: {phase.QuickStrategy}";
+                            OutputChat(baseMessage);
+                        }
                     }
                 }
 
