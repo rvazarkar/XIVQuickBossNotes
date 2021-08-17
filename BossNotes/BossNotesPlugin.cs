@@ -31,6 +31,7 @@ namespace BossNotes
         {
             _ui.Dispose();
             _pluginInterface.CommandManager.RemoveHandler(Command);
+            _pluginInterface.CommandManager.RemoveHandler(ReloadCommand);
             _pluginInterface.ClientState.TerritoryChanged -= OnTerritoryChanged;
             _pluginInterface.Dispose();
         }
@@ -104,19 +105,31 @@ namespace BossNotes
             for (var i = 0; i < _expansions.Length; i++)
             {
                 for (var j = 0; j < _expansions[i].Dungeons.Length; j++)
-                    _zoneMap.Add(_expansions[i].Dungeons[j].ZoneID, new DungeonSelectionIndex(i, 0, j));
+                    InsertZoneMap(_expansions[i].Dungeons[j], new DungeonSelectionIndex(i, 0, j));
 
                 for (var j = 0; j < _expansions[i].Trials.Length; j++)
-                    _zoneMap.Add(_expansions[i].Trials[j].ZoneID, new DungeonSelectionIndex(i, 1, j));
+                    InsertZoneMap(_expansions[i].Trials[j], new DungeonSelectionIndex(i, 1, j));
 
                 for (var j = 0; j < _expansions[i].HighEndTrials.Length; j++)
-                    _zoneMap.Add(_expansions[i].HighEndTrials[j].ZoneID, new DungeonSelectionIndex(i, 2, j));
+                    InsertZoneMap(_expansions[i].HighEndTrials[j], new DungeonSelectionIndex(i, 2, j));
 
                 for (var j = 0; j < _expansions[i].Raids.Length; j++)
-                    _zoneMap.Add(_expansions[i].Raids[j].ZoneID, new DungeonSelectionIndex(i, 3, j));
+                    InsertZoneMap(_expansions[i].Raids[j], new DungeonSelectionIndex(i, 3, j));
 
                 for (var j = 0; j < _expansions[i].AllianceRaids.Length; j++)
-                    _zoneMap.Add(_expansions[i].AllianceRaids[j].ZoneID, new DungeonSelectionIndex(i, 4, j));
+                    InsertZoneMap(_expansions[i].AllianceRaids[j], new DungeonSelectionIndex(i, 4, j));
+            }
+        }
+
+        private void InsertZoneMap(Instance i, DungeonSelectionIndex idx)
+        {
+            try
+            {
+                _zoneMap.Add(i.ZoneID, idx);
+            }
+            catch
+            {
+                PluginLog.LogError($"Error inserting {i.Name}");
             }
         }
 
