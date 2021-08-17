@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using BossNotes;
 using Microsoft.Build.Tasks;
 using Microsoft.Build.Utilities;
@@ -11,6 +12,8 @@ namespace NotesValidator
         private const int MaxPrefixLength = 9;
         public string ProjectDir { get; set; }
         private bool _clean = true;
+
+        private Dictionary<ushort, string> _zoneIds = new();
 
         private void DirSearch(string directory)
         {
@@ -32,6 +35,17 @@ namespace NotesValidator
                     continue;
                 }
 
+                var zid = dungeon.ZoneID;
+
+                if (_zoneIds.ContainsKey(zid))
+                {
+                    Log.LogError($"Duplicate zone id in {dungeon.Name} and {_zoneIds[zid]}");
+                    _clean = false;
+                }
+                else
+                {
+                    _zoneIds.Add(zid, dungeon.Name);
+                }
                 
                 foreach (var boss in dungeon.Bosses)
                 {
