@@ -40,7 +40,7 @@
       <ProjectReference Include="..\NotesValidator\NotesValidator.csproj" Private="false" />
     </ItemGroup>
     <Target Name="Validator" BeforeTargets="Build">
-        <Validator ProjectDir="$(ProjectDir)" />
+        <Validator ProjectDir="$(OutputPath)" />
     </Target>
     <Target Name="ZipOutput" AfterTargets="PackagePlugin">
         <ZipDirectory DestinationFile="$(OutputPath)..\output.zip" SourceDirectory="$(OutputPath)" Overwrite="true" />
