@@ -15,6 +15,7 @@ namespace BossNotes
     public class BossNotesPlugin : IDalamudPlugin
     {
         private const string Command = "/bnotes";
+        private const string ReloadCommand = "/bnotesreload";
 
         private Configuration _configuration;
 
@@ -50,6 +51,11 @@ namespace BossNotes
             _pluginInterface.CommandManager.AddHandler(Command, new CommandInfo(OnCommand)
             {
                 HelpMessage = "Displays quick notes for bosses and lets you print quick strategies to chat."
+            });
+
+            _pluginInterface.CommandManager.AddHandler(ReloadCommand, new CommandInfo(OnReloadCommand)
+            {
+                HelpMessage = "Reloads boss strats."
             });
 
             _pluginInterface.UiBuilder.OnBuildUi += DrawUI;
@@ -117,6 +123,12 @@ namespace BossNotes
         private void OnCommand(string command, string args)
         {
             _ui.Visible = !_ui.Visible;
+        }
+
+        private void OnReloadCommand(string command, string args)
+        {
+            _expansions = LoadContent(AssemblyLocation);
+            BuildZoneMap();
         }
 
         private void DrawUI()
