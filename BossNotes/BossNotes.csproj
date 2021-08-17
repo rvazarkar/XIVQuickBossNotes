@@ -17,6 +17,7 @@
         <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
           <Private>false</Private>
       </Reference>
+      <Reference Include="Microsoft.Build.Utilities.v4.0" />
       <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
         <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Newtonsoft.Json.dll</HintPath>
           <Private>false</Private>
@@ -29,11 +30,18 @@
     <ItemGroup>
       <PackageReference Include="DalamudPackager" Version="1.2.2" />
     </ItemGroup>
+    <UsingTask TaskName="NotesValidator.Validator" AssemblyFile="$(SolutionDir)NotesValidator\bin\Release\net472\NotesValidator.dll" />
     <ItemGroup>
         <None Update="ENG\**\*.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\NotesValidator\NotesValidator.csproj" Private="false" />
+    </ItemGroup>
+    <Target Name="Validator" BeforeTargets="Build">
+        <Validator ProjectDir="$(ProjectDir)" />
+    </Target>
     <Target Name="ZipOutput" AfterTargets="PackagePlugin">
         <ZipDirectory DestinationFile="$(OutputPath)..\output.zip" SourceDirectory="$(OutputPath)" Overwrite="true" />
     </Target>
