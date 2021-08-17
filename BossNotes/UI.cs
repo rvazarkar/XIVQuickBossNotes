@@ -315,6 +315,12 @@ namespace BossNotes
             var commands = baseMessage.Replace("\r", string.Empty).Split('\n').Select(x => channel.FormatMessage(x))
                 .ToList();
 
+            if (commands.Any(x => x.Length > 179))
+            {
+                PluginLog.Error($"Quick strategy is too long. Aborting chat.");
+                return;
+            }
+
             var macroPtr = IntPtr.Zero;
             try
             {
