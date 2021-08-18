@@ -1,0 +1,23 @@
+﻿{
+  "Index": 16,
+  "Name": "Sohm Al (Hard)",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "The Leightonward",
+      "InDepthStrategy": "Excretion Targeted attack with Heavy component.\nSpore Sac Spawns many spores which will explode shortly.\nInflamable Fumes Room wide AoE.\nGlorious Blaze A proximity based explosion.",
+      "QuickStrategy": ""
+    },
+    {
+      "Name": "Gowrow",
+      "InDepthStrategy": "Volcanic Howl Room wide AoE\nUntelegraphed frontal cleave. Moderate damage. Can be dodged by tank.\n360° Swipe.\nFaces target and unleashes a fireball.\nFaces target and unleashes a linear flame breath.\nFaces target and charges.\nVery similar to Giruveganaus in Stone Vigil and Coincounter in The Aurum Vale. Most of this boss' attacks are untelegraphed. Move away if he faces you. Melee should learn to tell if he's doing a frontal cleave or a 360° swipe.\n\nMost of his attacks also leave behind a healing-down debuff if it connects with a player.",
+      "QuickStrategy": "Most attacks are untelegraphed. Move away if the boss faces you."
+    },
+    {
+      "Name": "Lava Scorpion",
+      "InDepthStrategy": "Molten Silk 270° telegraphed close range cleave. Safe zone is directly behind. Often turns around and repeats from the other side.\nDeadly Thrust Very high damage attack on primary target.\nHiss Summons 2-4 Scorpions which should be killed.\nRealm Shaker Short range circular AoE around boss.\nFlying Press Randomly marks a party member for a moderate attack with splash damage. Will create lava puddles near point of impact, as well as expanding existing puddles.\nThe lava puddles left behind by some of his attacks do high damage. Move toward the boss if necessary so you don't have to run through them to get back. Scorpion's Claw adds will also create lava puddles and need to be killed before they complete the Borehole cast. Scorpion's Tail adds use a less powerful version of Deadly Thrust.\n\nBeware Deadly Thrust in conjunction with damage from adds. Healers should be ready and tanks may want to use cooldowns.",
+      "QuickStrategy": "Kill adds ASAP. Try to drop fire puddles in safe places since they linger."
+    }
+  ],
+  "ZoneID": 617
+}
