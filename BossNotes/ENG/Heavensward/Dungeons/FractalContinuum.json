@@ -1,0 +1,23 @@
+﻿{
+  "Index": 7,
+  "Name": "The Fractal Continuum",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Phantom Ray",
+      "InDepthStrategy": "Avoid Double Sever, a double cone AoE that fans out directly in front of and behind the boss, and then repeats on either side of the boss. As the battle progresses, this ability will be accompanied by a large number of circular ground AoE.\n\nRapid Sever is a tank buster; use cooldowns as necessary to mitigate the damage.",
+      "QuickStrategy": ""
+    },
+    {
+      "Name": "Minotaur",
+      "InDepthStrategy": "11-tonze swipe is forward-facing melee cleave. This ability does not have an AoE ground indicator.\n\n111-tonze swing is 360-degree melee cleave & knockback. Deals extremely heavy damage. This ability does not have an AoE ground indicator.\n\nDisorienting Groan deals mild AoE damage and knockback. The boss will then rush from player to players dealing moderate damage with each impact. Afterward, he will use 10-tonze slash, a forward-facing line AoE.\n\n1111-tonze Swipe is a room-wide AoE. When the boss begins charging this ability, one player (usually healer or ranged) needs to click on one of the several Biomass Incubator tubes that encircle the arena. This will spawn an add, distracting the boss and interrupting his attack. The add needs to be killed immediately.",
+      "QuickStrategy": "When boss starts casting \"1111-tonze Swipe\", click on one of the \"Biomass Incubators\" and then kill the add immediately."
+    },
+    {
+      "Name": "The Curator",
+      "InDepthStrategy": "Clockwork Alarum adds will periodically spawn occasionally along the edge of the arena; each will occupy a single square, infusing it with a debuff that damages any player who touches it. These adds slowly walk forward, spreading the debuff to additional squares, and should be killed immediately.\n\nThe Curator will occasionally afflict a random player with a heavy DoT debuff called Aetherochemical Explosive. The afflicted player needs to be cleansed by the healer immediately.\n\nThe Educator will light up a pattern of floor tiles. The tiles will explode after a short time, dealing heavy damage to any players who happen to be standing on them.\n\nMines will occasionally spawn on random floor tiles. Avoid/ignore these until they explode.\n\nTanks, be ready to soak heavy magic damage while gearing. This boss is best tanked in a corner, facing away from the group. Be sure to relocate in case of mines so your melee DPS don't have to dodge them, and so that you won't run into them to avoid The Educator.\n\nIn summary:\n\nKill Clockwork Alarum ASAP.\nStay off lighted squares.\nAvoid mines.\nCleanse Aetherochemical Explosive.",
+      "QuickStrategy": "Kill adds ASAP. Avoid glowing panels. Esuna the bomb debuff."
+    }
+  ],
+  "ZoneID": 430
+}

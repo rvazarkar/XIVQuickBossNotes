@@ -1,0 +1,23 @@
+﻿{
+  "Index": 13,
+  "Name": "Xelphatol",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Nuzal Hueloc",
+      "InDepthStrategy": "Wind Blast path aoe\nLift he jumps up and summons 3 adds, kill turret first\nAir Raid party wide aoe\nHot Air party wide aoe cast by the turrets, it throws everyone up\nAirstone an add tethered to the boss or turret, kill asap\nLong Burst unavoidable, targets random player\nWhen 4 airstones appear tethered to a turret, kill the airstones first. Otherwise, kill turrets first.\n\nAfter the turret's health reaches 0, it will begin casting Hot Air. During the cast, players should position themselves underneath Nuzal which will bring him down after the cast is complete.",
+      "QuickStrategy": "Kill balloon when it comes down. Stand in whirlwind to knock the boss back. Kill anything that tethers."
+    },
+    {
+      "Name": "Dotoli Ciloc",
+      "InDepthStrategy": "On low frontal cleave\nOn high party wide aoe with push back, stand with your back to the barriers or you will fall in the spike pit\nDark wings targets random player and spawns windy aoe in their place, move out\nTerrible fury marks a random player and aoe blasts them, move away\nSwiftfeather Causes the next On Low to be almost instant. On Low is used right after. Cannot be dodged to the side as the cast is instant, so tank must move away from the boss preemptively to dodge.",
+      "QuickStrategy": "Stand in front of a fence when he casts \"On High\". Run out of tornadoes.\n \"Swiftfeather\" makes next \"On Low\" instant. Tank should move to the side preemptively."
+    },
+    {
+      "Name": "Tozol Huatotl",
+      "InDepthStrategy": "Ixali Aero III party wide aoe\nIxali Aero II path aoe\nHawk arrows and aoe marker on one player, stack up and run on the boss (still not confirmed)\nSummon Garuda he summons untargetable Garuda, she fires a room wide aoe with some safe areas and marks everyone with green crystals and aoe rings, spread out",
+      "QuickStrategy": "Spread out for markers."
+    }
+  ],
+  "ZoneID": 572
+}

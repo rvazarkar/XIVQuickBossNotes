@@ -1,0 +1,23 @@
+﻿{
+  "Index": 2,
+  "Name": "The Aery",
+  "Level": 55,
+  "Bosses": [
+    {
+      "Name": "Rangda",
+      "InDepthStrategy": "Rangda is a lightning-themed boss with a few straight-forward mechanics.\n\nElectric Cachexis is a long-cast attack that will attack everyone outside of Rangda's melee range. (Similar to Dragon's Voice from Cutter's Cry).\nWhen Rangda places the Prey debuff on you, run to one of the tall pillars encircling the room to transfer it.\nKill adds as they spawn.",
+      "QuickStrategy": "Drag tethers to pillars and kill adds."
+    },
+    {
+      "Name": "Gyascutus",
+      "InDepthStrategy": "Gyascutus is a poison-themed boss.\n\nGyascutus will place clouds of poison around the room. For each cloud out, Gyascutus will gain a stacking damage buff.\nAt intervals, bombs will spawn. Allow these to eat one or two of the gas clouds to manage how many buffs the boss has before killing them. (If not killed before consuming 4 clouds, a bomb will start casting self destruct that will hit the entire room, dealing damage and applying 4 poison stacks to each party member.)",
+      "QuickStrategy": "Let adds eat 1 cloud and then kill them."
+    },
+    {
+      "Name": "Nidhogg",
+      "InDepthStrategy": "The Crimson Price will put out increasing numbers of fiery orbs (starting with 2, with one more each time the attack is repeated) that do burning damage for a short period of time, then fire off a line AoE. When the final boss faces you while casting this attack, simply take a few steps to one side.\nThe Sable Price will trap one player, causing them to float as it casts Sable Weave. If Sable Weave is allowed to complete, the trapped player will die.\nAt about 30% health, the final boss will retreat to prepare an instant-death attack. During this time, multiple waves of adds will spawn and try to attack your NPC ally. It is important that tanks pull aggro of adds and face them away from the NPC so they do not die. Healers can keep the NPC alive by healing it. Kill adds as quickly as you can. When the final add dies, your NPC ally will put up a protective shield you must get under to avoid the instant-death attack. If your NPC dies or the adds do not die quickly enough, you will wipe.\nNo new mechanics after this point, simply a repeat of the Crimson Price and Sable price attacks until the boss is dead.\nIt should be noted that if the NPC dies at any point in the fight, including after he shields the instant death attack, Nidhogg will fire another, which is a guaranteed wipe.",
+      "QuickStrategy": "Kill \"Sable Price\" ASAP or the player dies. Kill adds, keep NPC healed and stack in the bubble with him." 
+    }
+  ],
+  "ZoneID": 435
+}

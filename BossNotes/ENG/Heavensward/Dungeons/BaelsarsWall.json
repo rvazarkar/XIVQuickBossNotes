@@ -1,0 +1,23 @@
+﻿{
+  "Index": 15,
+  "Name": "Baelsar's Wall",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Magitek Predator",
+      "InDepthStrategy": "Magitek Claw Attack on Tank.\nMagitek Ray Linear high damage attack.\nMagitek Missle Targeted high damage explosion on marked people.\nMove away from others when marked with Magitek Missle",
+      "QuickStrategy": "Move away when marked for missiles"
+    },
+    {
+      "Name": "Armored Weapon",
+      "InDepthStrategy": "Launcher Group wide AoE.\nDynamic Sensory Jammer Damages oneself for any actions taken while the debuff is active. Including movement.\nMagitek Bit Summoned Bits around room create a checkerboard AoE before disappearing.\nDistress Beacon Summons many low hp adds. Tank damage is significant due to quantity of adds.\nTake no actions or movement during Dynamic Sensory Jammer. Be ready with heals and AoE damage during Distress Beacon adds.",
+      "QuickStrategy": "When you get exclamation point, STOP MOVING AND ATTACKING."
+    },
+    {
+      "Name": "The Griffin",
+      "InDepthStrategy": "Beak of the Griffin Room wide AoE attack.\nFlash Powder Turn away from the boss. Stuns and reduces accuracy otherwise.\nSanguine Blade Leaps to one side of the room and cleaves the room in front of him for high damage.\nLionshead Multiple swords rain down around the arena, damaging to nearby players. After finishing the cast, the boss does a room-wide AoE, and the swords become targetable. Those will channel Corruption. Unkilled swords eventually explode. The massive sword in the middle does a high damage room wide explosion.\nBig Foot Marks a player and pushes it back after the cast\nRestraint Collar Places the party's healer in restraints, preventing all action. Kill restraints to release the healer.\nClaw of the Griffin High damage attack on tank.\nWhen The Griffin casts Lionshead, kill the sword in the middle and stand in the now vacant space. Be ready to chase boss to avoid cleave from Sanguine Blade. Turn around during Flash Powder, and be ready to break party members out of restraints.",
+      "QuickStrategy": "Kill \"Restraint Collar\" on healer ASAP. Kill the middle spear to make a safe zone."
+    }
+  ],
+  "ZoneID": 615
+}

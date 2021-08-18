@@ -1,0 +1,23 @@
+﻿{
+  "Index": 9,
+  "Name": "The Antitower",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Zuro Roggo",
+      "InDepthStrategy": "The first boss in the dungeon. Spawns Adds (Choirtoad) throughout the fight. Inflicts debuff toad on two players that can't be dispelled and spawns two adds, these must be killed to dispell the debuff (Seems to hit the Healer and one DPS). Spawns two bubbles that inflict moderate damage and the debuff Damage Down.\n\nBe sure to kill the adds quickly if your Healer is inflicted with Toad\nAbilities\n\nToy Hammer has a cast time on the Tank, causes a DOT (Concussion) that can be dispelled\nWater Bomb circular AoE that inflicts moderate damage",
+      "QuickStrategy": "Kill adds ASAP to remove Toad."
+    },
+    {
+      "Name": "Ziggy",
+      "InDepthStrategy": "The second boss, a spriggan.\n\nSpawns three stones called Stardust with expanding AoE that need to be killed before the platform is covered. They become solid after the AoE. Emotes \"Ziggy takes careful aim\" and tethers to one player, can be avoided by hiding behind a stone.\n\nSpawns adds, Spriggan Gemcutter, that need to be killed.\n\nAbilities\n\nJittering Glare Frontal Cone aoe\nGyrating Glare Platform-wide AoE for high damage, can be dodged by hiding behind the stones",
+      "QuickStrategy": "Kill rocks ASAP. Hide behind rocks when tethered. Kill adds."
+    },
+    {
+      "Name": "Calcabrina",
+      "InDepthStrategy": "A giant doll that starts out as 6 smaller dolls, 3 Calca and 3 Brina, that do various AoE patterns. Merges after the small ones are dead to Calcabrina.\n\nBe sure to kill Calca and Brina quickly, as it can hit your Healer and your party will take medium damage throughout the dollhouse phase.\nLook away from her if you or another player has a red eye above their head.\nAbilities\n\nDollhouse Transforms two players into dolls (Calca and Brina) that cause a dot on these player and the dolls need to be killed to free the player and end this phase\nSlapstick A channeled AoE that she casts while Dollhouse is active\nKnockout Has a medium cast time and inflicts massive damage on the tank (or other players if the tank is dead)\nBrace Parry attacks from a certain direction\nTerrifying glance Targets a player with a red eye above their head and blasts everything in their direction with a frontal cone. Causes confusion if hit. This attack can be avoided by looking away from the boss.",
+      "QuickStrategy": "Turn away for gaze attack. Kill adds/transformed players ASAP.\n Can only hit the boss from one side when parrying (reflects spells too!)"
+    }
+  ],
+  "ZoneID": 516
+}

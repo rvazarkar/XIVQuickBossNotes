@@ -1,0 +1,23 @@
+﻿{
+  "Index": 8,
+  "Name": "Saint Mocianne's Arboretum",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Rose Garden",
+      "InDepthStrategy": "When the boss is about to use his spinning breath attack, he'll summon several small untargetable adds. These have their own small breath attacks, though fortunately they do not spin. The boss will randomly spin clockwise or counterclockwise, so pay attention to which way he's turning. Starting on the second spinning breath attack, he'll summon Rose Hips, which look like balloons. They need to be killed quickly before they explode and do raid wide damage.\n\nAvoid breath attacks\nPrioritize killing Rose Hip adds",
+      "QuickStrategy": "Avoid breath attacks, and kill \"Rose Hip\" adds ASAP."
+    },
+    {
+      "Name": "Queen Hawk",
+      "InDepthStrategy": "There are several bees that randomly fly around the edge of the room. They will target random players and use a column AoE attack that needs to be dodged. When the Queen uses 'Ally', they will gather in two groups along the edge and launch a huge double column AoE attack with no ground marker. The bees blend in with the walls so you will need to pay attention to get out of the way in time. Partway through the fight, several Knight Hawk bee adds will appear and tether to the boss. This is a DPS check where the boss will do raid wide damage that gets stronger every time, so burn them down quickly.\n\nDo not stand in front of bees\nKill Knight Hawk adds",
+      "QuickStrategy": "Don't stand in front of THE BEES. Kill adds ASAP."
+    },
+    {
+      "Name": "Belladonna",
+      "InDepthStrategy": "The first noteworthy attack is a big AoE which you only can dodge by being next to the boss, you have time to run towards him so it shouldn't be an issue. After that he'll summon Bulbs that will place ground AoEs that give you a stackable magic vulnerability up debuff. At the same time he'll start casting Frond Fatale, which charm you into running inside the Bulbs' AoE to get the debuff. To avoid being charmed you need to look away from the boss, be aware that the cast time is rather short. Besides this there is one more room wide AoE that hits for about 4K. He also summons some targetable adds which need to be killed.\n\nDon't stand in yellow circles\nLook away when the boss casts Frond Fatale",
+      "QuickStrategy": "Stack on boss for \"Atropine Spore\". Look away from \"Front Fatale\". Kill adds ASAP."
+    }
+  ],
+  "ZoneID": 511
+}

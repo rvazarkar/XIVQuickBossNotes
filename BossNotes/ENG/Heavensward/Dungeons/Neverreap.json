@@ -1,0 +1,23 @@
+﻿{
+  "Index": 6,
+  "Name": "Neverreap",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Nunyenunc",
+      "InDepthStrategy": "Avoid Feather Squall AoE.\n\nBoss will disappear and area will be covered in mist, players must run around the edge to find Nunyenunc's Shadow and kill it.\n\nKill Nunyeninc's Feathers ASAP, they will explode dealing damage and inflict Vulnerability Up.",
+      "QuickStrategy": "Find the shadow in the fog and kill it. Kill feather adds."
+    },
+    {
+      "Name": "Canu Vanu",
+      "InDepthStrategy": "Morrowcloud targets random player and inflicts Bleed, healer needs to cleanse this.\n\nSacred Totem marks players, they will drop a totem in their place, a few seconds later, he will cast Totem Chant, a big purple circle will spawn in a random place, any Totems need to be carried out of this circle before the cast finishes. This is easier to manage if players try to spread out when marked, keeping previously spawned totems in mind.\n\nIf a totem is inside the circle when the cast is finished, it will turn into a Canu Vanu's Totem and make the boss immune, kill it.\nThe Chant has no other effects, its perfectly safe to stand in the target circle.",
+      "QuickStrategy": "Drop markers away from each other. Pick up totems and carry them out of the purple circle."
+    },
+    {
+      "Name": "Waukkeon",
+      "InDepthStrategy": "Marks a random player, they will spawn an add called Divine Mist, ignore it for now.\n\nSeveral Divine Gale will spawn and boss will start rushing around the area dealing damage to anyone in its path. Kill the Mists then the Gales.\n\nWhen all adds are dead, boss will cast Turbine, a party-wide AoE and knockback. Everyone needs to stack next to the boss where a largest area is behind them (i.e. If boss is on the west side, they should stack next to boss so they get knocked back east.) You can get knocked off and you can not get resurrection if you do.\n\nTornadoes will also spawn and roam around dealing damage and knocking anyone into the air that touches them.\n\nUse Limit Break 2 as soon as possible due to Tornadoes.",
+      "QuickStrategy": "Kill adds, avoid falling off. Get near the boss when \"Turbine\" is cast. Avoid tornadoes."
+    }
+  ],
+  "ZoneID": 420
+}

@@ -1,0 +1,23 @@
+﻿{
+  "Index": 9,
+  "Name": "Pharos Sirus (Hard)",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Ghrah Luminary",
+      "InDepthStrategy": "If a player becomes tethered and marked as prey, he/she should run up to one of the passive mobs circling the room to pass the debuff. After a short time, the afflicted mob will transform and become aggressive; these have very little hp and should die easily. Note that the spider mobs will leave behind a small pool of poison when they die, so be sure to pull them aside before killing.",
+      "QuickStrategy": "Bring tethers to passive adds around the room (birds are best). Kill transformed adds."
+    },
+    {
+      "Name": "8th Order Patriarch Be Gu",
+      "InDepthStrategy": "The boss will periodically perform a room-wide AoE that opens a fissure in the floor. Aether will leak out from these fissures until they are plugged by pulling a Corrupted Gel add and killing it on top of the plume. Eventually, the boss will summon a set of Kobold adds in addition to one or more purple Alchemy Engines; these engines provide a tether to the boss and should be destroyed immediately.",
+      "QuickStrategy": "Kill slime adds on top of damaged floor. Kill other adds when the boss charges prioritizing \"Alchemy Engines\""
+    },
+    {
+      "Name": "Progenitrix and Progenitor",
+      "InDepthStrategy": "Progenitrix will periodically summon a mixture of Grey bombs and Lava bombs around the perimeter of the arena. The Grey bombs should be killed immediately. Once Progenitrix is killed, Progenitor will spawn. Like his predecessor, Progenitor will also summon Grey bombs around the perimeter of the arena; however, they will be accompanied by blue Remedy bombs rather than Lava Bombs. The Remedy bombs will attach a tether to a Grey bomb and slowly move toward it. Hitting the Remedy bombs will push them away, allowing time for the Grey bombs to be killed.",
+      "QuickStrategy": "Kill grey bombs ASAP. Knock blue adds away from grey adds by hitting them. "
+    }
+  ],
+  "ZoneID": 510
+}

@@ -1,0 +1,23 @@
+﻿{
+  "Index": 10,
+  "Name": "The Lost City of Ampador (Hard)",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Achamoth",
+      "InDepthStrategy": "Spawns poison clouds that tether to a player and follow them. They explode upon contact.\n\nAbilities\n\nPsycho Squamae Frontal cone AE\nNeura Squamae Spawns ghosts of the players, look into the walls to avoid to much AE on the platform\nToxic Squamae Platform wide AE\nEnthrallment The spawned ghosts cast a frontal cone AE",
+      "QuickStrategy": "Run to clouds to pop tethers. When targetted by \"Neuro Squama\", face towards the outside of the platform."
+    },
+    {
+      "Name": "Winged Lion",
+      "InDepthStrategy": "Spawns Adds while casting Ancient Holy. Each player get a debuff that reduces their earth resistance or their wind resistance. They can walk in to the earth/wind bubbles that spawn on the platform for a moderate amount of damage to destroy them. Earth debuff walks into wind bubble and wind debuff walks into earth bubble.\n\nAbilities\n\nAncient Aero Circular AoE, leaves a wind bubble on the ground\nAncient Stone Circular AoE, leaves a stone bubble on the ground\nAncient Holy Winged Lion lifts into the air and can't be attacked and casts a circular AoE. Arcane sphere is spawned at his feet that must be killed to reduce damage.\nAncient Libra Gives or reassigns Wind or Earth vulnerabilities to each player",
+      "QuickStrategy": "Kill middle sphere and then other adds. Run into the puddle opposite of your debuff."
+    },
+    {
+      "Name": "Kuribu",
+      "InDepthStrategy": "Has a buff called Seed of Life with two stacks, kill it once to remove a stack, so you have to kill it three times total. Each time counts as a defeat/killing blow for the purposes of abilities like Samurai's Ageha.\n\nSpawns adds in phase 3 that tether to a player and interrupts him. Marked player will gain the 'Prey' status.\n\nAbilities\n\nGlory: Frontal Cone AoE\nCure IV (light circle, Phase 1+3): Each player that steps into the circle removes a spike and reduces the HP she will recover\nCure IV (dark circle, Phase 2+3): Persistent Ground AoE, get out of it to avoid damage.\nRegen: Applies Rehabilitation buff to Kuribu, causing health regen. Can be interrupted.\nCure III (Phase 2): Marks two players with large red ring AoEs; spread out to reduce damage taken.\nDecoy Spawns an add that must be killed\nReverse: Changes Kuribu's Cure effects to damage players instead of healing Kuribu.",
+      "QuickStrategy": "Drag the boss out of AoEs. Stand in sparkly AoE to reduce boss healing.\n Kill adds ASAP, get far away from ground marker."
+    }
+  ],
+  "ZoneID": 519
+}

@@ -1,0 +1,28 @@
+﻿{
+  "Index": 5,
+  "Name": "The Aetherochemical Research Facility",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Regula Van Hydrus",
+      "InDepthStrategy": "Stuns the tank and follows up with a high damage attack. Heal as necessary.\nSummons turrets every phase swap, with one additional turret per swap. Turrets self-destruct if not killed in time, causing room-wide damage.\nMagitek Turret Is target a random party member with a visible line and will continuously attack them.\nMagitek Turret IIs target random party members with circle AoEs.\nAfter switching to Phase 2, he will move to the walls and repeatedly cast Magitek Slug, an easily dodged line AoE\nAt the end of Phase 2 will cast Magitek Spread, a large AoE that hits everywhere except a wide cone behind him.",
+      "QuickStrategy": "Kill turrets. Tank can soak turret damage by breaking line."
+    },
+    {
+      "Name": "Harmachis",
+      "InDepthStrategy": "Party members should remain on different sides of the boss when possible, only stacking up to mitigate Ballistic Missile.\n\nWeighing of the Heart: Changes Forms, form will be announced but may be only a split second before the change. There is no cast or announcement prior to changing back to Sphinx.\nSphinx form\nRiddle of the Sphinx is an easily dodged circle AoE.\nWill periodically attack the tank with a unmarked cone of Poison.\nAnti-Cobra form\nHigh damage tank buster (6000-8000+ damage)\nAnti-Naga form\nPetrifaction is a gaze attack that will cause 10 seconds of Petrification unless you are looking away from the boss.\nCircle of Flames is an instant AoE that will target multiple party members, stay spread out to avoid stacking damage.\nAnti-Machina form\nBallistic Missile will target a party member with a high-damage missile, indicated by a small circle on the ground. Have one other party member stack on you to spread the damage.\nGaseous Bomb is an instant cone AoE that will target a random party member.",
+      "QuickStrategy": "Turn away for \"Petrification\". One person should stack with \"Ballistic Missile\" target."
+    },
+    {
+      "Name": "Lahabrea & Igeyorhm",
+      "InDepthStrategy": "There are two bosses active during the course of the fight. The inactive boss will cast End of Days, a line AoE, while the party fights the other boss.\nBoth bosses will periodically cast back to back AoEs, Blizzard Sphere which freezes, and Fire Sphere which deals damage. The AoEs will overlap greatly.\nWhen Lahabrea is active the floor will be frozen, causing party members to slip forward when attempting to walk. Lahabrea will then cast AoE's that do large damage--be very careful not to slip into AoEs in this phase.\nAbilities\nEnd of Days: Line AoE cast by the inactive boss\nDark Orb: Basic attack, targets tank\nSea of Pitch: DoT circle AoE, targets all party members\nBlizzard Sphere: Multiple circle AoEs that will cause Frozen, always followed by Fire Sphere\nFire Sphere: Multiple circle AoEs, always preceded by Blizzard Sphere\nDark Blizzard II: Random circle AoEs\nDark Fire II: Random circle AoEs\nPermafrost: Only cast by Igeyrohm while inactive, will apply Thin Ice, causing party members to slip forward when attempting to walk",
+      "QuickStrategy": ""
+    },
+    {
+      "Name": "Ascian Prime",
+      "InDepthStrategy": "Dodge AoEs\nBoss will mark two players with a circular AoE with a safe area in the middle. All players should stack up to avoid taking damage.\nBoss will become immune and summon two orbs--Blizzard and Fire--that move towards him. As before, Blizzard will freeze the party if not broken and Fire will deal damage if not broken. Kill the Blizzard orb first in the event there is not enough DPS for both orbs.\nLast phase will spawn four dark portals around the room. The boss will begin casting Universal Manipulation, which deals AoE damage and places a plethora of hazardous debuffs (think Bad Breath with stuns.) Players must jump into the portals before the cast bar completes to avoid Universal Manipulation. Some AoE healing is necessary as the portals place a DoT on each party member.\nAt around 30%, the boss attaches orbs to all players. The orbs will follow their tethered players, and damage and apply a debuff if they hit. If a player pops another player's orb, they take the damage, but not the debuff. Therefore it is best for players to pop each other's orbs, minding that the tank and healer should move the least so they can maintain their roles. Players can run from the orbs to stall for time if they have any hazardous debuffs or are too low on HP to survive.\nAbilities\nAncient Disruption: Targeted circle AoEs\nShadow Flare: Causes room-wide damage\nAncient Circle: Two party members will be marked with circular AoEs, with a central safe area. Stack up to avoid damage.\nAnnihilation: Causes high room-wide damage\nUniversal Manipulation: Causes room-wide damage and five debuffs, can be avoided by stepping into one of the dark portals around the edge of the room before the cast completes.\nThe portal will cause Bleeding and Fetters until Universal Manipulation is complete.\nChaos Sphere: Four tethered orbs will appear and move towards the tethered party member. If they hit their target they will cause damage and debuffs. Players should pop other player's orbs to avoid the debuffs. They will still take damage.\nEntropic Flame: Multiple line AoEs in a T, from his sides and front.",
+      "QuickStrategy": "Kill \"Blizzard\" then \"Fire\" orbs ASAP. Jump into portals when boss casts \"Universal Manipulation\".\n Run into other player's orbs when tethered."
+    }
+  ],
+  "ZoneID": 438
+}

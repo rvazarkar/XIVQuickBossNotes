@@ -1,0 +1,23 @@
+﻿{
+  "Index": 3,
+  "Name": "The Vault",
+  "Level": 57,
+  "Bosses": [
+    {
+      "Name": "Ser Adelphel Brightblade",
+      "InDepthStrategy": "Ser Adelphel uses a few moves. To begin with, he will have 3 adds with him, all of whom have extremely low health. When you've killed the others and gotten Adelphel around 30%, he will change forms, knocking everyone back and beginning the true encounter.\n\nWhen he casts Holy Shield Bash, he will target one player, jump to them, and perform a stun and hit combination.\nWhen he casts Holiest of Holy, he will deal moderate damage to every player in the room.\nAt intervals, Adelphel will charge around the room, dealing damage and leaving behind orbs of light. These will deal damage to players upon exploding. When he is done charging, he will target one player and come crashing back down to them.",
+      "QuickStrategy": "Stay away from explody orbs."
+    },
+    {
+      "Name": "Ser Grinnaux the Bull",
+      "InDepthStrategy": "Like Ser Adelphel, Grinnaux first has a trivial health pool and will at one point change forms, knock everyone back, and unleash his full potential.\n\nGrinnaux has multiple ground pattern AOEs to watch out for.\nAt regular intervals throughout the fight, Grinnaux will put down a Hyperdimensional Slash attack that lays out a red AOE before him in the direction of a random player. When this goes off, it will deal damage to anyone in its wake and leave an Aetherial Tear where it hits the wall of the room. This attack is always repeated twice in a row. Best strategy is to bait the Tears to the same general part of the wall so they aren't spread around; they will tether to and damage any player that gets too close to them. This is exacerbated by....\nAfter using his Slash attack to put out two Aetherial Tears, Grinnaux will use Faith Unmoving, a room-wide attack with a cast bar. This attack will push all players directly backward from Grinnaux. Make sure your back isn't to one of the Aetherial Tears; this is why it's beneficial to keep them all close together, so you have a safe place to get pushed back to. (Alternatively, you can use Arm's Length or Surecast to nullify the knockback.)\nGrinnaux will also put out a Dimensional Rift circle AOE that will damage players.",
+      "QuickStrategy": "Stay way from \"Tears\" near the walls.\n \"Faith Unmoving\" is a knockback so don't be in front of \"Tears\""
+    },
+    {
+      "Name": "Ser Charibert",
+      "InDepthStrategy": "Ser Charibert does not have a phase switch like the other two; he starts out at full power.\n\nCharibert will do room-wide damage with Altar Pyre.\nCharibert will use a Holy Chain to chain two players together. Simply run away from each other to break this chain; otherwise you will take recurring damage.\nCharibert will cast Heavensflame and put out flame rings on the ground.\nAt regular intervals, he'll summon a broken row of \"knights.\" Like the mummies in The Sunken Temple of Qarn (Hard), these will march across the room from wherever they spawn (they always spawn on the same side, though). Avoid being run over by these knights, as they will put Slow on you.\nAt half health, Charibert will disappear for a moment. When he reappears, he will have a Dawn Knight and Dusk Knight with him, and summon several Holy Flames around the outside of the room. The Knights can safely be ignored; just make sure not to stand in their AOE attacks. Kill the Holy Flames quickly. After a short while, Charibert will cast a room-wide attack which deals more damage if any Holy Flames are left. After that, the normal rotation resumes, but now there will be two rows of knights and two sets of flame rings from Heavensflame.",
+      "QuickStrategy": "Avoid marching adds. Run apart to break tethers. Kill orbs ASAP"
+    }
+  ],
+  "ZoneID": 421
+}

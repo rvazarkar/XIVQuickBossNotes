@@ -1,0 +1,23 @@
+﻿{
+  "Index": 12,
+  "Name": "Hullbreaker Isle (Hard)",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Battle Couerl",
+      "InDepthStrategy": "This fight is very straightforward and is presented as several waves of fights. Primarily you'll need to dodge the AOEs, which include lines from the mobs and circles from offshore cannons. However, starting in the second wave and continuing into further waves, a coeurl will spawn tethered to the healer. This needs to be killed quickly as it applies a healing down debuff to the healer and a damage up buff to itself.",
+      "QuickStrategy": "Kill the Couerl add tethered to healer ASAP."
+    },
+    {
+      "Name": "Ymir",
+      "InDepthStrategy": "In this fight you'll be dealing with a snail. This boss has a few major mechanics.\n\nA lightning tether. Move away to break the tether\nSlime spots. These will cause you to become fettered for a time. However, they are useful because...\nTargeted lightning. You will be marked with a red flag. If this happens, move into the slime to become fettered and also immune to the lightning.\nFreezing. You will be marked with an ice flag and a circle. Try to place all of the circles close to each other without overlapping because after an initial freezing attack, an exploding ice block will be left behind. If these are not close to each other there may not be a safe spot.",
+      "QuickStrategy": "Run apart to break tethers. Try to group ice markers together. Stand in swirly spots when marked with red."
+    },
+    {
+      "Name": "Grand Storm Marshal Slafyrsyn",
+      "InDepthStrategy": "This boss has two forms. In the first form, simply tank him away from the rest of the party, dodge the AOEs, and heal through his arena wide damage. His second form is more complex and again has a few possible mechanics.\n\nChests. Several chests will spawn and he will poison everyone. Some of the chests will have a potion in them. Make sure each player gets to a chest with a potion to remove the poison.\nTarget marker. A player can become marked. That player will be affected by a severe heavy before the boss targets them with a high damage AOE. The heavy needs to be removed ASAP so the player can dodge the AOE. This timing is very tight if you fail to notice the target icon, so if the person cannot escape, heal them to full so they can soak the damage.\nFiresand Kegs. The boss will throw these around the arena and then begin targeting them. After a time a targeted keg will explode causing massive damage in a fairly large area around it. Simply dodge the targeted keg. You can also knock the kegs with an attack to move them to the edge of the arena.",
+      "QuickStrategy": "Watch which chests have potions. Use them to cleanse poison. Cleanse Heavy ASAP. \n Knock kegs away from the boss."
+    }
+  ],
+  "ZoneID": 557
+}

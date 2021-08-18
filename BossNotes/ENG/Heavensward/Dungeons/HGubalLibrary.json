@@ -1,0 +1,23 @@
+﻿{
+  "Index": 14,
+  "Name": "The Great Gubal Library (Hard)",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Demon of the Tome",
+      "InDepthStrategy": "Best to tank it sideways so that all the AoE indicators are visible. Otherwise, the fight is mainly a positioning check. Watch out for narrow AoE markers at the edge of the arena; a large AoE attack will follow in between them.",
+      "QuickStrategy": "Tank the boss sideways to make AoE easier to see."
+    },
+    {
+      "Name": "Liquid Flame",
+      "InDepthStrategy": "Bibliocide: Unavoidable party-wide AoE for moderate damage.\nSea of Flames: Scorched earth AoE attack, much like Ifrit's.\nSlosh: A random player gets tethered to the boss; it will shortly charge at them; the player has to run far away from the boss.\nImportant mechanics:\n\nFerrofluid: Players get + and - marks, if your mark is the same as the boss's, run close to the boss. Otherwise, run away.\nSeal of Night and Day: Players get sun and moon marks; run to the corresponding sun or moon sigil on the floor.",
+      "QuickStrategy": "Human Phase: run away with tether.\n Tornado Phase: same mark as boss = run close to the boss. Different = run away from boss."
+    },
+    {
+      "Name": "Strix",
+      "InDepthStrategy": "It possesses four different attacks, three of which can be avoided through proper preparation. Healers will need to be careful, as they will have to jump between the boss and their party members to properly avoid damage while keeping the party healthy.\n\nOn Tornados: When this ability is being readied, step into a dark circle to receive a Leaden effect that will reduce the damage to zero. Failure to do this will cause two hits of heavy damage and Vulnerability Up.\nOn Quakes: When this ability is being readied, step into a windy circle to float above the ground, which will reduce the damage to zero. Failure to do this will cause large damage and stun.\nOn Imps: This ability is quickly cast, and turns all party members into Imps, also giving them Lightning Vulnerability Up II. Immediately after transformation, Strix will begin casting On Thunder III on all targets which, if it hits an Imp, does heavy damage. To negate this, step into a green circle and turn back to normal, causing the Thunder spell to do minor damage.\nOn Darkness II: This ability cannot be dodged, and simply does large damage.\nAt about 50%, Strix will summon a Behemoth Ward into the center of the room. This is a non-targetable mob that will rain down comets on the party. Eventually, rocks will be placed on the ground as the Behemoth begins to bring down its meteor, with warnings indicating ten seconds left, and five through one seconds left. Players must have the rocks between them and the behemoth or they will take enormous damage.\n\nNote:\n\nTornado - Dark Circle\nQuake - Windy Circle\nImp (only if you've become one) - Green Circle",
+      "QuickStrategy": "Quake = windy circle. Tornado = dark circle. Imps = green circle. Stand behind rocks for meteor."
+    }
+  ],
+  "ZoneID": 578
+}
