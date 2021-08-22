@@ -1,0 +1,23 @@
+﻿{
+  "Index": 5,
+  "Name": "Containment Bay P1T6",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "The fight begins with Thunder II, a large conal AoE aimed in the direction that Sophia is facing, immediately followed by Thunder III.\nThunder III is a giant donut AoE emitted from Sophia with a safe spot just inside her hitbox. If players are far enough away, it can also be avoided by standing at max-range, depending on Sophia's position.\nPlayers must also be wary of Aero II, a large AoE centred on Sophia that deals moderate damage and inflicts a knockback. While neither fatal nor particularly difficult to avoid, players should respect this mechanic later in the fight seeing as the rails on the side of the arena will eventually collapse, allowing players to fall out of the arena to their deaths.\nDaughter, the lower-half of Sophia, will occasionally disappear from beneath her and materialize at the edges of the arena. After doing so, it will charge up and fire a straight line-AoE called Light Dew across the platform.\nSophia Rush is much like the Daughter attack used by her lower half. Sophia herself will move to the eastern or western edge of the arena and charge a huge straight line-AoE across the platform that must be avoided.\nSophia will eventually create Proximity Markers under the feet of players that they must move away from to avoid as much damage as possible.",
+      "QuickStrategy": "Safe spot for \"Thunder III\" is inside her hitbox. Don't stand in front of \"Daughter\" add."
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "Sophia begins this phase by casting Cloudy Heavens, making herself invulnerable and marking all players with Eternal Doom. This debuff can only be cleared by defeating three adds.\nIf players are fatally injured while affected by Eternal Doom, they will become mindless zombies, attacking their fellow teammates with no control over their actions.\nThe First Demiruge is a Paladin-based add that utilizes AoE attacks and a directional parry. Players who attack the wrong side during the parry-mechanic will be knocked away. Ideally, this add should be focused last.\nThe Second Demiruge is a Healer-based add which will heal the other adds and also uses a gaze mechanic to confuse any players looking directly at it. Ideally, this add should be slain first.\nThe Third Demiruge is a Lancer-based add that will eventually drop a persistent ice puddle on the ground at its current position. Ideally, this add should be positioned at the side of the arena to prevent the puddle from being too obstructive during Phase 3 and the rest of the current add-phase.",
+      "QuickStrategy": "Kill order is \"Second\" -> \"Third\" -> \"First\""
+    },
+    {
+      "Name": "Phase 3",
+      "InDepthStrategy": "From here on, it will now be possible to fall off the platform, though players that do so for any reason can still be resurrected after a brief delay.\nSophia will eventually use Quasar, which creates tethers to the east and west of the platform. Each of these tethers will spawn a meteor that will slowly fall towards a set of scales on both sides of the platform. Players must determine which side of the arena is safe by calculating the 'weight' of the meteors and moving to the side that weighs the least. On collision, the arena will tilt towards the side that weighs the most and send players sliding in that direction. The larger the weight-difference, the further players will slide.\nThere are two types of Meteors that help calculate the tilt.\nOrange Meteors have a value of 1 and can appear on both sides of the arena.\nBlue Meteors have a value of 3 and will only appear on one side.\nThe best approach to this mechanic is to always move towards the opposite side of any Blue Meteors and stand at the very edge before the arena tilts.\n\nPlayers must also be mindful of the ice puddle left behind by The Third Demiruge during Phase 2. Before the scales tip, it is best to position yourself so that you don't slide through the puddle.\nLastly, when Sophia reaches 15% health or less, she will spawn another Second Demiruge (healer-add) with the same abilities from Phase 2. However, despite being a healer, it cannot heal the boss. Depending on overall DPS, the group must decide between nuking the add to reduce the threat of its gaze attack, or have the off-tank move it away while the group focuses on Sophia to end the fight.",
+      "QuickStrategy": "You can fall off the platform now. When \"Quasar\" is cast, go to the very edge of the side without the blue meteor."
+    }
+  ],
+  "ZoneID": 576
+}

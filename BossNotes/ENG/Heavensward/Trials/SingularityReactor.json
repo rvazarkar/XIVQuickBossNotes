@@ -1,0 +1,13 @@
+﻿{
+  "Index": 2,
+  "Name": "The Singularity Reactor",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "King Thordan",
+      "InDepthStrategy": "The Singularity Reactor is a fairly straightforward end-of-story trial. In general, dodge AoEs, kill adds when they do happen. It has three phases, although the most eventful are the first two.\n\nSimilar to Ramuh's Thunderstorm, four players at a time will be marked for a small lightning circle that will hit after them and everyone around them a few seconds. Simultaneously, Thordan will put AoE circles below the other four players. These will turn into icy patches on the ground that will inflict heavy on anyone going through them. Move away from other members of the party to avoid stacking AoEs and leaving room for movement.\n\nHe also casts Ancient Quaga throughout the fight, hitting for moderate party damage. Heal/shield through it as necessary.\n\nAfter channelling The Dragon's Eye, he will be able to use The Dragon's Gaze, which inflicts a party-wide terror. As with any other gaze attack, turn your character away from him to avoid it completely.\n\nHe will cast Knights of the Round periodically as well, summoning different Knights of the Heavens' Ward who cannot be targeted to provide different mechanics to keep in mind. The first two will be Ser Janlenoux and Ser Adelphel, who will charge around the room, putting a bleeding debuff on everyone in their path and leaving behind orbs of light. These will deal damage to players upon exploding. Note that this debuff can be dispelled. Next will be Ser Vellguine who will stand outside of the platform and cast a column AoE that goes from one side to the other and can be easily avoided. Ser Hermenost will pop out next to Thordan with three small platforms that need to be stood upon. A single player for each one of them will suffice. Fail to do so and the entire party will be affected with paralyze. While the duration is not too long and this is not game-changing, your healers will thank you.\n\nAt around 15% to 10%, phase two will start. Thordan will leave the arena, letting his Knights have the spotlight.",
+      "QuickStrategy": "Dodge AoEs, kill adds, turn away for gaze attack, and enjoy."
+    }
+  ],
+  "ZoneID": 437
+}

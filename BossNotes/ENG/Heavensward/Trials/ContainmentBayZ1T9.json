@@ -1,0 +1,13 @@
+﻿{
+  "Index": 6,
+  "Name": "Containment Bay Z1T9",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Zurvan",
+      "InDepthStrategy": "",
+      "QuickStrategy": "Phase 1: Don't stand on glowing platforms.\n Phase 2: Kill caster adds first.\n Phase 3: Match your color to the circle. Stack for the marker."
+    }
+  ],
+  "ZoneID": 637
+}

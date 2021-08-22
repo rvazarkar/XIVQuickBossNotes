@@ -1,0 +1,18 @@
+﻿{
+  "Index": 4,
+  "Name": "Containment Bay S1T7",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "Generally, try and keep DPS and healers stacked up behind him for this phase.\n\nFiendish Rage - 1 player is marked with the 4 arrows indicator. All other players should stack on them to share the damage.\nRatzon - Approximately 6 players will get a small green AoE mark on them. These players should spread out to avoid stacking the damage taken.\nAin - The arm air push. Sephirot will turn to face a random player and hold very still with his arms up. This attack has a 180-degree blast radius, has no cast and gives a vulnerability debuff on hit, but can easily avoided by stacking behind him.\nAt the phase change (about 60% hp) he'll spawn Cochma and Binah adds, burn down Binah first, then Cochma.",
+      "QuickStrategy": "DPS and healers should stay behind the boss as much as possible as he cleaves."
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "This starts at around 60% health - be careful as you can fall off the platform during this phase.\nStay in the center as best you can.\nPillar of Mercy - fist strikes on the blue circles with knockback - stand next to them (not inside otherwise you take the dmg) on the inside of the arena to avoid being knocked off the platform.\nHe puts individual markers on two players which look like giant beams of light. He will do a large cleave at these two. Various strategies can be applied, but easiest is just strafing to a side, having marked players go one way, and non-marked go the other way. Use of waypoints is recommended.\nKill the Storm of Words add quickly, before it casts Revelation - if it casts Revelation you'll wipe. Once Storm of Words is dead, focus on killing the Binah/Cochma adds.\nIt will drop an air current on death, when it's marked by arrows stand inside to avoid the arm sweep.\nAfter the arm sweep he will charge up a beam, spread out before restacking in the center.\nHe will summon two large red pillars. One person needs to stand in each pillar to avoid raid damage (Tanks are a good choice for this.)",
+      "QuickStrategy": "\"Storm of Words\" add must die ASAP. Get in the puddle to avoid arm sweep. One person needs to stand in each tower."
+    }
+  ],
+  "ZoneID": 517
+}

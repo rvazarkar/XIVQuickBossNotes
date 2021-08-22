@@ -1,0 +1,23 @@
+﻿{
+  "Index": 0,
+  "Name": "Thok ast Thok (Hard)",
+  "Level": 53,
+  "Bosses": [
+    {
+      "Name": "Phase 1",
+      "InDepthStrategy": "Prelude to Slaughter - Uses this after the first 100 Bloodlust. Combination of AoEs: #1 Large melee AoE, negligible damage. #2 Pattern of linear fire AoE across the arena with several safe spots. #3 Covers the arena except the center in AoE.\n\nSlaughter - Combination of AoEs: #1 AoE that comes out of him in a linear fashion two-ways (i.e. Infront and behind him), negligible damage, knocks back. #2 & #3: These happen at the same time, a cross fire AoE will form across the arena that will deal damage when they explode and leaves a cross of fire that inflicts Burn on anyone standing in it. Two players get marked with a purple icon above their head, they will have a large purple circle around them, these 2 players need to spread to opposite sides of the arena and other players should run out of the circle. Deals heavy damage to all inside. Note the purple circle will explode a couple of seconds after the cross explodes, players can move through the cross in those seconds to move out of the circles.\n\nRevenge - Every now and then, Ravana will buff himself for 5s to increase his Parry and will deal damage back to ",
+      "QuickStrategy": "Don't fall off the arena. Try to make sure there's a wall behind you at all times.\n Do not overlap the targeted AoEs. Middle is safe zone for room wide AoE."
+    },
+    {
+      "Name": "Phase 2",
+      "InDepthStrategy": "Chandrahas (Ultimate)\nAt about 60% multiple adds will spawn. You have about 80 seconds until Ravana does his Ultimate.\n\n\nSpirit Gana - Casts Blizzard and Falling Laughter\n\nMoon Gana - Casts Fire and Falling Laughter\n\n\nYou need to kill these adds before they finish casting Falling Laughter. Moon Gana will start casting quickly so these take priority, 2 of these will spawn at separate intervals. If Falling Laughter finishes, the adds will drop a large sword into the ground which will be used before Chandrahas.\n\n\nAfter about 80s, any remaining adds will die and leave a sword, Ravana Fetters all players and lifts them off the ground. Once for each sword in the ground, he will use Laughing Moon, which each deals moderate damage and applies a stack of Vulnerability up to all players, then cast Chandrahas which deals heavy damage. Note that if there are 3 or more swords in the ground, this will most likely cause a wipe.",
+      "QuickStrategy": "Kill adds ASAP. \"Spirit Gana\" is higher priority than \"Moon Gana\"."
+    },
+    {
+      "Name": "Phase 3",
+      "InDepthStrategy": "Will not use Prelude to Slaughter, introduces all other abilities mentioned.\n\n\nOffensive stance rotation: Swift Slaughter -> Slaughter\n\nDefensive stance rotation: Pillars of Heaven -> Surpanakha (hits 3 times) -> Rose of Hate -> Surpankha (hits 10 times) -> Pillars of Heaven\n\nNo Stance: Atma-Linga will be used, otherwise he focus the tank.\n\n\nPillars of Heaven\n\nAfter the Ultimate, areas of the wall around the edge will crumble. You can be knocked off the arena by Pillars of Heaven. Make sure you will get knocked back into the wall.\n\n\nRose of Hate Orbs\n\nThe players with orbs should separate from each other and take the damage from the orbs themselves to avoid unnecessary AoE damage and debuffing to everyone.",
+      "QuickStrategy": "When marked, get away from other players. Boss will jump between each marked player."
+    }
+  ],
+  "ZoneID": 432
+}
