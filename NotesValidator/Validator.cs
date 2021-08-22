@@ -49,8 +49,9 @@ namespace NotesValidator
                 
                 foreach (var boss in dungeon.Bosses)
                 {
-                    var quickStrategy = boss.QuickStrategy;
-                    var lines = quickStrategy.Replace("\r", string.Empty).Split('\n');
+                    var baseMessage =
+                        $"★{boss.Name}★: {boss.QuickStrategy}";
+                    var lines = baseMessage.Replace("\r", string.Empty).Split('\n');
                     foreach (var line in lines)
                     {
                         if (line.Length + MaxPrefixLength >= 179)
