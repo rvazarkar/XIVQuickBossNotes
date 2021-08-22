@@ -1,0 +1,28 @@
+﻿{
+  "Index": 0,
+  "Name": "The Void Ark",
+  "Level": 60,
+  "Bosses": [
+    {
+      "Name": "Cetus",
+      "InDepthStrategy": "This fight is a simple DPS check. Cetus will randomly drop bubbles that create small persistent AoEs on the ground. It will also cast body slam in a random area, has a room-wide electric AoE where you must be in close proximity of Cetus to avoid damage. During the fight, Cetus will spawn adds, take them down. It will also spawn smaller adds with a long-range AoE charge; the targeted raid member should go into melee range to prevent damage to other members. As these adds are up Cetus will fly across the map dropping large AoE bubbles that deal massive damage and knockback. Near the end of the fight Cetus fly into the middle of the map, stun everyone and pull half the raid party into the middle. It will create an impassable wall and spawn four adds that are linked to its core in the middle. The raid members will have a timer to destroy all the adds outside and the one inside or else they will KO.",
+      "QuickStrategy": "Kill all adds. When marked, get away from everyone else, boss will dive at you. \nSafe zone for \"Electric Whorl\" is inside Boss's hitbox."
+    },
+    {
+      "Name": "Irminsul and Sawtooth",
+      "InDepthStrategy": "This fight is a little confusing for first-timers, one tank has to hold Irminsul, and another holds Sawtooth. The soil under the adds will shift during the fight, kill the adds before they are consumed, or move them away. If they are consumed the boss will get points and if it reaches the max amount, the party will wipe. Avoid being eaten, you will become infected with a plant, if you are infected it will become hard to control your character, and it will attempt to infect everyone close by with a short cone AoE. Irminsul does a circle AoE and Sawtooth occasionally swings its tail. Random raid members will be marked with a yellow circle with a large AoE radius around them, they will tether and bind nearby raid members and make them unable to perform actions. Break this by having unaffected raid members run through the tethers. Sawtooth will have red electricity around it and begin casting a long spell, everyone MUST go behind Irminsul AWAY from Sawtooth's line of sight to avoid damage, as it is a KO ability.",
+      "QuickStrategy": "One boss has ranged resist and one has magic resist, make sure you attack the right one!\n Kill adds ASAP. When boss uses \"Smashing Stomp\" get behind the tree."
+    },
+    {
+      "Name": "Cuchulainn",
+      "InDepthStrategy": "Cuchulainn has multiple mechanics for his fight:\n\nEveryone will have a non-curable bleeding debuff.\nFirst, you want to stay behind him because he will cast corrosive bile which deals a moderate amount of AoE damage in front of him.\nHe will then spawn five statues that raise the bleeding stack to 5, if not destroyed in time they will explode. Destroying them will also reduce the bleeding stack back to 1.\nHe will also throw out a large poison circle AoE, it's best to not stand on the raised platforms because of this. He will turn the ground green and then you must stand on a raised platform to avoid extreme damage.\nHe will spawn Slime adds on the platforms, and attempt to eat them. Do not let him consume them. Whoever has enmity can pull the mobs away from his cone AoE. If he consumes an add he gains a stacking Damage Up buff.\nAfter this phase he will cast a room-wide AoE, healers need to prepare AoEs because it deals moderate damage.\nHe will also slam his tentacles on the ground and you have to be in between the tentacles to avoid corruption damage and a knockback.\nHe will cast black lung until the battle ends, which in addition to increasing the stack on the bleeding debuff is an AoE and spawns orbs. Members have to collect all the orbs or they will explode and bind everyone.",
+      "QuickStrategy": "Avoid standing on platforms until the ground becomes lava. \nAvoid tentacle slams, and try to stay behind the boss. Kill all the adds.\nCollect orbs to keep from exploding."
+    },
+    {
+      "Name": "Echidna",
+      "InDepthStrategy": "This is a very straightforward fight. She has a cleave and a circle AoE around her called \"Abyssal Sickle\". She will then jump in the air and target a random raid member with a large grey AoE circle with arrows pointing to the member. Everyone has to group up on the targeted member to reduce the damage they will take. She will also cast a room-wide petrifying AoE, to avoid it look away from her. She also casts two rectangular line AoEs with gaps in between and to the opposite sides of them. She will jump into the air and create multiple large circle AoEs which deal massive damage if caught.\n\nAround 70% and 40% she splits into three, each mob will target a tank from each raid party. It is good to set waymarks on opposite sides of the map to avoid their tether, which creates a stacking defense if they are too close to each other. The main body part will also cast the petrifying AoE. If you do not kill them in time the party will wipe. She also spawns adds twice throughout the fight.",
+      "QuickStrategy": "Safe spots for AoE are outside and right down the middle. Look away for \"Petrifaction\". When adds spawn, split them apart so there's no tethers."
+    }
+  ],
+  "ZoneID": 508
+}

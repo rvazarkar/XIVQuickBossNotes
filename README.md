@@ -17,7 +17,7 @@ A boss strategy plugin for [Dalamud](https://github.com/goatcorp/Dalamud). Allow
   - Trials: Complete
   - High-End Trials: Not Started
   - Raids: Not Started
-  - Alliance Raids: Not Started
+  - Alliance Raids: Complete
 - Stormblood
   - Dungeons: Complete
   - Trials: Complete
