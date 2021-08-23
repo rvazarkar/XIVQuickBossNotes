@@ -1,0 +1,23 @@
+﻿{
+  "Index": 0,
+  "Name": "Holminster Switch",
+  "Level": 71,
+  "Bosses": [
+    {
+      "Name": "Forgiven Dissonance",
+      "InDepthStrategy": "The Path of Light: Moderate damage to the entire party\nPillory: Tankbuster.\nBrazen Bull: Summons four untargetable orb adds that fire off cross AoEs, leaving a small section of the arena safe.\nThumbscrew: Cast during Brazen Bull. Line AoE toward a safe area. Forgiven Dissonance charges to the edge of the arena.\nWooden Horse: Cast immediately after Thumbscrew. A large cone attack directed toward the center of the arena.",
+      "QuickStrategy": ""
+    },
+    {
+      "Name": "Tesleen, the Forgiven",
+      "InDepthStrategy": "The Tickler: Tankbuster.\nScold's bridle: Moderate damage to the entire party.\nFevered Flagellation: Each player gains a number of dots above their heads, 1-4. Tesleen will charge at each player in order, dealing damage to that player as well as any other players in the way.\nExorcise: Stack marker on one player alongside four circle AoEs around the center of the arena. All five targets will leave behind a puddle that inflicts Bleed.",
+      "QuickStrategy": "Immediately move out after the stack marker expires.\n \"Fevered Flagellation\" will cause the boss to charge players in order of number of orbs above their head, so avoid bad patterns."
+    },
+    {
+      "Name": "Lightwarden: Philia",
+      "InDepthStrategy": "Scavenger's Daughter: Moderate damage to the entire party.\nHeadcrusher: Tankbuster.\nPendulum: Targeted proximity marker on the tank followed immediately by a proximity marker in the center of the arena.\nChain Down: Targets a random non-tank player with a crosshair. Shortly after, that player will become Fettered, unable to act. Destroy the Iron Chain to free them.\nAethersup: Large cone attack directed at the Fettered player. Extremely high damage that lingers for a bit and inflicts stacks of Vulnerability Up.\nLeft/Right Knout: >180 degree arc to the respective side of Philia. Philia telegraphs this attack by raising the arm it's about to attack with. Deals moderate damage while also Stunning players hit and knocking them directly in front of Philia.\nTaphephobia: Player targeted circle AoE.\nInto the Light: Line stack marker on a random player.\nFierce Beating: Philia moves to the center of the arena with a rotating marker around it and a damaging puddle will appear inside Philia's hitbox. Philia will slam the ground in front of it with its arms, creating two moving circle AoEs travelling outward. Then Philia will swing its tail as a cone attack behind itself, rotating slightly as it does so. The attack will repeat until Philia has made a full 360 degree rotation.",
+      "QuickStrategy": "Free the chained player ASAP. \"Right/Left Knout\" = get to opposite side of the boss. When the boss spins, rotate with the boss"
+    }
+  ],
+  "ZoneID": 837
+}

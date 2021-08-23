@@ -1,0 +1,23 @@
+﻿{
+  "Index": 1,
+  "Name": "Dohn Mheg",
+  "Level": 73,
+  "Bosses": [
+    {
+      "Name": "Aenc Thon",
+      "InDepthStrategy": "Candy Cane: Tankbuster.\nHydrofall: Two circle AoEs below random players. Deals high damage to players hit.\nLaughing Leap: Alternates between a small circle AoE in the center of the arena or a stack marker on a random player. Aenc Thon will leap to the targeted area and follow up with Landsblood.\nLandsblood: Constant party-wide damage every few seconds, combined with several blue water AoE markers appearing around the arena. The more opaque the markers become, the closer they are to \"exploding\", dealing moderate damage and Stunning players caught in the area of effect.",
+      "QuickStrategy": "First stage of water spouts is safe, second stage is a knockup."
+    },
+    {
+      "Name": "Griaule",
+      "InDepthStrategy": "Swinge: 60 degree frontal AoE cone\nFodder: Griaule will move to the center of the arena and summon five untargetable Painted Sapling adds that will then tether to him. These tethers can and should be intercepted by players, and after a short time, the adds will bestow a the Growing buff to whomever they were tethered to.\nThe Growing buff increases damage dealt and reduces damage taken, along with physically increasing the target's size. Players who gain a second stack of Growing will have it replaced with Full-Grown, which further increases the benefits gained from Growing, but the boss will continue to gain stacks.\nTiiimbeeer: Moderate party-wide damage.\nCoiling Ivy: Four Painted Ivy adds will appear on each player and inflict Fetter, binding them in place. The adds can be targeted and destroyed to remove the debuff.",
+      "QuickStrategy": "You can break your own vines when trapped. You MUST intercept the tethers from the add to the boss (4/5 tethers should be taken)"
+    },
+    {
+      "Name": "Lakelord: Aenc Thon",
+      "InDepthStrategy": "Crippling Blow: Tankbuster.\nVirtuisic Capriccio: Moderate party-wide damage and a weak Bleed debuff on all players. Late in the fight, Aenc Thon will cast this ability three times in a row, but the Bleed debuff does not stack.\nImp Choir: Gaze attack that transforms any player hit into an Imp for 6 seconds.\nToad Choir: Aenc Thon will turn to face a random player and cast a wide, untelegraphed frontal cone AoE. Players in the cone are transformed into a Toad for 6 seconds.\nFunambulist's Fantasia: Aenc Thon will move to the back of the arena, knock all players back to the entrance of the arena, and creates a massive gap in the center of the room. A single, narrow and winding path is the only way across the pit. Players that fall into the pit are teleported back to the start, but are otherwise unharmed. Players' mobility and teleporation skills cannot be used to bypass the maze. At the same time, Aenc Thon will become surrounded in a barrier, summon the Liar's Lyre, and the two will begin casting Finale.\nIf running the dungeon with the Trust system, each of the Scions will react differently to this:\nThancred and Urianger will bypass the maze entirely using Rough Divide and Aetherial Manipulation respectively.\nAlisaie and Crystal Exarch use Sprint to run the whole thing without stopping.\nY'shtola will also use Sprint, but to increase her walking speed, rather than running full-tilt.\nMinfilia and Alphinaud will cautiously and slowly walk. Alphinaud will eventually speed up, but Minfilia does not and will not make it to the end before Finale casts.\nLiar's Lyre: The Liar's Lyre can only be damaged if you are inside Aenc Thon's barrier. Destroying the lyre will interrupt the Finale cast and stun Aenc Thon for a short time.\nFinale: If the cast finishes, Finale will instantly kill any player not inside Aenc Thon's barrier. Once Finale has finished either by being cast or being interrupted, the arena will return to normal.\nChangeling's Fantasia: Aenc Thon transforms into the Shade of Fear. After a few attacks from the Shade, Aenc Thon will transform back to normal. If the battle lasts long enough for him to cast this a second time, he will instead transform into a tiny helpless frog.\nCorrosive Bile: Very wide lingering cone attack from the Shade of Fear's front.\nFlailing Tentacles: The Shade of Fear will raise its four tentacles and slam them down in a line attack. Deals moderate damage and inflicts Concussion, dealing high damage over time.",
+      "QuickStrategy": "Imp Choir = turn away, Toad Choir = get behind. Don't stand in front of the boss during \"Corrosive Bile\".\n If the fight goes on long enough, the boss turns himself into a turtle :D"
+    }
+  ],
+  "ZoneID": 821
+}

@@ -1,0 +1,23 @@
+﻿{
+  "Index": 4,
+  "Name": "Mt. Gulg",
+  "Level": 79,
+  "Bosses": [
+    {
+      "Name": "Forgiven Cruelty",
+      "InDepthStrategy": "Rake: Tankbuster\nLumen Infinitum: Frontal line AOE attach with no ground marker, move away from boss' face when he starts to cast\nCyclone Wing: Room-wide AOE\nTyphoon Wing: Don't stand in front of green orbs around boss to avoid triangular AOE attack\nTypoon Wing: Further into the fight he will add aether current-looking AOE puddles aswell as his orbs around him - dodge both to avoid damage",
+      "QuickStrategy": ""
+    },
+    {
+      "Name": "Forgiven Whimsy",
+      "InDepthStrategy": "Sacrament of Penance: Room-wide AOE\nCatechism: Tankbuster\nJudgement Day: 2 meteor puddle - 1 person will be enough to soak damage\nExegesis: The boss's face is a map of the platform, with the bottom corresponding to the front of the platform (toward the boss). Stand on a square without a face.\nShiny Orbs: Occurs same time as Exegesis and spawns large donot AOEs on the ground - avoid both for no damage",
+      "QuickStrategy": "When faces light up on the boss, stand in squares that don't match the faces. Meteor puddles can be soaked by one person."
+    },
+    {
+      "Name": "Consort of Sin: Forgiven Obscenity",
+      "InDepthStrategy": "Orison Fortissimo: Room-wide AOE\nDivine Diminuendo: Puddle AOE around boss, after 1st time, 2 more AOE rings around the boss will occur quickly and with little time to spare to dodge\nConviction Marcato: Avoid the large yellow discs surrounding the boss as they will cast a line AOE from each\nPenance Pianissimo: Tightens the map into a circle\nFeather marionette: Makes 4 copies of herself around the room\nAll 4 copies and the boss will cast another Divine Diminuendo - one of the copes will have a ring around them head to this copy and stay close to avoid damage\nThe position of the copies and boss will then change and she will cast Conviction Marcato again - stay out of line AOEs from the copies and avoid her golden disc line AOEs too\n\nSolitaire Ring: Stand on the path of the last ring to spawn, wait for others to go off and then run out of the way of the last one to avoid\nSacrament Sforzando: Tankbuster",
+      "QuickStrategy": "When boss makes clones, find the clone with the ring around it and get close to avoid AoE."
+    }
+  ],
+  "ZoneID": 822
+}

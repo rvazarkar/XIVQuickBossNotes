@@ -1,0 +1,23 @@
+﻿{
+  "Index": 3,
+  "Name": "Malikah's Well",
+  "Level": 77,
+  "Bosses": [
+    {
+      "Name": "Greater Armadillo",
+      "InDepthStrategy": "Falling Rocks: Every attack that involves the Greater Armadillo slamming the ground will cause two sets of four circle AoEs to appear in random locations in the arena.\nStone Flail: Tankbuster.\nHead Toss: Stack marker on a random player.\nRight Round: Untelegraphed melee-ranged AoE that deals minor damage and knocks players back.\nFlail Smash: Proximity marker in the center of the arena, followed by a ring attack along the outside of the arena.\nPack Armadillos: A short time after each Flail Smash, two Pack Armadillo adds will spawn.\nMechanics will repeat until boss is dead.",
+      "QuickStrategy": "Get in for stack marker, and then get out as soon as the boss jumps. Kill adds."
+    },
+    {
+      "Name": "Amphibious Talos",
+      "InDepthStrategy": "Efface: Tankbuster.\nWellbore: Large circle AoE in the center of the arena, followed by four smaller circles appearing. The smaller circles will persist as geysers for a short time.\nHigh Pressure: Minor damage and a strong knockback on all players.\nSwift Spill: Rotating cone attack from the center of the arena.\nMechanics will repeat until boss is dead.",
+      "QuickStrategy": ""
+    },
+    {
+      "Name": "Lightwarden: Storge",
+      "InDepthStrategy": "Intestinal Crank: Moderate damage on all players.\nHeretics Fork: Four line AoEs in the cardinal directions centered on Storge.\nBreaking Wheel: Room-wide AoE with the only safe spot being inside Storge's hitbox.\nCrystal Nail: Four circle AoEs in the cardinal directions from the boss that leave behind untargetable Rhapsodic Nail adds.\nCensure: The Rhapsodic Nails and Storge will cast the attack last used by Storge in sequence, moving clockwise and finishing with Storge.",
+      "QuickStrategy": "Safe zone for \"Breaking Wheel\" is inside boss."
+    }
+  ],
+  "ZoneID": 836
+}

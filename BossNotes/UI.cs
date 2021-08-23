@@ -280,6 +280,11 @@ namespace BossNotes
                             OutputChat(baseMessage);
                         }
                     }
+                    else
+                    {
+                        ImGui.SameLine();
+                        ImGui.Button("N/A");
+                    }
                 }
 
                 ImGui.End();

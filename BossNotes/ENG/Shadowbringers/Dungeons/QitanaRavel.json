@@ -1,0 +1,23 @@
+﻿{
+  "Index": 2,
+  "Name": "The Qitana Ravel",
+  "Level": 75,
+  "Bosses": [
+    {
+      "Name": "Lozatl",
+      "InDepthStrategy": "Stonefist: Tankbuster.\nSun Toss: Circle AoE below a random player.\nLozatl's Scorn: One of the two statues in the background will glow purple and eventually deal high damage across half the arena.\nHeat Up: One side of Lozatl's body will glow red-hot in preparation for Lozatl's Fury.\nLozatl's Fury: Lozatl will move to the center of the arena and face a random direction. When the cast finishes, Lozatl will attack the half of the arena his glowing side is facing for high damage.\nEventually, Lozatl will combine Lozatl's Scorn and Lozatl's Fury. There is always a safe area, though its size can greatly vary.",
+      "QuickStrategy": "When a statue lights up, be on the other side of the room. When boss's shoulder starts smoking, be on the other side of the room from the shoulder."
+    },
+    {
+      "Name": "Batsquatch",
+      "InDepthStrategy": "Ripper Fang: Tankbuster.\nSoundwave: Moderate party-wide damage.\nSubsonics: Batsquatch stomps the ground several times in quick succession, dealing low damage (though this quickly stacks up) while also causing rocks to fall into the arena as circle AoEs of various sizes. The largest AoEs leave behind pillars.\nPillars: If there are any pillars on the field when Batsquatch casts Soundwave, they will topple over, dealing massive damage and inflicting Vulnerability Up in a narrow cone in the direction they fell. The pillars will always collapse in a way that results in their entire damage area to be within the arena.",
+      "QuickStrategy": "Pillars collapse towards their shadows., so position accordingly."
+    },
+    {
+      "Name": "Lightwarden: Eros",
+      "InDepthStrategy": "Rend: Tankbuster.\nHound out of Heaven: Proximity tether on a random non-Tank player. Eros charges at the targeted player for high damage. If the player was not far away enough to turn the tether purple, the attack also inflicts a stack of Vulnerability Up.\nGlossolalia: Moderate party-wide damage.\nViper Poison: Several circle AoEs will appear on the platform, dealing damage and leaving behind a poison puddle that inflicts a Poison debuff. Occasionally, one of the puddles will be targeted on a player instead.\nInhale: Cast immediately after Viper Poison. Eros will jump to the back of room and drag all players into the center of its hitbox.\nHeaving Breath: Cast immediately after Inhale. Knocks all players to the other side of the arena. move somewhere that won't land you in a poison puddle before cast goes off.\nConfession of Faith: Eros moves to an edge of the arena and performs one of two attacks:\nLightning Breath: If Eros's two side heads gain electrical orbs near their mouths, the attack resolves as a stack marker on a random player along with each of the side heads firing off a large cone attack to the sides, leaving the area directly in front of Eros safe.\nFire Breath: If Eros's center head gains a fiery orb in its mouth, the attack resolves as player-targeted circle AoEs on two random players along with a large cone attack from the center head. Stand directly next to Eros's sides to avoid the attack.",
+      "QuickStrategy": "Get far away when tethered. If you get the marker, drop the poison puddle to the side. Position yourself so knockback avoids puddles."
+    }
+  ],
+  "ZoneID": 823
+}
