@@ -12,6 +12,7 @@ namespace BossNotes
             Trials = LoadFolder(Path.Combine(expansionFolder, "Trials"));
             HighEndTrials = LoadFolder(Path.Combine(expansionFolder, "HighEndTrials"));
             Raids = LoadFolder(Path.Combine(expansionFolder, "Raids"));
+            SavageRaids = LoadFolder(Path.Combine(expansionFolder, "SavageRaids"));
             AllianceRaids = LoadFolder(Path.Combine(expansionFolder, "AllianceRaids"));
         }
 
@@ -24,6 +25,7 @@ namespace BossNotes
         public Instance[] HighEndTrials { get; protected set; }
 
         public Instance[] Raids { get; protected set; }
+        public Instance[] SavageRaids { get; protected set; }
 
         public Instance[] AllianceRaids { get; protected set; }
 

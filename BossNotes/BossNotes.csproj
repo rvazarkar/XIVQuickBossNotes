@@ -3,6 +3,7 @@
         <TargetFramework>net472</TargetFramework>
         <LangVersion>preview</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
     </PropertyGroup>
     <ItemGroup>
       <Reference Include="Dalamud, Version=5.2.7.0, Culture=neutral, PublicKeyToken=null">
@@ -43,6 +44,9 @@
         <Validator ProjectDir="$(OutputPath)" />
     </Target>
     <Target Name="ZipOutput" AfterTargets="PackagePlugin">
-        <ZipDirectory DestinationFile="$(OutputPath)..\output.zip" SourceDirectory="$(OutputPath)" Overwrite="true" />
+        <ZipDirectory DestinationFile="$(OutputPath)..\latest.zip" SourceDirectory="$(OutputPath)" Overwrite="true" />
+    </Target>
+    <Target Name="CopyJson" AfterTargets="ZipOutput">
+        <Copy SourceFiles="$(OutputPath)BossNotes.json" DestinationFolder="$(OutputPath)..\" />
     </Target>
 </Project>
