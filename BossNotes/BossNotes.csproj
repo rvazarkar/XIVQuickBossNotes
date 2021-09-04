@@ -12,7 +12,7 @@
       <Folder Include="Properties" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="DalamudPackager" Version="1.2.2" />
+      <PackageReference Include="DalamudPackager" Version="2.1.2" />
     </ItemGroup>
     <UsingTask TaskName="NotesValidator.Validator" AssemblyFile="$(SolutionDir)NotesValidator\bin\Release\net5.0-windows\NotesValidator.dll" />
     <ItemGroup>
