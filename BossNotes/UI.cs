@@ -10,7 +10,6 @@ using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.SubKinds;
 using Dalamud.Game.Gui;
 using Dalamud.Logging;
-using Dalamud.Plugin;
 using ImGuiNET;
 
 namespace BossNotes
@@ -38,9 +37,17 @@ namespace BossNotes
             new("Linkshell 8", "ls8")
         };
 
+        private readonly ChatGui _chatGui;
+
+        private readonly ClientState _clientState;
+
         private readonly Configuration _configuration;
 
         private readonly Expansion[] _expansions;
+        private readonly GameGui _gameGui;
+        private readonly ObjectTable _objectTable;
+
+        private readonly SigScanner _sigScanner;
 
         private readonly string[] _types =
         {
@@ -59,12 +66,8 @@ namespace BossNotes
 
         private bool _visible;
 
-        private readonly SigScanner _sigScanner;
-        private readonly ClientState _clientState;
-        private readonly GameGui _gameGui;
-        private readonly ObjectTable _objectTable;
-
-        public UI(Configuration configuration, Expansion[] expansions, SigScanner sigScanner, ClientState clientState, GameGui gameGui, ObjectTable objectTable)
+        public UI(Configuration configuration, Expansion[] expansions, SigScanner sigScanner, ClientState clientState,
+            GameGui gameGui, ObjectTable objectTable, ChatGui chatGui)
         {
             _configuration = configuration;
             _autoSelectChat = configuration.AutoSelectChat;
@@ -75,6 +78,7 @@ namespace BossNotes
             _gameGui = gameGui;
             _clientState = clientState;
             _objectTable = objectTable;
+            _chatGui = chatGui;
 
             _selectedInstance = _configuration.SelectedTypeIndex switch
             {
@@ -279,7 +283,6 @@ namespace BossNotes
                 ImGui.Text("Share Strat:");
 
                 foreach (var phase in _selectedInstance.Bosses)
-                {
                     if (!string.IsNullOrWhiteSpace(phase.QuickStrategy))
                     {
                         ImGui.SameLine();
@@ -295,7 +298,6 @@ namespace BossNotes
                         ImGui.SameLine();
                         ImGui.Button("N/A");
                     }
-                }
 
                 ImGui.End();
             }
@@ -312,7 +314,7 @@ namespace BossNotes
 
                 if (player == null)
                 {
-                    channel = _chatChannels[0];
+                    channel = null;
                 }
                 else
                 {
@@ -321,7 +323,7 @@ namespace BossNotes
                     else if ((player.StatusFlags & StatusFlags.PartyMember) != 0)
                         channel = _chatChannels[3];
                     else
-                        channel = _chatChannels[0];
+                        channel = null;
                 }
             }
             else
@@ -329,30 +331,40 @@ namespace BossNotes
                 channel = _chatChannels[_configuration.SelectedChatIndex];
             }
 
-            var commands = baseMessage.Replace("\r", string.Empty).Split('\n').Select(x => channel.FormatMessage(x))
-                .ToList();
+            if (channel == null)
+            {
+                var commands = baseMessage.Replace("\r", string.Empty).Split('\n')
+                    .ToList();
 
-            if (commands.Any(x => x.Length > 179))
-            {
-                PluginLog.Error($"Quick strategy is too long. Aborting chat.");
-                return;
+                foreach (var c in commands) _chatGui.Print(c);
             }
+            else
+            {
+                var commands = baseMessage.Replace("\r", string.Empty).Split('\n').Select(x => channel.FormatMessage(x))
+                    .ToList();
 
-            var macroPtr = IntPtr.Zero;
-            try
-            {
-                macroPtr = Marshal.AllocHGlobal(Macro.size);
-                using var macro = new Macro(macroPtr, string.Empty, commands);
-                Marshal.StructureToPtr(macro, macroPtr, false);
-                _executeMacro.Invoke(_raptureShellModule, macroPtr);
-            }
-            catch
-            {
-                //pass
-            }
-            finally
-            {
-                if (macroPtr != IntPtr.Zero) Marshal.FreeHGlobal(macroPtr);
+                if (commands.Any(x => x.Length > 179))
+                {
+                    PluginLog.Error("Quick strategy is too long. Aborting chat.");
+                    return;
+                }
+
+                var macroPtr = IntPtr.Zero;
+                try
+                {
+                    macroPtr = Marshal.AllocHGlobal(Macro.size);
+                    using var macro = new Macro(macroPtr, string.Empty, commands);
+                    Marshal.StructureToPtr(macro, macroPtr, false);
+                    _executeMacro.Invoke(_raptureShellModule, macroPtr);
+                }
+                catch
+                {
+                    //pass
+                }
+                finally
+                {
+                    if (macroPtr != IntPtr.Zero) Marshal.FreeHGlobal(macroPtr);
+                }
             }
         }
 

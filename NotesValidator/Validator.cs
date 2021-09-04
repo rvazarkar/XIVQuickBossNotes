@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using BossNotes;
-using Microsoft.Build.Tasks;
 using Microsoft.Build.Utilities;
 
 namespace NotesValidator
@@ -10,17 +8,14 @@ namespace NotesValidator
     public class Validator : Task
     {
         private const int MaxPrefixLength = 9;
-        public string ProjectDir { get; set; }
         private bool _clean = true;
 
-        private Dictionary<ushort, string> _zoneIds = new();
+        private readonly Dictionary<ushort, string> _zoneIds = new();
+        public string ProjectDir { get; set; }
 
         private void DirSearch(string directory)
         {
-            foreach (var d in Directory.GetDirectories(directory))
-            {
-                DirSearch(d);
-            }
+            foreach (var d in Directory.GetDirectories(directory)) DirSearch(d);
 
             foreach (var f in Directory.GetFiles(directory, "*.json"))
             {
@@ -47,20 +42,18 @@ namespace NotesValidator
                 {
                     _zoneIds.Add(zid, dungeon.Name);
                 }
-                
+
                 foreach (var boss in dungeon.Bosses)
                 {
                     var baseMessage =
                         $"★{boss.Name}★: {boss.QuickStrategy}";
                     var lines = baseMessage.Replace("\r", string.Empty).Split('\n');
                     foreach (var line in lines)
-                    {
                         if (line.Length + MaxPrefixLength >= 179)
                         {
                             Log.LogError($"Quick strategy for {boss.Name} in {f} is too long: {line}");
                             _clean = false;
                         }
-                    }
                 }
             }
         }

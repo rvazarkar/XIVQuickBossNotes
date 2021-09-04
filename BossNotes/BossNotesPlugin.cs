@@ -22,40 +22,40 @@ namespace BossNotes
     {
         private const string Command = "/bnotes";
         private const string ReloadCommand = "/bnotesreload";
+        private readonly ClientState _clientState;
+        private readonly CommandManager _commandManager;
 
-        private Configuration _configuration;
-
-        private Expansion[] _expansions;
+        private readonly Configuration _configuration;
 
         private readonly DalamudPluginInterface _pluginInterface;
-        private readonly CommandManager _commandManager;
-        private readonly ClientState _clientState;
-        private UI _ui;
-        private bool drawConfigWindow = false;
+        private readonly UI _ui;
+
+        private Expansion[] _expansions;
 
         private Dictionary<ushort, DungeonSelectionIndex> _zoneMap;
 
         public BossNotesPlugin(
-            [RequiredVersion("1.0")]DalamudPluginInterface pluginInterface, 
-            [RequiredVersion("1.0")] CommandManager commandManager, 
+            [RequiredVersion("1.0")] DalamudPluginInterface pluginInterface,
+            [RequiredVersion("1.0")] CommandManager commandManager,
             [RequiredVersion("1.0")] ClientState clientState,
             [RequiredVersion("1.0")] GameGui gameGui,
             [RequiredVersion("1.0")] SigScanner sigScanner,
-            [RequiredVersion("1.0")] ObjectTable objectTable)
+            [RequiredVersion("1.0")] ObjectTable objectTable,
+            [RequiredVersion("1.0")] ChatGui chatGui)
         {
             _pluginInterface = pluginInterface;
             _commandManager = commandManager;
             _clientState = clientState;
             _configuration = pluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             _configuration.Initialize(_pluginInterface);
-            
+
             _expansions = LoadContent(AssemblyLocation);
 
             BuildZoneMap();
 
-            _ui = new UI(_configuration, _expansions, sigScanner, clientState, gameGui, objectTable);
+            _ui = new UI(_configuration, _expansions, sigScanner, clientState, gameGui, objectTable, chatGui);
             _ui.Initialize();
-            
+
             _commandManager.AddHandler(Command, new CommandInfo(OnCommand)
             {
                 HelpMessage = "Displays quick notes for bosses and lets you print quick strategies to chat."
@@ -65,13 +65,14 @@ namespace BossNotes
             {
                 HelpMessage = "Reloads boss strats."
             });
-            
-            _pluginInterface.UiBuilder.OpenConfigUi += () => {OnCommand(null, null);};
+
+            _pluginInterface.UiBuilder.OpenConfigUi += () => { OnCommand(null, null); };
             _pluginInterface.UiBuilder.Draw += DrawUI;
             _clientState.TerritoryChanged += OnTerritoryChanged;
         }
-        
+
         public string AssemblyLocation { get; set; } = Assembly.GetExecutingAssembly().Location;
+
         public void Dispose()
         {
             _ui.Dispose();
