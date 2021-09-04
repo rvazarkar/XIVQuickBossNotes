@@ -31,6 +31,7 @@ namespace BossNotes
         private readonly CommandManager _commandManager;
         private readonly ClientState _clientState;
         private UI _ui;
+        private bool drawConfigWindow = false;
 
         private Dictionary<ushort, DungeonSelectionIndex> _zoneMap;
 
@@ -65,7 +66,8 @@ namespace BossNotes
                 HelpMessage = "Reloads boss strats."
             });
             
-            _pluginInterface.UiBuilder.OpenConfigUi += DrawUI;
+            _pluginInterface.UiBuilder.OpenConfigUi += () => {OnCommand(null, null);};
+            _pluginInterface.UiBuilder.Draw += DrawUI;
             _clientState.TerritoryChanged += OnTerritoryChanged;
         }
         
