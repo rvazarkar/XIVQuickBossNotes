@@ -3,7 +3,9 @@
         <TargetFramework>net5.0-windows</TargetFramework>
         <LangVersion>preview</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <PreserveCompilationContext>false</PreserveCompilationContext>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     </PropertyGroup>
     <ItemGroup>
       <Folder Include="ENG" />
@@ -32,9 +34,6 @@
       </Reference>
         <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
     </ItemGroup>
-    <PropertyGroup>
-        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-    </PropertyGroup>
     <Target Name="Validator" BeforeTargets="Build">
         <Validator ProjectDir="$(OutputPath)\ENG" />
     </Target>

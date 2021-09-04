@@ -2,5 +2,7 @@
   "Author": "CptJesus",
   "Name": "Boss Notes",
   "Description": "In-game boss notes and shareable quick strategies",
-  "RepoUrl": "https://github.com/rvazarkar/XIVQuickBossNotes"
+  "RepoUrl": "https://github.com/rvazarkar/XIVQuickBossNotes",
+  "Punchline": "Quick Boss Strategy Reference",
+  "Changelog": "Initial API4 release"
 }
