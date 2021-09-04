@@ -7,12 +7,18 @@ using BossNotes.ENG.Heavensward;
 using BossNotes.ENG.Shadowbringers;
 using BossNotes.ENG.Stormblood;
 using Dalamud;
+using Dalamud.Game;
+using Dalamud.Game.ClientState;
+using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
+using Dalamud.Game.Gui;
+using Dalamud.IoC;
+using Dalamud.Logging;
 using Dalamud.Plugin;
 
 namespace BossNotes
 {
-    public class BossNotesPlugin : IDalamudPlugin
+    public class BossNotesPlugin : IDalamudPlugin, IDisposable
     {
         private const string Command = "/bnotes";
         private const string ReloadCommand = "/bnotesreload";
@@ -21,53 +27,63 @@ namespace BossNotes
 
         private Expansion[] _expansions;
 
-        private DalamudPluginInterface _pluginInterface;
+        private readonly DalamudPluginInterface _pluginInterface;
+        private readonly CommandManager _commandManager;
+        private readonly ClientState _clientState;
         private UI _ui;
 
         private Dictionary<ushort, DungeonSelectionIndex> _zoneMap;
 
-        public string AssemblyLocation { get; set; } = Assembly.GetExecutingAssembly().Location;
-        public void Dispose()
-        {
-            _ui.Dispose();
-            _pluginInterface.CommandManager.RemoveHandler(Command);
-            _pluginInterface.CommandManager.RemoveHandler(ReloadCommand);
-            _pluginInterface.ClientState.TerritoryChanged -= OnTerritoryChanged;
-            _pluginInterface.Dispose();
-        }
-
-        public void Initialize(DalamudPluginInterface pluginInterface)
+        public BossNotesPlugin(
+            [RequiredVersion("1.0")]DalamudPluginInterface pluginInterface, 
+            [RequiredVersion("1.0")] CommandManager commandManager, 
+            [RequiredVersion("1.0")] ClientState clientState,
+            [RequiredVersion("1.0")] GameGui gameGui,
+            [RequiredVersion("1.0")] SigScanner sigScanner,
+            [RequiredVersion("1.0")] ObjectTable objectTable)
         {
             _pluginInterface = pluginInterface;
+            _commandManager = commandManager;
+            _clientState = clientState;
             _configuration = pluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             _configuration.Initialize(_pluginInterface);
-
+            
             _expansions = LoadContent(AssemblyLocation);
 
             BuildZoneMap();
 
-            _ui = new UI(_configuration, _pluginInterface, _expansions);
+            _ui = new UI(_configuration, _expansions, sigScanner, clientState, gameGui, objectTable);
             _ui.Initialize();
-
-            _pluginInterface.CommandManager.AddHandler(Command, new CommandInfo(OnCommand)
+            
+            _commandManager.AddHandler(Command, new CommandInfo(OnCommand)
             {
                 HelpMessage = "Displays quick notes for bosses and lets you print quick strategies to chat."
             });
 
-            _pluginInterface.CommandManager.AddHandler(ReloadCommand, new CommandInfo(OnReloadCommand)
+            _commandManager.AddHandler(ReloadCommand, new CommandInfo(OnReloadCommand)
             {
                 HelpMessage = "Reloads boss strats."
             });
-
-            _pluginInterface.UiBuilder.OnBuildUi += DrawUI;
-            _pluginInterface.ClientState.TerritoryChanged += OnTerritoryChanged;
+            
+            _pluginInterface.UiBuilder.OpenConfigUi += DrawUI;
+            _clientState.TerritoryChanged += OnTerritoryChanged;
+        }
+        
+        public string AssemblyLocation { get; set; } = Assembly.GetExecutingAssembly().Location;
+        public void Dispose()
+        {
+            _ui.Dispose();
+            _commandManager.RemoveHandler(Command);
+            _commandManager.RemoveHandler(ReloadCommand);
+            _clientState.TerritoryChanged -= OnTerritoryChanged;
+            _pluginInterface.Dispose();
         }
 
         public string Name => "Boss Notes";
 
         private Expansion[] LoadContent(string assemblyLocation)
         {
-            var lang = _pluginInterface.ClientState.ClientLanguage;
+            var lang = _clientState.ClientLanguage;
             var folder = Path.GetDirectoryName(assemblyLocation);
             var langFolder = lang switch
             {

@@ -1,29 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
     <PropertyGroup>
-        <TargetFramework>net472</TargetFramework>
+        <TargetFramework>net5.0-windows</TargetFramework>
         <LangVersion>preview</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
     </PropertyGroup>
-    <ItemGroup>
-      <Reference Include="Dalamud, Version=5.2.7.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
-          <Private>false</Private>
-      </Reference>
-      <Reference Include="ImGui.NET, Version=1.72.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGui.NET.dll</HintPath>
-          <Private>false</Private>
-      </Reference>
-      <Reference Include="ImGuiScene, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\ImGuiScene.dll</HintPath>
-          <Private>false</Private>
-      </Reference>
-      <Reference Include="Microsoft.Build.Utilities.v4.0" />
-      <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-        <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Newtonsoft.Json.dll</HintPath>
-          <Private>false</Private>
-      </Reference>
-    </ItemGroup>
     <ItemGroup>
       <Folder Include="ENG" />
       <Folder Include="Properties" />
@@ -31,7 +12,7 @@
     <ItemGroup>
       <PackageReference Include="DalamudPackager" Version="1.2.2" />
     </ItemGroup>
-    <UsingTask TaskName="NotesValidator.Validator" AssemblyFile="$(SolutionDir)NotesValidator\bin\Release\net472\NotesValidator.dll" />
+    <UsingTask TaskName="NotesValidator.Validator" AssemblyFile="$(SolutionDir)NotesValidator\bin\Release\net5.0-windows\NotesValidator.dll" />
     <ItemGroup>
         <None Update="ENG\**\*.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -40,8 +21,22 @@
     <ItemGroup>
       <ProjectReference Include="..\NotesValidator\NotesValidator.csproj" Private="false" />
     </ItemGroup>
+    <ItemGroup>
+      <Reference Include="Dalamud, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+      <Reference Include="ImGui.NET, Version=1.82.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\AppData\Roaming\XIVLauncher\addon\Hooks\dev\ImGui.NET.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+        <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    </ItemGroup>
+    <PropertyGroup>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    </PropertyGroup>
     <Target Name="Validator" BeforeTargets="Build">
-        <Validator ProjectDir="$(OutputPath)" />
+        <Validator ProjectDir="$(OutputPath)\ENG" />
     </Target>
     <Target Name="ZipOutput" AfterTargets="PackagePlugin">
         <ZipDirectory DestinationFile="$(OutputPath)..\latest.zip" SourceDirectory="$(OutputPath)" Overwrite="true" />

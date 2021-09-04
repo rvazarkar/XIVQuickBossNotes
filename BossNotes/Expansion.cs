@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace BossNotes
 {
@@ -40,7 +40,7 @@ namespace BossNotes
             var instances = Directory.GetFiles(folder, "*.json").Select(x =>
             {
                 var json = File.ReadAllText(x);
-                return JsonConvert.DeserializeObject<Instance>(json);
+                return JsonSerializer.Deserialize<Instance>(json);
             }).OrderBy(x => x.Index).ToArray();
 
             if (instances.Length == 0)

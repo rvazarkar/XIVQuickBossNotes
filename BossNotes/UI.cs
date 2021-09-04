@@ -3,8 +3,13 @@ using System.Linq;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using BossNotes.Internal;
-using Dalamud.Game.ClientState.Actors;
-using Dalamud.Game.ClientState.Actors.Types;
+using Dalamud.Game;
+using Dalamud.Game.ClientState;
+using Dalamud.Game.ClientState.Objects;
+using Dalamud.Game.ClientState.Objects.Enums;
+using Dalamud.Game.ClientState.Objects.SubKinds;
+using Dalamud.Game.Gui;
+using Dalamud.Logging;
 using Dalamud.Plugin;
 using ImGuiNET;
 
@@ -36,7 +41,6 @@ namespace BossNotes
         private readonly Configuration _configuration;
 
         private readonly Expansion[] _expansions;
-        private readonly DalamudPluginInterface _pluginInterface;
 
         private readonly string[] _types =
         {
@@ -55,16 +59,22 @@ namespace BossNotes
 
         private bool _visible;
 
-        public UI(Configuration configuration, DalamudPluginInterface pluginInterface, Expansion[] expansions)
+        private readonly SigScanner _sigScanner;
+        private readonly ClientState _clientState;
+        private readonly GameGui _gameGui;
+        private readonly ObjectTable _objectTable;
+
+        public UI(Configuration configuration, Expansion[] expansions, SigScanner sigScanner, ClientState clientState, GameGui gameGui, ObjectTable objectTable)
         {
             _configuration = configuration;
             _autoSelectChat = configuration.AutoSelectChat;
             _autoSwapDungeons = configuration.AutoSwapDungeon;
             _showDetails = configuration.ShowDetails;
             _expansions = expansions;
-            _pluginInterface = pluginInterface;
-            _pluginInterface.Framework.Gui.GetUIModule();
-
+            _sigScanner = sigScanner;
+            _gameGui = gameGui;
+            _clientState = clientState;
+            _objectTable = objectTable;
 
             _selectedInstance = _configuration.SelectedTypeIndex switch
             {
@@ -95,12 +105,12 @@ namespace BossNotes
 
         public unsafe void Initialize()
         {
-            var uiModule = _pluginInterface.Framework.Gui.GetUIModule();
+            var uiModule = _gameGui.GetUIModule();
             var vtbl = (IntPtr*) (*(IntPtr*) uiModule);
             var getRaptureShellModule = Marshal.GetDelegateForFunctionPointer<GetModuleDelegate>(*(vtbl + 9));
             _raptureShellModule = getRaptureShellModule(uiModule);
             _executeMacro = Marshal.GetDelegateForFunctionPointer<ExecuteMacroDelegate>(
-                _pluginInterface.TargetModuleScanner.ScanText("E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8D 4D 28"));
+                _sigScanner.ScanText("E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8D 4D 28"));
         }
 
         public void SetSelected(DungeonSelectionIndex idx)
@@ -296,9 +306,8 @@ namespace BossNotes
             ChatChannel channel;
             if (_autoSelectChat)
             {
-                var player = _pluginInterface.ClientState.LocalPlayer;
-                var actors = _pluginInterface.ClientState.Actors;
-                var inAlliance = actors.Where(x => x.ObjectKind == ObjectKind.Player).Cast<PlayerCharacter>()
+                var player = _clientState.LocalPlayer;
+                var inAlliance = _objectTable.Where(x => x.ObjectKind == ObjectKind.Player).Cast<PlayerCharacter>()
                     .Any(x => (x.StatusFlags & StatusFlags.AllianceMember) != 0);
 
                 if (player == null)

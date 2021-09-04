@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Text.Json;
 using BossNotes;
 using Microsoft.Build.Tasks;
 using Microsoft.Build.Utilities;
-using Newtonsoft.Json;
 
 namespace NotesValidator
 {
@@ -28,7 +28,7 @@ namespace NotesValidator
                 ValidatorInstance dungeon;
                 try
                 {
-                    dungeon = JsonConvert.DeserializeObject<ValidatorInstance>(json);
+                    dungeon = JsonSerializer.Deserialize<ValidatorInstance>(json);
                 }
                 catch
                 {
@@ -36,6 +36,7 @@ namespace NotesValidator
                 }
 
                 var zid = dungeon.ZoneID;
+                Log.LogMessage($"Zone ID: {zid}");
 
                 if (_zoneIds.ContainsKey(zid))
                 {
